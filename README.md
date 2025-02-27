@@ -1,4 +1,4 @@
-<div align="center">
+<!-- <div align="center">
   <img src="https://i.ibb.co/W7cK6SC/portfolio-img-1-jpg.png" alt="Portify Banner" width="100%"/>
   
   <h1 align="center">
@@ -138,4 +138,4 @@ Give a ⭐️ if you like this project!
   <a href="https://www.buymeacoffee.com/yourname">
     <img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" />
   </a>
-</div> -->
+</div> --> -->
