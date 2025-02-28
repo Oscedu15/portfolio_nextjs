@@ -8,9 +8,11 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiTypescript,
+  SiPrisma,
 } from "react-icons/si";
 import Image from "next/image";
 import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
+import Link from "next/link";
 
 const projects = [
   {
@@ -20,8 +22,10 @@ const projects = [
       { name: "React", icon: FaReact, color: "#61DAFB" },
       { name: "Next.js", icon: SiNextdotjs, color: "000000" },
       { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
+      { name: "Prisma", icon: SiPrisma, color: "06B6D4" },
     ],
     image: "/projects/ecommerce.png",
+    href: "https://centro-odontologico-od-enerirt.vercel.app/",
   },
   {
     title: "Analytics Dashboard",
@@ -32,6 +36,7 @@ const projects = [
       { name: "Node.js", icon: FaNode, color: "#339933" },
     ],
     image: "/projects/analytics.jpg",
+    href: "https://centro-odontologico-od-enerirt.vercel.app/",
   },
   {
     title: "Mobile Application",
@@ -42,6 +47,7 @@ const projects = [
       { name: "GraphQL", icon: SiGraphql, color: "#E535AB" },
     ],
     image: "/projects/mobile.jpg",
+    href: "https://centro-odontologico-od-enerirt.vercel.app/",
   },
   {
     title: "Mobile Application",
@@ -52,6 +58,7 @@ const projects = [
       { name: "GraphQL", icon: SiGraphql, color: "#E535AB" },
     ],
     image: "/projects/mobile.jpg",
+    href: "https://centro-odontologico-od-enerirt.vercel.app/",
   },
   {
     title: "Mobile Application",
@@ -62,6 +69,7 @@ const projects = [
       { name: "GraphQL", icon: SiGraphql, color: "#E535AB" },
     ],
     image: "/projects/mobile.jpg",
+    href: "https://centro-odontologico-od-enerirt.vercel.app/",
   },
   {
     title: "Mobile Application",
@@ -72,6 +80,7 @@ const projects = [
       { name: "GraphQL", icon: SiGraphql, color: "#E535AB" },
     ],
     image: "/projects/mobile.jpg",
+    href: "https://centro-odontologico-od-enerirt.vercel.app/",
   },
 ];
 
@@ -104,7 +113,7 @@ export default function Main() {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
             gap-8 relative z-10"
         >
-          {projects.map((project, i) => (
+          {projects?.map((project, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 50 }}
@@ -142,9 +151,12 @@ export default function Main() {
                   className="flex justify-between items-start
                 mb-4 group/title"
                 >
-                  <h3 className="text-2xl font-bold text-content">
-                    {project.title}
-                  </h3>
+                  <Link href={project.href} target="_blank" rel="noopener">
+                    <h3 className="text-2xl font-bold text-content">
+                      {project.title}
+                    </h3>
+                  </Link>
+
                   <ArrowUpRightIcon
                     className="h-6 w-6 text-content/50
                  group-hover/title:text-primary transition-colors duration-300"

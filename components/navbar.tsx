@@ -53,9 +53,11 @@ export default function Navbar() {
                 </span>
               </div>
             </div>
-            <span className="font-semibold text-content/90 group-hover:text-primary transition-colors">
-              Oscar Garcia
-            </span>
+            <Link href="/">
+              <span className="font-semibold text-content/90 group-hover:text-primary transition-colors">
+                Oscar Garcia
+              </span>
+            </Link>
           </motion.div>
 
           {/* Desktop Navigation */}

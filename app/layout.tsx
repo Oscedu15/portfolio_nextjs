@@ -27,7 +27,9 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${poppins.variable} font-poppins antialiased `}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

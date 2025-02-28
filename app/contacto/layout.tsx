@@ -1,24 +1,12 @@
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-    title: "Layout Contacto",
-    description: "Created by Oscar Garcia",
-  };
-  
-  export default function RootLayout({
-    children,
-  }: {
-    children: React.ReactNode;
-  }) {
-    return (
-      <html lang="es">
-        <body
-          suppressHydrationWarning
-          className={``}
-        >
-          {children}
-        </body>
-      </html>
-    );
+export async function generateMetadata(): Promise<Metadata> {
+    return {
+      title: "Social Links",
+      description: "My social profiles, courses, and downloads",
+    };
   }
-  
+
+export default function SocialLayout({ children }: { children: React.ReactNode }) {
+    return <>{children}</>;
+  }

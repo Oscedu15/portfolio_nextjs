@@ -1,5 +1,6 @@
 "use client";
 
+import WhatsApp from "@/components/whatsapp";
 import { useState } from "react";
 
 export default function Contact() {
@@ -16,17 +17,17 @@ export default function Contact() {
         </p>
       </div>
 
-      <form className="mx-auto mt-16 max-w-xl sm:mt-20 shadow-lg rounded-xl">
-        <div className="grid grid-cols-1 gap-x-8 gap-y-6">
-          <div className="mt-2.5 mx-2">
+      <form className="mx-auto mt-16 max-w-xl sm:mt-20 shadow-xl rounded-xl">
+        <div className="flex flex-col  justify-center items-center gap-x-8 gap-y-6">
+          <div className="mt-2.5 w-9/12">
             <input
               type="name"
               id="firstname"
               placeholder="First Name"
-              className="border border-blue-500 rounded-full shadow-lg w-11/12"
+              className="bg-gray-200 w-full border rounded-md border-gray-300  focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2"
             />
           </div>
-          <div className="mt-2.5 mx-2">
+          <div className="mt-2.5 w-9/12">
             <input
               type="name"
               id="lastname"
@@ -34,26 +35,25 @@ export default function Contact() {
               className="border border-blue-500 rounded-full shadow-lg w-11/12"
             />
           </div>
-          <div className="">
-            <div className="mt-2.5 mx-2">
-              <input
-                type="name"
-                id="Company"
-                placeholder="Company"
-                className="border border-blue-500 rounded-full shadow-lg w-11/12"
-              />
-            </div>
+
+          <div className="mt-2.5 w-9/12">
+            <input
+              type="name"
+              id="Company"
+              placeholder="Company"
+              className="border border-blue-500 rounded-full shadow-lg w-11/12"
+            />
           </div>
-          <div className="">
-            <div className="mt-2.5 mx-2">
-              <input
-                type="name"
-                id="Email"
-                placeholder="Email Address"
-                className="border border-blue-500 rounded-full shadow-lg w-11/12"
-              />
-            </div>
+
+          <div className="mt-2.5 w-9/12">
+            <input
+              type="name"
+              id="Email"
+              placeholder="Email Address"
+              className="border border-blue-500 rounded-full shadow-lg w-11/12"
+            />
           </div>
+
           <div className=" mx-2">
             <div className="mt-2.5">
               <textarea
@@ -72,6 +72,7 @@ export default function Contact() {
           </div>
         </div>
       </form>
+      <WhatsApp />
     </div>
   );
 }
