@@ -35,7 +35,7 @@ const ProjectsPage = () => {
           Our Projects
         </h1>
       </div>
-      {/* <div className="mx-auto grid lg:grid-cols-2 gap-8 py-8">
+      <div className="mx-auto grid lg:grid-cols-2 gap-8 py-8">
         {projects?.map((project, index) => (
           <div
             key={index}
@@ -59,7 +59,7 @@ const ProjectsPage = () => {
             </div>
           </div>
         ))}
-      </div> */}
+      </div>
     </div>
   );
 };
