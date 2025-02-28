@@ -9,7 +9,7 @@ export default function Footer() {
         className="max-w-7xl mx-auto px-4 sm:px-6
          lg:px-8 py-12"
       >
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid text-center grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">About</h3>
             <p className="text-gray-400">
@@ -75,7 +75,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Connect</h3>
-            <ul className="flex space-x-4">
+            <ul className="flex space-x-4 items-center justify-center">
               <Link
                 href="https://github.com/Oscedu15"
                 target="_blank"

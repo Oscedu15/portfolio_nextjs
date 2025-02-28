@@ -9,6 +9,8 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiPrisma,
+  SiFramer,
+  SiVite,
 } from "react-icons/si";
 import Image from "next/image";
 import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
@@ -23,6 +25,7 @@ const projects = [
       { name: "Next.js", icon: SiNextdotjs, color: "000000" },
       { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
       { name: "Prisma", icon: SiPrisma, color: "06B6D4" },
+      { name: "Framer Motion", icon: SiFramer, color: "06B6D4" },
     ],
     image: "/projects/ecommerce.png",
     href: "https://centro-odontologico-od-enerirt.vercel.app/",
@@ -34,6 +37,7 @@ const projects = [
       { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
       { name: "D3.js", icon: SiD3Dotjs, color: "#F9A03C" },
       { name: "Node.js", icon: FaNode, color: "#339933" },
+      { name: "Node.js", icon: SiVite, color: "#339933" },
     ],
     image: "/projects/analytics.jpg",
     href: "https://centro-odontologico-od-enerirt.vercel.app/",
@@ -98,7 +102,8 @@ export default function Main() {
         >
           <h2
             className="text-4xl md:text-5xl font-bold
-            text-content mb-4 text-center"
+            bg-gradient-to-r from-primary via-secondary
+        to-tertiary bg-clip-text text-transparent mb-4 text-center"
           >
             Selected Work
           </h2>
