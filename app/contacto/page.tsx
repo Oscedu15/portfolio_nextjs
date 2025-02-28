@@ -1,11 +1,8 @@
 "use client";
 
 import WhatsApp from "@/components/whatsapp";
-import { useState } from "react";
 
 export default function Contact() {
-  const [agreed, setAgreed] = useState(false);
-
   return (
     <div
       className="px-6 py-24 sm:py-32 lg:px-8 bg-gradient-to-r 
