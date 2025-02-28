@@ -30,18 +30,18 @@ const projects = [
 const ProjectsPage = () => {
   return (
     <div>
-      <div className="bg-red-300 text-center bg-center bg-cover">
-        <h1 className="container py-64 text-6xl font-semibold tracking-widest text-white ">
+      <div className="bg-[url('/programacion.jpg')] text-center bg-center bg-cover">
+        <h1 className="mx-auto py-64 text-6xl font-semibold tracking-widest text-white ">
           Our Projects
         </h1>
       </div>
-      <div className="container grid lg:grid-cols-2 gap-8 py-8">
+      {/* <div className="mx-auto grid lg:grid-cols-2 gap-8 py-8">
         {projects?.map((project, index) => (
           <div
             key={index}
-            className="relative overflow-hidden rounded-xl group"
+            className="relative overflow-hidden rounded-xl group "
           >
-            <div>
+            <div className="mx-auto">
               <Image
                 src={project.image}
                 width={480}
@@ -59,7 +59,7 @@ const ProjectsPage = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

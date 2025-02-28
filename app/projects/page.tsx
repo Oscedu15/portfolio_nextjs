@@ -5,14 +5,17 @@ import React from "react";
 
 const ProjectsPage = () => {
   return (
-    <div
-      className="flex flex-col justify-center items-center gap-y-2  bg-gradient-to-r 
+    <div className="bg-gray-900">
+      <div
+      className="flex flex-col justify-center items-center gap-y-2  bg-gradient-to-r p-4
         from-primary/10 to-tertiary/10"
     >
       <Main />
       <Badge />
       <Faqs />
     </div>
+    </div>
+    
   );
 };
 

@@ -36,7 +36,7 @@ export default function Faqs() {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
-    <section className="py-28 ">
+    <section className="py-28 mx-auto">
       <div className="container mx-auto">
         <div className="flex justify-center">{/* <Tag>Faqs</Tag> */}czxcx</div>
         <h2 className="text-6xl font-medium mt-6 text-center max-w-xl mx-auto">
@@ -52,7 +52,7 @@ export default function Faqs() {
         from-primary/10 to-tertiary/10 text-white rounded-2xl border border-white/10 p-6"
             >
               <div
-                className="flex justify-between items-center"
+                className="flex justify-between items-center mx-auto"
                 onClick={() => setSelectedIndex(faqIndex)}
               >
                 <h3 className="font-medium">{faq.question}</h3>

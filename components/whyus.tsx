@@ -47,7 +47,7 @@ const WhyUs = () => {
         alt="gradient"
         className="absolute bottom-0 left-0"
       /> */}
-      <div className="relative flex w-full flex-col gap-16 md:flex-row 3xl:max-w-[1200px]">
+      <div className="relative flex w-full flex-col-reverse gap-16 md:flex-row 3xl:max-w-[1200px]">
         {/* Left Panel Content */}
 
         <motion.div

@@ -40,8 +40,9 @@ const SkillsPage = () => {
     },
   ];
   return (
-    <>
-      <div className="container py-12 xl:py-24 h-auto lg:justify-between mx-auto">
+    <div className="bg-black">
+      <div className=" bg-gradient-to-r 
+        from-primary/10 to-tertiary/10 text-white py-12 xl:py-24 h-auto lg:justify-between p-4">
         <div className="grid lg:grid-cols-2 place-items-center">
           <motion.div
             animate={{ y: [0, -20, 0] }}
@@ -64,14 +65,14 @@ const SkillsPage = () => {
               initial="offscreen"
               whileInView={"onscreen"}
               className="px-12 bg-gradient-to-r from-primary via-secondary
-        to-tertiary bg-clip-text text-transparent py-4 text-3xl font-extrabold leading-tight lg:text-5xl"
+        to-tertiary bg-clip-text text-transparent py-4 text-3xl font-extrabold leading-tight lg:text-5xl text-center"
             >
               We are awards Winning Company
             </motion.h2>
             <motion.p
               initial="offscreen"
               whileInView={"onscreen"}
-              className="px-12 tracking-wider uppercase text-gray-400 mt-3"
+              className="px-12 tracking-wider  uppercase text-gray-400 mt-3"
             >
               World Award
             </motion.p>
@@ -97,8 +98,7 @@ const SkillsPage = () => {
             </motion.p>
           </div>
         </div>
-      </div>
-      <div className="grid gap-8 lg:grid-cols-4 md:grid-cols-2 lg:gap-0 divide-gray-300 lg:divide-x">
+      <div className="grid p-4 gap-8 lg:grid-cols-4 md:grid-cols-2 lg:gap-0 divide-gray-300 lg:divide-x">
         {items?.map((item, index) => (
           <div
             key={index}
@@ -126,14 +126,16 @@ const SkillsPage = () => {
                 See Details <TbArrowNarrowRight className="ml-2" />
               </a>
             </div>
-            <div className="inset-0 bg-tertiary flex-col items-center justify-end md:flex md:absolute gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 group-hover:translate-y-full md:border-b-0 hidden cursor-pointer">
+            <div className="inset-0 bg-gradient-to-t from-primary via-secondary
+        to-tertiary flex-col items-center justify-end md:flex md:absolute gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 group-hover:translate-y-full md:border-b-0 hidden cursor-pointer">
               <p className="tracking-wider -rotate-90">{item.category}</p>
               <span>{item.id}</span>
             </div>
           </div>
         ))}
       </div>
-    </>
+      </div>
+    </div>
   );
 };
 

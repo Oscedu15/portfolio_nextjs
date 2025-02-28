@@ -11,15 +11,18 @@ const ExperiencesPage = () => {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "end end"]
+    offset: ["start end", "end end"],
   });
 
   const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
 
   return (
- <div className="bg-gradient-to-r from-stone-500 to-stone-700">
-    <div className="container mx-auto ">
-        <div className="pt-4">
+    <div className="bg-gray-900 ">
+      <div
+        className="bg-gradient-to-r p-4 
+        from-primary/10 to-tertiary/10 text-white"
+      >
+        <div className="pt-4 mx-auto">
           <motion.h2
             initial="offscreen"
             whileInView={"onscreen"}
@@ -44,7 +47,12 @@ const ExperiencesPage = () => {
         </div>
         <div className="items-center lg:flex gap-x-8">
           <motion.div style={{ scale }} ref={ref} className="w-full">
-            <Image src="/perfil.jpeg" width={700} height={700} alt="gallery1123" />
+            <Image
+              src="/perfil.jpeg"
+              width={700}
+              height={700}
+              alt="gallery1123"
+            />
           </motion.div>
           {/* Right Content Section */}
           <motion.div
@@ -108,7 +116,8 @@ const ExperiencesPage = () => {
                   src="/image/profile2.jpg"
                   width={200}
                   height={200}
-                  className="rounded-full mx-auto" alt="profile2"
+                  className="rounded-full mx-auto"
+                  alt="profile2"
                 />
                 <h2 className="py-4 text-2xl font-semibold uppercase">
                   Building Surveys
@@ -130,7 +139,8 @@ const ExperiencesPage = () => {
                   src="/image/profile3.jpg"
                   width={200}
                   height={200}
-                  className="rounded-full mx-auto" alt="profile3"
+                  className="rounded-full mx-auto"
+                  alt="profile3"
                 />
                 <h2 className="py-4 text-2xl font-semibold uppercase">
                   Building Surveys
@@ -152,7 +162,8 @@ const ExperiencesPage = () => {
                   src="/image/profile1.jpg"
                   width={200}
                   height={200}
-                  className="rounded-full mx-auto" alt="profile1"
+                  className="rounded-full mx-auto"
+                  alt="profile1"
                 />
                 <h2 className="py-4 text-2xl font-semibold uppercase">
                   Building Surveys
@@ -166,9 +177,7 @@ const ExperiencesPage = () => {
           </div>
         </div>
       </div>
- </div>
-    
-   
+    </div>
   );
 };
 
