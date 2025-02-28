@@ -13,8 +13,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">About</h3>
             <p className="text-gray-400">
-              Building digital experiences that combine modern technology width
-              exceptional design.
+            Construyendo experiencias digitales que combinan tecnología moderna con un diseño excepcional.
             </p>
           </div>
           <div>

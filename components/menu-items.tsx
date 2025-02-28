@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React from "react";
+import Link from "next/link";
 
 const MenuItem = ({
   children,
@@ -11,8 +11,7 @@ const MenuItem = ({
   href: string;
 }) => {
   return (
-    <motion.a
-      href={href}
+    <motion.div
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       whileHover={{ scale: 1.05 }}
@@ -22,12 +21,13 @@ const MenuItem = ({
         duration: 0.3,
         ease: "easeOut",
       }}
-      className="realtive overflow-hidden px-2 py-1"
     >
-      <span className="text-content/80 hover:text-primary transition-colors">
-        {children}
-      </span>
-    </motion.a>
+      <Link href={href} className="realtive overflow-hidden px-2 py-1">
+        <span className="text-content/80 hover:text-primary transition-colors">
+          {children}
+        </span>
+      </Link>
+    </motion.div>
   );
 };
 

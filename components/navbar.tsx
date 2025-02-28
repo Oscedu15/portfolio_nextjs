@@ -7,10 +7,10 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 const navItems = [
-  { name: "Projects", href: "#work" },
-  { name: "Skills", href: "#skills" },
-  { name: "Experience", href: "#experience" },
-  { name: "Contact", href: "#contact" },
+  { name: "Projects", href: "projects" },
+  { name: "Skills", href: "skills" },
+  { name: "Experience", href: "experiences" },
+  { name: "Contact", href: "contacto" },
 ];
 
 const socialLinks = {
