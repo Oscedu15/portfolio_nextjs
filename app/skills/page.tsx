@@ -40,10 +40,12 @@ const SkillsPage = () => {
     },
   ];
   return (
-    <div className="bg-black">
-      <div className=" bg-gradient-to-r 
-        from-primary/10 to-tertiary/10 text-white py-12 xl:py-24 h-auto lg:justify-between p-4">
-        <div className="grid lg:grid-cols-2 place-items-center">
+    <div className="bg-black ">
+      <div
+        className=" bg-gradient-to-r  py-24  sm:py-32
+        from-primary/10 to-tertiary/10 text-white  xl:py-24 h-auto lg:justify-between p-4"
+      >
+        <div className="grid lg:grid-cols-2 place-items-center max-w-7xl mx-auto">
           <motion.div
             animate={{ y: [0, -20, 0] }}
             transition={{
@@ -98,42 +100,44 @@ const SkillsPage = () => {
             </motion.p>
           </div>
         </div>
-      <div className="grid p-4 gap-8 lg:grid-cols-4 md:grid-cols-2 lg:gap-0 divide-gray-300 lg:divide-x">
-        {items?.map((item, index) => (
-          <div
-            key={index}
-            className="relative overflow-hidden group cursor-pointer"
-          >
-            <div>
-              <Image
-                src={item.image}
-                width={380}
-                height={100}
-                alt="itemImage"
-                className="w-full"
-              />
-            </div>
-            <div className="absolute top-0 p-8 bg-white text-black bg-opacity-60 backdrop-blur m-12">
-              <div className="flex justify-between pb-4">
-                <p className="text-sm">{item.category}</p>
-                <span className="text-sm">{item.id}</span>
+        <div className="grid p-4 gap-8 lg:grid-cols-4 md:grid-cols-2 lg:gap-0 divide-gray-300 max-w-7xl  mx-auto lg:divide-x">
+          {items?.map((item, index) => (
+            <div
+              key={index}
+              className="relative overflow-hidden group cursor-pointer"
+            >
+              <div>
+                <Image
+                  src={item.image}
+                  width={380}
+                  height={100}
+                  alt="itemImage"
+                  className="w-full"
+                />
               </div>
-              <a href="" className="block text-xl font-semibold">
-                {item.title}
-              </a>
-              <p className="py-4">{item.description}</p>
-              <a href="" className="inline-flex items-center font-medium">
-                See Details <TbArrowNarrowRight className="ml-2" />
-              </a>
+              <div className="absolute top-0 p-8 bg-white text-black bg-opacity-60 backdrop-blur m-12">
+                <div className="flex justify-between pb-4">
+                  <p className="text-sm">{item.category}</p>
+                  <span className="text-sm">{item.id}</span>
+                </div>
+                <a href="" className="block text-xl font-semibold">
+                  {item.title}
+                </a>
+                <p className="py-4">{item.description}</p>
+                <a href="" className="inline-flex items-center font-medium">
+                  See Details <TbArrowNarrowRight className="ml-2" />
+                </a>
+              </div>
+              <div
+                className="inset-0 bg-gradient-to-t from-primary via-secondary
+        to-tertiary flex-col items-center justify-end md:flex md:absolute gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 group-hover:translate-y-full md:border-b-0 hidden cursor-pointer"
+              >
+                <p className="tracking-wider -rotate-90">{item.category}</p>
+                <span>{item.id}</span>
+              </div>
             </div>
-            <div className="inset-0 bg-gradient-to-t from-primary via-secondary
-        to-tertiary flex-col items-center justify-end md:flex md:absolute gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 group-hover:translate-y-full md:border-b-0 hidden cursor-pointer">
-              <p className="tracking-wider -rotate-90">{item.category}</p>
-              <span>{item.id}</span>
-            </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
       </div>
     </div>
   );

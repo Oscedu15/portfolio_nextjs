@@ -1,12 +1,16 @@
 import { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {
-    return {
-      title: "Social Links",
-      description: "My social profiles, courses, and downloads",
-    };
-  }
+  return {
+    title: "Contactanos ",
+    description: "Pagina de Contacto",
+  };
+}
 
-export default function SocialLayout({ children }: { children: React.ReactNode }) {
-    return <>{children}</>;
-  }
+export default function SocialLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return <>{children}</>;
+}

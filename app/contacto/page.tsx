@@ -4,24 +4,24 @@ import WhatsApp from "@/components/whatsapp";
 
 export default function Contact() {
   return (
-    <div
-      className="px-4 py-24 sm:py-32 lg:px-8 bg-gray-900 "
-    >
-      <div className="mx-auto max-w-2xl text-centerbg-gradient-to-r 
-        from-primary/10 to-tertiary/10 ">
+    <div className="px-4 py-24 sm:py-32 lg:px-8 ">
+      <div
+        className="mx-auto max-w-2xl text-centerbg-gradient-to-r 
+        from-primary/10 to-tertiary/10 "
+      >
         <h2
-          className="text-3xl font-bold tracking-tight sm:text-4xl
+          className="text-3xl text-center font-bold tracking-tight sm:text-4xl
         bg-gradient-to-r from-primary via-secondary
         to-tertiary bg-clip-text text-transparent"
         >
           Contact Sales{" "}
         </h2>
-        <p className="mt-2 text-lg leading-8 text-muted-foreground">
+        <p className="mt-2 text-center text-lg leading-8 text-muted-foreground">
           Por Favor, no dudes en preguntar cualquier cosa.
         </p>
       </div>
 
-      <form className="mx-auto mt-16 shadow-gray-700 max-w-xl sm:mt-20 shadow-xl rounded-xl">
+      <form className="mx-auto mt-16  max-w-xl sm:mt-20 shadow-xl rounded-xl">
         <div className="flex flex-col  justify-center items-center gap-x-8 gap-y-6">
           <div className="mt-2.5 w-9/12">
             <input

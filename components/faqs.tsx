@@ -36,12 +36,12 @@ export default function Faqs() {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
-    <section className="py-28 mx-auto">
+    <section className="py-28 mx-auto max-w-7xl">
       <div className="container mx-auto">
         <div className="flex justify-center">{/* <Tag>Faqs</Tag> */}czxcx</div>
         <h2 className="text-6xl font-medium mt-6 text-center max-w-xl mx-auto">
           {/* Questions? We&apos;ve got{" "} */}
-          ¿Tienes preguntas? Tenemos 
+          ¿Tienes preguntas? Tenemos
           <span className="text-lime-400"> respuestas.</span>
         </h2>
         <div className="mt-12 flex flex-col gap-6 max-w-xl mx-auto">

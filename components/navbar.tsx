@@ -53,7 +53,7 @@ export default function Navbar() {
                 </span>
               </div>
             </div>
-            <Link href="/">
+            <Link href="/" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               <span className="font-semibold text-content/90 group-hover:text-primary transition-colors">
                 Oscar Garcia
               </span>
@@ -126,7 +126,7 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
-            <div className="pt-4 border-t border-white/5 flex gap-4">
+            <div className="pt-4 flex justify-center items-centerborder-t border-white/5 gap-4">
               <Link
                 href={socialLinks.github}
                 target="_blank"

@@ -19,10 +19,10 @@ const ExperiencesPage = () => {
   return (
     <div className="bg-gray-900 ">
       <div
-        className="bg-gradient-to-r p-4 
+        className=" bg-gradient-to-r p-4  py-24  sm:py-32
         from-primary/10 to-tertiary/10 text-white"
       >
-        <div className="pt-4 mx-auto">
+        <div className="pt-4 mx-auto max-w-7xl">
           <motion.h2
             initial="offscreen"
             whileInView={"onscreen"}
@@ -45,7 +45,7 @@ const ExperiencesPage = () => {
             that is experienced in the field of interior.
           </motion.p>
         </div>
-        <div className="items-center lg:flex gap-x-8">
+        <div className="items-center max-w-7xl mx-auto lg:flex gap-x-8">
           <motion.div style={{ scale }} ref={ref} className="w-full">
             <Image
               src="/perfil.jpeg"
@@ -83,22 +83,28 @@ const ExperiencesPage = () => {
               </span>
             </p>
             <button
-              className="inline-flex items-center px-8 py-3 shadow-lg 
-            hover:bg-gray-800 hover:ring-gray-950 ring-offset-2 "
+              className="flex  relative max-w-sm items-center px-8 py-3  text-white rounded-full shadow-lg  hover:ring-2 ring-offset-2 duration-200  bg-surface border
+       border-white/10 hover:border-primary/30 text-center transition-all group"
             >
               Read More
               <TbArrowUpRight className="w-5 h-5 ml-2" />
+              <div
+                className="absolute inset-0 bg-gradient-to-r 
+        from-primary/10 to-tertiary/10 opacity-0
+        group-hover:opacity-100 transition-opacity"
+              />
             </button>
           </motion.div>
         </div>
         {/* Team Section */}
-        <div className="lg:py-20 mx-auto">
+        <div className="lg:py-20 mx-auto max-w-7xl">
           <div className="pt-8 pb-4">
             <motion.h1
               initial="offscreen"
               whileInView={"onscreen"}
               variants={titleVariants}
-              className="text-4xl font-bold tracking-wider text-center"
+              className="text-4xl font-bold tracking-wider text-center  bg-gradient-to-r from-primary via-secondary
+        to-tertiary bg-clip-text text-transparent"
             >
               Team
             </motion.h1>
@@ -111,7 +117,10 @@ const ExperiencesPage = () => {
               variants={titleVariants}
               className="border-2 border-primary"
             >
-              <div className="p-4 text-center bg-gray-100 -m-0.5 aspect-square dark:bg-tertiary transition hover:-translate-y-3 hover:-translate-x-3">
+              <div
+                className="p-4 text-center  bg-gradient-to-r from-primary via-secondary
+        to-tertiary bg-clip-text text-transparent -m-0.5 aspect-square dark:bg-tertiary transition hover:-translate-y-3 hover:-translate-x-3"
+              >
                 <Image
                   src="/image/profile2.jpg"
                   width={200}
@@ -134,7 +143,10 @@ const ExperiencesPage = () => {
               variants={desVariants}
               className="border-2 border-primary"
             >
-              <div className="p-4 text-center bg-gray-100 -m-0.5 aspect-square dark:bg-tertiary transition hover:-translate-y-3 hover:-translate-x-3">
+              <div
+                className="p-4 text-center  bg-gradient-to-r from-primary via-secondary
+        to-tertiary bg-clip-text text-transparent -m-0.5 aspect-square dark:bg-tertiary transition hover:-translate-y-3 hover:-translate-x-3"
+              >
                 <Image
                   src="/image/profile3.jpg"
                   width={200}
@@ -157,7 +169,10 @@ const ExperiencesPage = () => {
               variants={tagVariants}
               className="border-2 border-primary"
             >
-              <div className="p-4 text-center bg-gray-100 -m-0.5 aspect-square dark:bg-tertiary transition hover:-translate-y-3 hover:-translate-x-3">
+              <div
+                className="p-4 text-center  bg-gradient-to-r from-primary via-secondary
+        to-tertiary bg-clip-text text-transparent -m-0.5 aspect-square  transition hover:-translate-y-3 hover:-translate-x-3"
+              >
                 <Image
                   src="/image/profile1.jpg"
                   width={200}

@@ -31,7 +31,7 @@ const ProjectsPage = () => {
   return (
     <div>
       <div className="bg-[url('/programacion.jpg')] text-center bg-center bg-cover">
-        <h1 className="mx-auto py-64 text-6xl font-semibold tracking-widest text-white ">
+        <h1 className="mx-auto max-w-7xl py-64 text-6xl font-semibold tracking-widest text-white ">
           Our Projects
         </h1>
       </div>

@@ -7,15 +7,14 @@ const ProjectsPage = () => {
   return (
     <div className="bg-gray-900">
       <div
-      className="flex flex-col justify-center items-center gap-y-2  bg-gradient-to-r p-4
+        className="flex flex-col justify-center items-center gap-y-2  bg-gradient-to-r p-4
         from-primary/10 to-tertiary/10"
-    >
-      <Main />
-      <Badge />
-      <Faqs />
+      >
+        <Main />
+        <Badge />
+        <Faqs />
+      </div>
     </div>
-    </div>
-    
   );
 };
 

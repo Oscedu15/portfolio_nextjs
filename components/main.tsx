@@ -90,7 +90,7 @@ const projects = [
 
 export default function Main() {
   return (
-    <section className="py-32 relative id='work'">
+    <section className="py-24 sm:py-32 relative id='work'">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Heading */}
 
@@ -157,7 +157,11 @@ export default function Main() {
                 mb-4 group/title"
                 >
                   <Link href={project.href} target="_blank" rel="noopener">
-                    <h3 className="text-2xl font-bold text-content">
+                    <h3
+                      className="text-2xl font-bold text-content hover:bg-gradient-to-r
+        from-primary via-secondary to-tertiary 
+        hover:bg-clip-text hover:text-transparent duration-300 transition-colors"
+                    >
                       {project.title}
                     </h3>
                   </Link>
