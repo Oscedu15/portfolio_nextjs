@@ -48,19 +48,22 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://portfolio-nextjs-pied-six.vercel.app"),
-  title: "Oscar Garcia Portfolio Nextjs 15",
-  description: "this is the desciption",
+  title: {
+    template: "%s | Oscar Garcia",
+    default: "Portfolio Nextjs 15",
+  },
+  description: "Tutorial de portfolio de Nextjs 15",
   openGraph: {
-    title: "Oscar Garcia Portfolio Nextjs 15",
-    description: "this is the desciption",
+    title: "Oscar Garcia",
+    description: "Portfolio Nextjs 15",
     images: "/logo.jpg",
   },
   twitter: {
     card: "summary_large_image",
     site: "@eMartiiin94",
-    title: "Title webtsite",
-    description: "this is the desciption",
-    images: "/public/logo.jpg",
+    title: "Oscar Garcia",
+    description: "Portfolio Nextjs 15",
+    images: "/logo.jpg",
   },
 };
 
