@@ -17,9 +17,9 @@ const ExperiencesPage = () => {
   const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
 
   return (
-    <div className="bg-gray-900 ">
+    <div className="bg-gray-900">
       <div
-        className=" bg-gradient-to-r p-4 py-24 sm:py-32
+        className="bg-gradient-to-r p-4 py-24 sm:py-32
         from-primary/10 to-tertiary/10 text-white"
       >
         <div className="mx-auto max-w-7xl">

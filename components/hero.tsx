@@ -45,8 +45,8 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 1.1 }}
               className="text-xl text-content/80 mb-8"
             >
-              Speciliazing in React, Node.js, and Cloud Architecture. Building
-              scalable application with modern tech stacks.
+              Especializado en React, Next.js, Tailwindcss y Prisma. Creación de
+              aplicaciones escalables con tecnologías modernas.
             </motion.p>
 
             <motion.button
@@ -107,6 +107,8 @@ export default function Hero() {
                   src="/perfil.jpeg"
                   alt="Avatar"
                   fill
+                  priority
+                  quality={100}
                   className="object-cover scale-110 group-hover:scale-100
                                             transition-transform duration-500"
                 />

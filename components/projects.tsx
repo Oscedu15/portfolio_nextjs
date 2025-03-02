@@ -39,15 +39,16 @@ const ProjectsPage = () => {
         {projects?.map((project, index) => (
           <div
             key={index}
-            className="relative overflow-hidden rounded-xl group "
+            className="relative mx-auto overflow-hidden rounded-xl group "
           >
-            <div className="mx-auto">
+            <div className="mx-auto w-[400px] md:w-[600px] h-[400px] md:h-[600px]">
               <Image
                 src={project.image}
                 width={480}
                 height={380}
                 alt={project.id}
                 className="w-full"
+                placeholder="empty"
               />
             </div>
             <div
