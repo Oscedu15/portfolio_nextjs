@@ -54,8 +54,11 @@ export const metadata: Metadata = {
   },
   description: "Tutorial de portfolio de Nextjs 15",
   openGraph: {
+    type: "website",
     title: "Oscar Garcia",
-    description: "Portfolio Nextjs 15",
+    description: "Portfolio Nextjs 15 OpenGraph",
+    siteName: "Mi Portfolio",
+    url: "https://portfolio-nextjs-pied-six.vercel.app",
     images: "/logo.jpg",
   },
   twitter: {
@@ -63,7 +66,7 @@ export const metadata: Metadata = {
     site: "@eMartiiin94",
     title: "Oscar Garcia",
     description: "Portfolio Nextjs 15",
-    images: "/logo.jpg",
+    images: "/mobile.jpg",
   },
 };
 
