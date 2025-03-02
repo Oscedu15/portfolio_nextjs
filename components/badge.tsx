@@ -47,7 +47,7 @@ const Badge = () => {
         >
           <button
             className="inline-flex items-center px-8 py-3 text-white   bg-surface border
-       border-white/10 hover:border-primary/30 transition-all group rounded-full shadow-lg hover:bg-gray-800 hover:ring-2 hover:ring-gray-950 ring-offset-2"
+       border-white/10 hover:border-primary/30 transition-all group rounded-full shadow-lg hover:bg-gray-800 hover:ring-gray-950 ring-offset-2"
           >
             Book Now <TbArrowUpRight className="w-5 h-5 ml-2" />
             <div

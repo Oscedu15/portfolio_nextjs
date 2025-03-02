@@ -19,10 +19,10 @@ const ExperiencesPage = () => {
   return (
     <div className="bg-gray-900 ">
       <div
-        className=" bg-gradient-to-r p-4  py-24  sm:py-32
+        className=" bg-gradient-to-r p-4 py-24 sm:py-32
         from-primary/10 to-tertiary/10 text-white"
       >
-        <div className="pt-4 mx-auto max-w-7xl">
+        <div className="mx-auto max-w-7xl">
           <motion.h2
             initial="offscreen"
             whileInView={"onscreen"}
@@ -83,13 +83,13 @@ const ExperiencesPage = () => {
               </span>
             </p>
             <button
-              className="flex  relative max-w-sm items-center px-8 py-3  text-white rounded-full shadow-lg  hover:ring-2 ring-offset-2 duration-200  bg-surface border
+              className="flex  relative max-w-sm items-center px-8 py-3  text-white rounded-full shadow-lg duration-200  bg-surface border
        border-white/10 hover:border-primary/30 text-center transition-all group"
             >
               Read More
               <TbArrowUpRight className="w-5 h-5 ml-2" />
               <div
-                className="absolute inset-0 bg-gradient-to-r 
+                className="absolute rounded-full inset-0 bg-gradient-to-r 
         from-primary/10 to-tertiary/10 opacity-0
         group-hover:opacity-100 transition-opacity"
               />
@@ -106,7 +106,7 @@ const ExperiencesPage = () => {
               className="text-4xl font-bold tracking-wider text-center  bg-gradient-to-r from-primary via-secondary
         to-tertiary bg-clip-text text-transparent"
             >
-              Team
+              Testimonios
             </motion.h1>
           </div>
 
@@ -120,14 +120,18 @@ const ExperiencesPage = () => {
               <div
                 className="p-4 text-center  bg-gradient-to-r from-primary via-secondary
         to-tertiary bg-clip-text text-transparent -m-0.5 aspect-square dark:bg-tertiary transition hover:-translate-y-3 hover:-translate-x-3"
+                //!!!!!!!!!!!!!!!!!!!!
               >
-                <Image
-                  src="/image/profile2.jpg"
-                  width={200}
-                  height={200}
-                  className="rounded-full mx-auto"
-                  alt="profile2"
-                />
+                <div className="w-32">
+                  <Image
+                    src="/perfil.jpeg"
+                    width={200}
+                    height={200}
+                    className="rounded-full mx-auto"
+                    alt="profile2"
+                  />
+                </div>
+
                 <h2 className="py-4 text-2xl font-semibold uppercase">
                   Building Surveys
                 </h2>
@@ -148,7 +152,7 @@ const ExperiencesPage = () => {
         to-tertiary bg-clip-text text-transparent -m-0.5 aspect-square dark:bg-tertiary transition hover:-translate-y-3 hover:-translate-x-3"
               >
                 <Image
-                  src="/image/profile3.jpg"
+                  src="/perfil.jpeg"
                   width={200}
                   height={200}
                   className="rounded-full mx-auto"
@@ -174,7 +178,7 @@ const ExperiencesPage = () => {
         to-tertiary bg-clip-text text-transparent -m-0.5 aspect-square  transition hover:-translate-y-3 hover:-translate-x-3"
               >
                 <Image
-                  src="/image/profile1.jpg"
+                  src="/perfil.jpeg"
                   width={200}
                   height={200}
                   className="rounded-full mx-auto"

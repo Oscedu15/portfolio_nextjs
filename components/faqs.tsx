@@ -37,10 +37,8 @@ export default function Faqs() {
 
   return (
     <section className="py-28 mx-auto max-w-7xl">
-      <div className="container mx-auto">
-        <div className="flex justify-center">{/* <Tag>Faqs</Tag> */}czxcx</div>
+      <div className="mx-auto">
         <h2 className="text-6xl font-medium mt-6 text-center max-w-xl mx-auto">
-          {/* Questions? We&apos;ve got{" "} */}
           ¿Tienes preguntas? Tenemos
           <span className="text-lime-400"> respuestas.</span>
         </h2>

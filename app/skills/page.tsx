@@ -40,9 +40,9 @@ const SkillsPage = () => {
     },
   ];
   return (
-    <div className="bg-black ">
+    <div className="bg-gray-900">
       <div
-        className=" bg-gradient-to-r  py-24  sm:py-32
+        className=" py-24  sm:py-32 bg-gradient-to-r 
         from-primary/10 to-tertiary/10 text-white  xl:py-24 h-auto lg:justify-between p-4"
       >
         <div className="grid lg:grid-cols-2 place-items-center max-w-7xl mx-auto">
