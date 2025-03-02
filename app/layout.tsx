@@ -11,24 +11,56 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
+// export const metadata: Metadata = {
+//   //El %s en template, nos permite capturar lo que este en el titulo de la pagina que este pasando por este layout
+//   title: {
+//     template: "%s | Oscar Garcia",
+//     default: "Portfolio Nextjs 15",
+//   },
+//   description: "Tutorial de portfolio de Nextjs 15",
+//   openGraph: {
+//     type: "website",
+//     url: "https://github.com/Oscedu15",
+//     title: "Oscar Garcia Portfolio Nextjs",
+//     description: "Front End Developer Oscar Garcia",
+//     siteName: "Mi Portfolio",
+//     images: [
+//       {
+//         url: "/public//ecommerce.png",
+//       },
+//     ],
+//   },
+// };
+
+// export const metadata = {
+//   metadataBase: new URL('http://localhost:3000'),
+//   alternates: {
+//     canonical: '/',
+//     languages: {
+//       'en-US': '/en-US',
+//       'de-DE': '/de-DE',
+//     },
+//   },
+//   openGraph: {
+//     images: '/og-image.png',
+//   },
+// }
+
 export const metadata: Metadata = {
-  //El %s en template, nos permite capturar lo que este en el titulo de la pagina que este pasando por este layout
-  title: {
-    template: "%s | Oscar Garcia",
-    default: "Portfolio Nextjs 15",
-  },
-  description: "Tutorial de portfolio de Nextjs 15",
+  metadataBase: new URL("http://localhost:3000"),
+  title: "Title webtsite",
+  description: "this is the desciption",
   openGraph: {
-    type: "website",
-    url: "https://github.com/Oscedu15",
-    title: "My Website",
-    description: "My Website Description",
-    siteName: "Mi Portfolio",
-    images: [
-      {
-        url: "/public//ecommerce.png",
-      },
-    ],
+    title: "Title webtsite",
+    description: "this is the desciption",
+    images: "/public/logo.jpg",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@eMartiiin94",
+    title: "Title webtsite",
+    description: "this is the desciption",
+    images: "/public/logo.jpg",
   },
 };
 

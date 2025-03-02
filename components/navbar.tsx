@@ -53,7 +53,7 @@ export default function Navbar() {
                 </span>
               </div>
             </div>
-            <Link href="/" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <Link href="/" onClick={() => setIsMenuOpen(false)}>
               <span className="font-semibold text-content/90 group-hover:text-primary transition-colors">
                 Oscar Garcia
               </span>
@@ -66,7 +66,7 @@ export default function Navbar() {
               className="flex items-center gap-6 bg-background/80 px-4 py-2 
             rounded-full border border-white/5 shadow-lg shadow-primary/5"
             >
-              {navItems.map((item, i) => (
+              {navItems?.map((item, i) => (
                 <MenuItem key={item.name} index={i} href={item.href}>
                   {item.name}
                 </MenuItem>
@@ -115,7 +115,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             className="md:hidden mt-4 pb-4 space-y-4"
           >
-            {navItems.map((item) => (
+            {navItems?.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
