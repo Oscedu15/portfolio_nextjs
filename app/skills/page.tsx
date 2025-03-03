@@ -3,20 +3,18 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { TbArrowNarrowRight } from "react-icons/tb";
-import { fadeIn } from "@/utils/animation";
+//react intersesction observer
+import { useInView } from "react-intersection-observer";
 import {
   MdOutlineBuildCircle,
   MdOutlineDirectionsCar,
   MdOutlineMapsHomeWork,
 } from "react-icons/md";
 import CountUp from "react-countup";
-//react intersesction observer
-import { useInView } from "react-intersection-observer";
+
+import { fadeIn } from "@/utils/animation";
 
 const SkillsPage = () => {
-  const [ref, inView] = useInView({
-    threshold: 0.4,
-  });
   const items = [
     {
       id: "01",
@@ -51,6 +49,9 @@ const SkillsPage = () => {
         "family drowing room with a clean and comfortable design for your family.",
     },
   ];
+  const [ref, inView] = useInView({
+    threshold: 0.4,
+  });
   return (
     <div className="bg-gray-900" ref={ref}>
       <div
