@@ -58,7 +58,7 @@ export default function Hero() {
        border-white/10 hover:border-primary/30 transition-all group"
             >
               <span className="text-content group-hover:text-primary transition-colors">
-                Explore Work
+                Explorar
               </span>
               <div
                 className="absolute inset-0 bg-gradient-to-r 

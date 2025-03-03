@@ -2,9 +2,11 @@
 
 import WhatsApp from "@/components/whatsapp";
 import { FormEvent, useState } from "react";
+import { motion } from "framer-motion";
+import { desVariants, titleVariants } from "@/utils/animation";
 
 export default function Contact() {
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState("prueba de enviado correo");
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -42,19 +44,30 @@ export default function Contact() {
     from-primary/10 to-tertiary/10 p-4 py-24 sm:py-32"
       >
         <div className="mx-auto max-w-2xl text-center">
-          <h2
+          <motion.h2
+            initial="offscreen"
+            whileInView={"onscreen"}
+            variants={titleVariants}
             className="text-3xl text-center font-bold tracking-tight sm:text-4xl
     bg-gradient-to-r from-primary via-secondary
     to-tertiary bg-clip-text text-transparent"
           >
             Contactanos.{" "}
-          </h2>
-          <p className="mt-2 text-center text-white text-lg leading-8 text-muted-foreground">
+          </motion.h2>
+          <motion.p
+            initial="offscreen"
+            whileInView={"onscreen"}
+            variants={desVariants}
+            className="mt-2 text-center text-white text-lg leading-8 text-muted-foreground"
+          >
             Por Favor, no dudes en realizar tu consulta.
-          </p>
+          </motion.p>
         </div>
 
-        <form
+        <motion.form
+          initial="offscreen"
+          whileInView={"onscreen"}
+          variants={titleVariants}
           action="https://formspree.io/f/xgvogldq"
           method="POST"
           onSubmit={handleSubmit}
@@ -124,7 +137,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="flex w-full relative max-w-sm items-center px-8 py-3  text-white rounded-full shadow-lg duration-200  bg-surface border
+                  className="flex w-full flex-col relative max-w-sm items-center px-8 py-3  text-white rounded-full shadow-lg duration-200  bg-surface border
    border-white/10 hover:border-primary/30 transition-all group"
                 >
                   <span className="text-content group-hover:text-primary transition-colors">
@@ -138,9 +151,15 @@ export default function Contact() {
                 </button>
               )}
             </div>
-            {message && <p className="font-bold pb-2">{message}</p>}
+            {message && (
+              <div className="flex flex-col justify-center items-center">
+                <span className="text-center text-white  mx-auto font-bold pb-2">
+                  {message} <br /> Pronto me comunicare con usted. Gracias
+                </span>
+              </div>
+            )}
           </div>
-        </form>
+        </motion.form>
         <WhatsApp />
       </div>
     </div>

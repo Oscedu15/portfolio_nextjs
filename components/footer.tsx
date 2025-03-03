@@ -1,6 +1,8 @@
+"use client";
 import { EnvelopeIcon } from "@heroicons/react/16/solid";
 import { GithubIcon, LinkedInIcon } from "./social-icons";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
@@ -10,14 +12,14 @@ export default function Footer() {
          lg:px-8 py-12"
       >
         <div className="grid text-center grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
+          <motion.div initial={{ x: -100 }} animate={{ x: 0 }}>
             <h3 className="text-lg font-semibold text-white mb-4">About</h3>
             <p className="text-gray-400">
               Construyendo experiencias digitales que combinan tecnología
               moderna con un diseño excepcional.
             </p>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div initial={{ x: -100 }} animate={{ x: 0 }}>
             <h3 className="text-lg font-semibold text-white mb-4">Links</h3>
             <ul className="space-y-2">
               <li>
@@ -48,9 +50,9 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div>
+          <motion.div initial={{ x: -100 }} animate={{ x: 0 }}>
             <h3 className="text-lg font-semibold text-white mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
@@ -72,9 +74,9 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div>
+          <motion.div initial={{ x: -100 }} animate={{ x: 0 }}>
             <h3 className="text-lg font-semibold text-white mb-4">Connect</h3>
             <ul className="flex space-x-4 items-center justify-center">
               <Link
@@ -104,7 +106,7 @@ export default function Footer() {
                 />
               </Link>
             </ul>
-          </div>
+          </motion.div>
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400">

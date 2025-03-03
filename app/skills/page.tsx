@@ -3,8 +3,20 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { TbArrowNarrowRight } from "react-icons/tb";
+import { fadeIn } from "@/utils/animation";
+import {
+  MdOutlineBuildCircle,
+  MdOutlineDirectionsCar,
+  MdOutlineMapsHomeWork,
+} from "react-icons/md";
+import CountUp from "react-countup";
+//react intersesction observer
+import { useInView } from "react-intersection-observer";
 
 const SkillsPage = () => {
+  const [ref, inView] = useInView({
+    threshold: 0.4,
+  });
   const items = [
     {
       id: "01",
@@ -40,19 +52,17 @@ const SkillsPage = () => {
     },
   ];
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray-900" ref={ref}>
       <div
         className=" py-24  sm:py-32 bg-gradient-to-r 
         from-primary/10 to-tertiary/10 text-white  xl:py-24 h-auto lg:justify-between p-4"
       >
-        <div className="grid lg:grid-cols-2 place-items-center max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2  max-w-7xl mx-auto">
           <motion.div
-            animate={{ y: [0, -20, 0] }}
-            transition={{
-              duration: 6,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.6 }}
           >
             <Image
               src="/perfil.jpeg"
@@ -64,23 +74,29 @@ const SkillsPage = () => {
           </motion.div>
           <div className="items-center">
             <motion.h2
-              initial="offscreen"
-              whileInView={"onscreen"}
-              className="px-12 bg-gradient-to-r from-primary via-secondary
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.6 }}
+              className="px-12 mt-16 bg-gradient-to-r from-primary via-secondary
         to-tertiary bg-clip-text text-transparent py-4 text-3xl font-extrabold leading-tight lg:text-5xl text-center"
             >
               We are awards Winning Company
             </motion.h2>
             <motion.p
-              initial="offscreen"
-              whileInView={"onscreen"}
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.6 }}
               className="px-12 tracking-wider  uppercase text-gray-400 mt-3"
             >
               World Award
             </motion.p>
             <motion.p
-              initial="offscreen"
-              whileInView={"onscreen"}
+              variants={fadeIn("up", 0.6)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.6 }}
               className="px-12 pb-4 mt-4"
             >
               This is a company engaged in the field of interior design. We
@@ -89,8 +105,10 @@ const SkillsPage = () => {
               many awards from various countries for our work.
             </motion.p>
             <motion.p
-              initial="offscreen"
-              whileInView={"onscreen"}
+              variants={fadeIn("up", 0.8)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.6 }}
               className="px-12 pb-4"
             >
               This is a company engaged in the field of interior design. We
@@ -98,6 +116,67 @@ const SkillsPage = () => {
               trusted by many people to design their homes. We have also recived
               many awards from various countries for our work.
             </motion.p>
+            {/* <motion.p
+              variants={fadeIn("up", 0.6)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.6 }}
+              className="px-12 pb-4"
+            >
+              This is a company engaged in the field of interior design. We
+              provide the best interior design fr your home. We have been
+              trusted by many people to design their homes. We have also recived
+              many awards from various countries for our work.
+            </motion.p> */}
+            {/* stats */}
+            <motion.div
+              variants={fadeIn("up", 0.8)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.6 }}
+              className="flex items-center gap-x-8 mb-12 px-0 mx-auto md:px-12"
+            >
+              {/* cart types */}
+              <div className="flex flex-col w-[100px]">
+                <MdOutlineDirectionsCar className="text-5xl text-accent" />
+                <div className="text-3xl font-black mb-2">
+                  {inView ? (
+                    <CountUp start={0} end={50} duration={3} delay={1} />
+                  ) : null}
+                  +
+                </div>
+                <div className="uppercase text-[13px] font-semibold text-secondary">
+                  car <br /> types
+                </div>
+              </div>
+              {/* rental outlets */}
+              <div className="flex flex-col w-[100px]">
+                <MdOutlineMapsHomeWork className="text-5xl text-accent" />
+                <div className="text-3xl font-black mb-2">
+                  {inView ? (
+                    <CountUp start={0} end={135} duration={3} delay={1} />
+                  ) : null}
+                  +
+                </div>
+                <div className="uppercase text-[13px] font-semibold text-secondary">
+                  rental <br /> outlets
+                </div>
+              </div>
+              {/* repair points */}
+              <div className="flex flex-col w-[100px]">
+                <MdOutlineBuildCircle className="text-5xl text-accent" />
+                <div className="text-3xl font-black mb-2">
+                  {inView ? (
+                    <CountUp start={0} end={35} duration={3} delay={1} />
+                  ) : null}
+                  +
+                </div>
+                <div className="uppercase text-[13px] font-semibold text-secondary">
+                  repair <br /> pointss
+                </div>
+              </div>
+              {/* Btn */}
+            </motion.div>
           </div>
         </div>
         <div className="grid p-4 gap-8 lg:grid-cols-4 md:grid-cols-2 lg:gap-0 divide-gray-300 max-w-7xl  mx-auto lg:divide-x">

@@ -1,4 +1,6 @@
+"use client"
 import Image from "next/image";
+import { motion } from 'framer-motion';
 
 const projects = [
   {
@@ -37,28 +39,29 @@ const ProjectsPage = () => {
       </div>
       <div className="mx-auto grid lg:grid-cols-2 gap-8 py-8">
         {projects?.map((project, index) => (
-          <div
+          <motion.div  whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
             key={index}
             className="relative mx-auto overflow-hidden rounded-xl group "
           >
-            <div className="mx-auto w-[400px] md:w-[600px] h-[400px] md:h-[600px]">
+            <div className="mx-auto w-5/6 md:w-[600px] h-[350px] md:h-[600px]">
               <Image
                 src={project.image}
                 width={480}
                 height={380}
                 alt={project.id}
                 className="w-full"
-                placeholder="empty"
+                
               />
             </div>
             <div
-              className="absolute bottom-0 right-0 bg-white/90 dark:bg-black/40 flex-col items-center justify-end w-96 gap-32 p-12 text-xl transition duration-300 ease-in-out translate-y-full
+              className="absolute mx-auto w-5/6 bottom-0 right-0 bg-white/90 dark:bg-black/40 flex-col items-center justify-end md:w-96 gap-32 p-12 text-xl transition duration-300 ease-in-out translate-y-full
                     from-transparent to-black group-hover:translate-y-0"
             >
               <h1 className="text-2xl font-semibold">{project.name}</h1>
               <p className="py-4">{project.description}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
