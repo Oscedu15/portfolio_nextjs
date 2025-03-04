@@ -29,9 +29,9 @@ export default function Introduction() {
   }, [wordIndex]);
 
   return (
-    <section className="py-20 md:py-24 lg:py-32">
+    <section className="py-20 md:py-24">
       <div className="container">
-        <div className="sticky top-20 md:top-24 lg:top-32">
+        <div className="sticky top-20 md:top-24">
           <motion.span
             initial="offscreen"
             whileInView={"onscreen"}

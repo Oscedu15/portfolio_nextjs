@@ -27,8 +27,8 @@ const ExperiencesPage = () => {
             initial="offscreen"
             whileInView={"onscreen"}
             variants={titleVariants}
-            className="text-3xl font-semibold text-center lg:p-10
-          lg:text-5xl mt-20 bg-gradient-to-r from-primary via-secondary
+            className="text-5xl md:text-5xl lg:text-6xl font-bold text-center lg:p-10
+           mt-20 bg-gradient-to-r from-primary via-secondary
         to-tertiary bg-clip-text text-transparent"
           >
             We have great idea & Interior Design
@@ -37,7 +37,7 @@ const ExperiencesPage = () => {
             initial="offscreen"
             whileInView={"onscreen"}
             variants={desVariants}
-            className="text-2xl text-center font-medium pb-10 mt-5"
+            className="text-2xl text-center text-white/50 pb-10 mt-5"
           >
             Our interior design company is a company that provides interior
             design services for homes, offices, apartments, and others. We
@@ -60,22 +60,25 @@ const ExperiencesPage = () => {
             whileInView={"onscreen"}
             variants={tagVariants}
           >
-            <p className="pb-8 tracking-wide mt-6 mx-auto">
+            <p className="pb-8 tracking-wide text-xl mt-6 mx-auto">
               We are international Architects. We believe that today it is
               fundamental to totally rethink archi-tectural education.
               Confluence not only integrates new visions on society but also
               incorporates new methods and contemporary tools linked to
               creativity, production and communication. De-signed and
               handcrafted to hold and showcase my year two architecture
-              portfolio, the unfolding box allows portfolio sheets. <br />
+              portfolio, the unfolding box allows portfolio sheets. <br className="hidden md:block"/>
               <br />
-              We are international Architects. We believe that today it is
+              <span className="hidden md:block text-xl">
+                We are international Architects. We believe that today it is
               fundamental to totally rethink archi-tectural education.
               Confluence not only integrates new visions on society but also
               incorporates new methods and contemporary tools linked to
               creativity, production and communication. De-signed and
               handcrafted to hold and showcase my year two architecture
-              portfolio, the unfolding box allows portfolio sheets. <br />
+              portfolio, the unfolding box allows portfolio sheets.
+              </span>
+               <br className="hidden md:block"/>
               <br />
               <span className="text-xl font-extrabold tracking-tight">
                 The backpiperARCH, we share a belief in the transformational
@@ -83,7 +86,7 @@ const ExperiencesPage = () => {
               </span>
             </p>
             <button
-              className="flex  relative max-w-sm items-center px-8 py-3  text-white rounded-full shadow-lg duration-200  bg-surface border
+              className="flex  relative max-w-sm items-center px-8 py-3 text-content group-hover:text-primary rounded-full shadow-lg duration-200  bg-surface border
        border-white/10 hover:border-primary/30 text-center transition-all group"
             >
               Read More

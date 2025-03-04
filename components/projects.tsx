@@ -1,33 +1,33 @@
 "use client"
-import Image from "next/image";
-import { motion } from 'framer-motion';
+// import Image from "next/image";
+// import { motion } from 'framer-motion';
 
-const projects = [
-  {
-    id: "1",
-    name: "Drowing room for family time",
-    description:
-      "Bedroom with a clean and comfortable design for your family. charming whit a modern design.",
-    image: "/perfil.jpeg",
-    link: "",
-  },
-  {
-    id: "2",
-    name: "Kitchen look modern and clean",
-    description:
-      "Kitchen look modern and clean. charming whit a modern design.",
-    image: "/perfil.jpeg",
-    link: "",
-  },
-  {
-    id: "3",
-    name: "Perfect living room for family time",
-    description:
-      "Drowing room with a clean and comfortable design for your family. charming whit a modern design.",
-    image: "/perfil.jpeg",
-    link: "",
-  },
-];
+// const projects = [
+//   {
+//     id: "1",
+//     name: "Drowing room for family time",
+//     description:
+//       "Bedroom with a clean and comfortable design for your family. charming whit a modern design.",
+//     image: "/perfil.jpeg",
+//     link: "",
+//   },
+//   {
+//     id: "2",
+//     name: "Kitchen look modern and clean",
+//     description:
+//       "Kitchen look modern and clean. charming whit a modern design.",
+//     image: "/perfil.jpeg",
+//     link: "",
+//   },
+//   {
+//     id: "3",
+//     name: "Perfect living room for family time",
+//     description:
+//       "Drowing room with a clean and comfortable design for your family. charming whit a modern design.",
+//     image: "/perfil.jpeg",
+//     link: "",
+//   },
+// ];
 
 const ProjectsPage = () => {
   return (
@@ -37,7 +37,7 @@ const ProjectsPage = () => {
           Our Projects
         </h1>
       </div>
-      <div className="mx-auto grid lg:grid-cols-2 gap-8 py-8">
+      {/* <div className="mx-auto grid lg:grid-cols-2 gap-8 py-8">
         {projects?.map((project, index) => (
           <motion.div  whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
@@ -63,7 +63,7 @@ const ProjectsPage = () => {
             </div>
           </motion.div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

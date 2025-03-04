@@ -109,8 +109,7 @@ export default function Hero() {
                   fill
                   priority
                   quality={100}
-                  className="object-cover scale-110 group-hover:scale-100
-                                            transition-transform duration-500"
+                  className="object-cover scale-110 group-hover:scale-100 transition-transform duration-500"
                 />
                 <div className="absoulte inset-0 bg-gradient-to-t from-black/60 to-transparent" />
 

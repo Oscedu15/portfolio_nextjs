@@ -1,7 +1,6 @@
-import Badge from "@/components/badge";
 import Faqs from "@/components/faqs";
 import Main from "@/components/main";
-import React from "react";
+
 
 const ProjectsPage = () => {
   return (
@@ -11,7 +10,6 @@ const ProjectsPage = () => {
         from-primary/10 to-tertiary/10"
       >
         <Main />
-        <Badge />
         <Faqs />
       </div>
     </div>

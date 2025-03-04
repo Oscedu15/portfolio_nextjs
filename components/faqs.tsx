@@ -36,18 +36,37 @@ export default function Faqs() {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
-    <section className="py-28 mx-auto max-w-7xl">
+    <section className="pb-28 mx-auto max-w-7xl">
       <div className="mx-auto">
-        <h2 className="text-6xl font-medium mt-6 text-center max-w-xl mx-auto">
-          ¿Tienes preguntas? Tenemos
-          <span className="text-lime-400"> respuestas.</span>
-        </h2>
+      <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r
+        from-primary via-secondary to-tertiary 
+        bg-clip-text text-transparent mb-6"
+            >
+              ¿Tienes preguntas? 
+              <br />
+              <motion.span
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="bg-gradient-to-r from-primary via-secondary
+        to-tertiary bg-clip-text text-transparent"
+              >
+              Tenemos respuestas.
+              </motion.span>
+            </motion.h1>
+        
+    
         <div className="mt-12 flex flex-col gap-6 max-w-xl mx-auto">
           {faqs?.map((faq, faqIndex) => (
             <div
               key={faqIndex}
               className="bg-gradient-to-r 
-        from-primary/10 to-tertiary/10 text-white rounded-2xl border border-white/10 p-6"
+        from-primary/10 to-tertiary/10 text-white rounded-2xl border border-white/10 p-6
+        shadow-2xl shadow-primary/10"
             >
               <div
                 className="flex justify-between items-center mx-auto"

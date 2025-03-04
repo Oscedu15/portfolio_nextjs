@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { desVariants, titleVariants } from "@/utils/animation";
 
 export default function Contact() {
-  const [message, setMessage] = useState("prueba de enviado correo");
+  const [message, setMessage] = useState("Gracias por contactame,");
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -48,7 +48,7 @@ export default function Contact() {
             initial="offscreen"
             whileInView={"onscreen"}
             variants={titleVariants}
-            className="text-3xl text-center font-bold tracking-tight sm:text-4xl
+            className="sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center tracking-tight 
     bg-gradient-to-r from-primary via-secondary
     to-tertiary bg-clip-text text-transparent"
           >
@@ -58,16 +58,20 @@ export default function Contact() {
             initial="offscreen"
             whileInView={"onscreen"}
             variants={desVariants}
-            className="mt-2 text-center text-white text-lg leading-8 text-muted-foreground"
+            className="mt-2 text-3xl text-center text-white leading-8 text-muted-foreground"
           >
             Por Favor, no dudes en realizar tu consulta.
           </motion.p>
         </div>
 
         <motion.form
-          initial="offscreen"
-          whileInView={"onscreen"}
-          variants={titleVariants}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1 * 0.1 }}
+            whileHover={{
+              y: -10,
+              transition: { duration: 0.2 },
+            }}
           action="https://formspree.io/f/xgvogldq"
           method="POST"
           onSubmit={handleSubmit}
@@ -123,7 +127,7 @@ export default function Contact() {
               />
             </div>
 
-            <div className="mt-10 mb-6 flex justify-center items-center sm:col-span-2">
+            <div className="mt-10 mb-4 flex justify-center items-center sm:col-span-2">
               {loading ? (
                 <div
                   className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-primary motion-reduce:animate-[spin_1.5s_linear_infinite]"
@@ -152,9 +156,9 @@ export default function Contact() {
               )}
             </div>
             {message && (
-              <div className="flex flex-col justify-center items-center">
-                <span className="text-center text-white  mx-auto font-bold pb-2">
-                  {message} <br /> Pronto me comunicare con usted. Gracias
+              <div className="flex flex-col max-w-80 justify-center items-center pb-6">
+                <span className="text-center text-white hover:text-[#16f2b3] transition-colors duration-300 mx-auto font-medium capitalize" >
+                  {message} Pronto me comunicare con usted. Gracias
                 </span>
               </div>
             )}

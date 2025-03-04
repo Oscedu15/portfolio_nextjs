@@ -38,15 +38,7 @@ const WhyUs = () => {
   });
 
   return (
-    <section
-      id="services"
-      className="relative flex w-full flex-col-reverse items-center justify-center gap-16 px-6 pb-16 pt-6 md:flex-row md:px-10 md:pt-24 xl:px-[159px]"
-    >
-      {/* <img
-        src={whyGradient}
-        alt="gradient"
-        className="absolute bottom-0 left-0"
-      /> */}
+    <section className="relative flex w-full flex-col-reverse items-center justify-center gap-16 px-6 pb-16 pt-6 md:flex-row md:px-10 md:pt-10 xl:px-[159px]">
       <div className="relative flex w-full flex-col-reverse gap-16 md:flex-row 3xl:max-w-[1200px]">
         {/* Left Panel Content */}
 
@@ -73,6 +65,7 @@ const WhyUs = () => {
             className={`absolute z-[13] h-full w-full scale-[1.01] object-cover transition-all duration-300 ${
               position === 1 ? "opacity-100" : "opacity-0"
             }`}
+            loading="lazy"
           />
           <Image
             fill

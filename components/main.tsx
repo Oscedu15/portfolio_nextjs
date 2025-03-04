@@ -90,7 +90,7 @@ const projects = [
 
 export default function Main() {
   return (
-    <section className="py-24 sm:py-32 relative id='work'">
+    <section className="pt-24 pb-20 sm:pt-32 sm:pb-24 relative id='work'">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Heading */}
 
@@ -203,22 +203,23 @@ export default function Main() {
           transition={{ delay: 0.4 }}
           className="flex justify-center mt-20 relative z-[5]"
         >
-          <button
-            className="relative px-8 py-3 rounded-full bg-surface
-            border border-white/10 hover:border-primary/10 transition-all group"
-          >
-            <span
-              className="text-content transition-colors
-            relative z-[1]"
+           <motion.button
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.2 }}
+              whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+              className="relative overflow-hidden px-8 py-4 rounded-full bg-surface border
+       border-white/10 hover:border-primary/30 transition-all group"
             >
+              <span className="text-content group-hover:text-primary transition-colors">
               View All Projects
-            </span>
-            <div
-              className="absolute inset-0 rounded-full
-            bg-gradient-to-r from-primary/10 to-tertiary/10
-            opacity-0 group-hover:opacity-100 transition-opacity"
-            />
-          </button>
+              </span>
+              <div
+                className="absolute inset-0 bg-gradient-to-r 
+        from-primary/10 to-tertiary/10 opacity-0
+        group-hover:opacity-100 transition-opacity"
+              />
+            </motion.button>
         </motion.div>
       </div>
     </section>

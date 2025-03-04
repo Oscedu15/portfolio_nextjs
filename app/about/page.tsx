@@ -145,13 +145,11 @@ import Introduction from "@/components/introduction";
 // };
 // export default About;
 
-import React from "react";
-
 const AboutPage = () => {
   return (
     <div className="bg-gray-900">
       <div
-        className="flex flex-col bg-gradient-to-r p-4 py-24 sm:py-32
+        className="flex flex-col bg-gradient-to-r p-4 py-16 
         from-primary/10 to-tertiary/10"
       >
         <div className="max-w-7xl mx-auto">
