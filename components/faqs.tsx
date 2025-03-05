@@ -42,7 +42,7 @@ export default function Faqs() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r
+              className="text-4xl text-center md:text-5xl lg:text-6xl font-bold bg-gradient-to-r
         from-primary via-secondary to-tertiary 
         bg-clip-text text-transparent mb-6"
             >

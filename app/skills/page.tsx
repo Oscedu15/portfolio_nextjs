@@ -50,15 +50,15 @@ const SkillsPage = () => {
     },
   ];
   const [ref, inView] = useInView({
-    threshold: 0.4,
+    threshold: 0.5,
   });
   return (
-    <div className="bg-gray-900" ref={ref}>
+    <div className="bg-gray-900 overflow-hidden" ref={ref}>
       <div
-        className=" py-24  sm:py-32 bg-gradient-to-r 
+        className="py-24 sm:py-32 bg-gradient-to-r 
         from-primary/10 to-tertiary/10 text-white  xl:py-24 h-auto lg:justify-between p-4"
       >
-        <div className="grid lg:grid-cols-2  max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 max-w-7xl mx-auto">
           <motion.div
             variants={fadeIn("up", 0.2)}
             initial="hidden"
@@ -80,7 +80,7 @@ const SkillsPage = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.6 }}
               className="px-12 mt-16 bg-gradient-to-r from-primary via-secondary
-        to-tertiary bg-clip-text text-transparent py-4 text-4xl font-extrabold leading-tight lg:text-5xl text-center"
+        to-tertiary bg-clip-text text-transparent py-4 font-extrabold leading-tight text-5xl md:text-6xl lg:text-7xl text-center"
             >
               We are awards Winning Company
             </motion.h2>
@@ -122,7 +122,7 @@ const SkillsPage = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.6 }}
-              className="flex items-center gap-x-8 mb-12 px-0 mx-auto md:px-12"
+              className="flex items-center gap-x-8 mb-12 px-0 md:px-12"
             >
               {/* cart types */}
               <div className="flex flex-col w-[100px] px-12">
@@ -130,7 +130,7 @@ const SkillsPage = () => {
                 <div className="text-3xl font-black mb-2">
                   {inView ? (
                     <CountUp start={0} end={50} duration={3} delay={1} />
-                  ) : null}
+                  ) : (<CountUp start={0} end={50} duration={3} delay={1} />)}
                   +
                 </div>
                 <div className="uppercase text-[13px] font-semibold text-secondary">
@@ -143,7 +143,7 @@ const SkillsPage = () => {
                 <div className="text-3xl font-black mb-2">
                   {inView ? (
                     <CountUp start={0} end={135} duration={3} delay={1} />
-                  ) : null}
+                  ) : <CountUp start={0} end={135} duration={3} delay={1} />}
                   +
                 </div>
                 <div className="uppercase text-[13px] font-semibold text-secondary">
@@ -156,7 +156,7 @@ const SkillsPage = () => {
                 <div className="text-3xl font-black mb-2">
                   {inView ? (
                     <CountUp start={0} end={35} duration={3} delay={1} />
-                  ) : null}
+                  ) : <CountUp start={0} end={135} duration={3} delay={1} />}
                   +
                 </div>
                 <div className="uppercase text-[13px] font-semibold text-secondary">

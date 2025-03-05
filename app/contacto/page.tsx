@@ -48,7 +48,7 @@ export default function Contact() {
             initial="offscreen"
             whileInView={"onscreen"}
             variants={titleVariants}
-            className="sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center tracking-tight 
+            className="font-bold text-5xl md:text-6xl lg:text-7xl text-center tracking-tight 
     bg-gradient-to-r from-primary via-secondary
     to-tertiary bg-clip-text text-transparent"
           >
@@ -65,13 +65,13 @@ export default function Contact() {
         </div>
 
         <motion.form
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1 * 0.1 }}
-            whileHover={{
-              y: -10,
-              transition: { duration: 0.2 },
-            }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1 * 0.1 }}
+          whileHover={{
+            y: -10,
+            transition: { duration: 0.2 },
+          }}
           action="https://formspree.io/f/xgvogldq"
           method="POST"
           onSubmit={handleSubmit}
@@ -157,7 +157,7 @@ export default function Contact() {
             </div>
             {message && (
               <div className="flex flex-col max-w-80 justify-center items-center pb-6">
-                <span className="text-center text-white hover:text-[#16f2b3] transition-colors duration-300 mx-auto font-medium capitalize" >
+                <span className="text-center text-white hover:text-[#16f2b3] transition-colors duration-300 mx-auto font-medium capitalize">
                   {message} Pronto me comunicare con usted. Gracias
                 </span>
               </div>

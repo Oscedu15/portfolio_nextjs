@@ -27,7 +27,7 @@ const ExperiencesPage = () => {
             initial="offscreen"
             whileInView={"onscreen"}
             variants={titleVariants}
-            className="text-5xl md:text-5xl lg:text-6xl font-bold text-center lg:p-10
+            className="text-5xl md:text-6xl lg:text-7xl font-bold text-center lg:p-10
            mt-20 bg-gradient-to-r from-primary via-secondary
         to-tertiary bg-clip-text text-transparent"
           >

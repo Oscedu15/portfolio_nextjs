@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import { FaNode, FaReact } from "react-icons/fa";
 import {
-  SiD3Dotjs,
   SiFirebase,
   SiGraphql,
   SiNextdotjs,
@@ -18,80 +17,79 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "E-commerce Platform",
+    title: "Carland Rent",
     description: "Modern shopping experinece with Next.js and Typescript",
     tech: [
       { name: "React", icon: FaReact, color: "#61DAFB" },
       { name: "Next.js", icon: SiNextdotjs, color: "000000" },
       { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
-      { name: "Prisma", icon: SiPrisma, color: "06B6D4" },
       { name: "Framer Motion", icon: SiFramer, color: "06B6D4" },
     ],
-    image: "/projects/ecommerce.png",
+    image: "/projects/carland.png",
     href: "https://centro-odontologico-od-enerirt.vercel.app/",
   },
   {
-    title: "Analytics Dashboard",
+    title: "Hotel",
     description: "Real-time data visualization platform",
     tech: [
       { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-      { name: "D3.js", icon: SiD3Dotjs, color: "#F9A03C" },
       { name: "Node.js", icon: FaNode, color: "#339933" },
-      { name: "Node.js", icon: SiVite, color: "#339933" },
+      { name: "Vite", icon: SiVite, color: "#339933" },
+      { name: "Prisma", icon: SiPrisma, color: "06B6D4" },
     ],
-    image: "/projects/analytics.jpg",
+    image: "/projects/hotel.png",
     href: "https://centro-odontologico-od-enerirt.vercel.app/",
   },
   {
-    title: "Mobile Application",
+    title: "Spa Irene",
     description: "Cross-platform mobile app for health tracking",
     tech: [
       { name: "React Native", icon: FaReact, color: "#61DAFB" },
       { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
       { name: "GraphQL", icon: SiGraphql, color: "#E535AB" },
     ],
-    image: "/projects/mobile.jpg",
+    image: "/projects/spa.png",
     href: "https://centro-odontologico-od-enerirt.vercel.app/",
   },
   {
-    title: "Mobile Application",
+    title: "Osocially",
     description: "Cross-platform mobile app for health tracking",
     tech: [
       { name: "React Native", icon: FaReact, color: "#61DAFB" },
       { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
       { name: "GraphQL", icon: SiGraphql, color: "#E535AB" },
     ],
-    image: "/projects/mobile.jpg",
-    href: "https://centro-odontologico-od-enerirt.vercel.app/",
+    image: "/projects/socially.png",
+    href: "https://osocially.vercel.app/",
   },
   {
-    title: "Mobile Application",
+    title: "Mediprime Salud",
     description: "Cross-platform mobile app for health tracking",
     tech: [
       { name: "React Native", icon: FaReact, color: "#61DAFB" },
       { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
       { name: "GraphQL", icon: SiGraphql, color: "#E535AB" },
     ],
-    image: "/projects/mobile.jpg",
-    href: "https://centro-odontologico-od-enerirt.vercel.app/",
+    image: "/projects/mediprime.png",
+    href: "https://mediprime.vercel.app/",
   },
   {
-    title: "Mobile Application",
+    title: "LinkTree Clone",
     description: "Cross-platform mobile app for health tracking",
     tech: [
       { name: "React Native", icon: FaReact, color: "#61DAFB" },
       { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
       { name: "GraphQL", icon: SiGraphql, color: "#E535AB" },
     ],
-    image: "/projects/mobile.jpg",
-    href: "https://centro-odontologico-od-enerirt.vercel.app/",
+    image: "/projects/linktree.png",
+    href: "https://linktree-clone-lac-seven.vercel.app/",
   },
 ];
 
 export default function Main() {
   return (
     <section className="pt-24 pb-20 sm:pt-32 sm:pb-24 relative id='work'">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-0 md:px-6">
         {/* Section Heading */}
 
         <motion.div
@@ -101,11 +99,11 @@ export default function Main() {
           className="flex flex-col items-center mb-20"
         >
           <h2
-            className="text-4xl md:text-5xl font-bold
+            className="text-5xl md:text-6xl lg:text-7xl font-bold
             bg-gradient-to-r from-primary via-secondary
         to-tertiary bg-clip-text text-transparent mb-4 text-center"
           >
-            Selected Work
+            Trabajos Seleccionados
           </h2>
           <div
             className="w-24 h-1 bg-gradient-to-r from-primary
@@ -142,7 +140,7 @@ export default function Main() {
                   alt={project.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover"
+                  className="object-fill "
                   priority
                 />
               </motion.div>

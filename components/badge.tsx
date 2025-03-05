@@ -8,7 +8,7 @@ import { desVariants, tagVariants, titleVariants } from "@/utils/animation";
 const Badge = () => {
   return (
     <div className="max-w-7xl text-white py-12 xl:py-24 h-[auto] text-center lg:py-0 lg:text-left lg:flex lg:justify-between mx-auto">
-      <div className="flex flex-row-reverse">
+      <div className="block md:flex  md:flex-row-reverse">
         {/* left section */}
         <div className="lg:w-1/2 py-0 md:py-8 lg:text-left">
           <motion.h1
@@ -26,7 +26,7 @@ const Badge = () => {
             initial="offscreen"
             whileInView={"onscreen"}
             variants={desVariants}
-            className="text-xl md:text-2xl text-content/80 mb-8 text-center"
+            className="text-xl md:text-2xl text-content/80 my-8 text-center"
           >
             Make your home a piece of art
           </motion.p>
@@ -34,7 +34,7 @@ const Badge = () => {
             initial="offscreen"
             whileInView={"onscreen"}
             variants={tagVariants}
-            className="pb-6 text-muted-foreground xl:pb-10"
+            className="pb-6 text-muted-foreground xl:pb-10 px-4 md:px-0"
           >
             Change your view with the best interior design. Lorem ipsum dolor
             sit amet consectetur, adipisicing elit. Repudiandae, provident! Eos,
