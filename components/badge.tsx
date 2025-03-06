@@ -7,26 +7,25 @@ import { desVariants, tagVariants, titleVariants } from "@/utils/animation";
 
 const Badge = () => {
   return (
-    <div className="max-w-7xl text-white py-12 xl:py-24 h-[auto] text-center lg:py-0 lg:text-left lg:flex lg:justify-between mx-auto">
+    <div className="max-w-7xl dark:from-primary/10 dark:to-tertiary/10 text-white py-12 xl:py-24 h-[auto] text-center lg:py-0 lg:text-left lg:flex lg:justify-between mx-auto">
       <div className="block md:flex  md:flex-row-reverse">
         {/* left section */}
         <div className="lg:w-1/2 py-0 md:py-8 lg:text-left">
-          <motion.h1
+          <motion.h2
             initial="offscreen"
             whileInView={"onscreen"}
             variants={titleVariants}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold  text-center lg:p-10
-             md:mt-0 bg-gradient-to-r from-primary via-secondary
-          to-tertiary bg-clip-text text-transparent"
+            className="text-center lg:p-10
+             md:mt-0"
           >
             Offer for the best Interior
-          </motion.h1>
+          </motion.h2>
 
           <motion.p
             initial="offscreen"
             whileInView={"onscreen"}
             variants={desVariants}
-            className="text-xl md:text-2xl text-content/80 my-8 text-center"
+            className="md:text-2xl text-content/80 my-8 px-12 text-3xl text-center  uppercase text-gray-600 mt-3"
           >
             Make your home a piece of art
           </motion.p>

@@ -7,12 +7,12 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
@@ -34,4 +34,30 @@ body {
 
 .animate-gradient-pulse {
   animation: gradient-pulse 3s ease-in-out infinite;
+}
+
+h1{
+  @apply text-6xl md:text-8xl font-bold bg-gradient-to-r from-red-600 via-red-500
+  to-red-400 dark:from-primary dark:via-secondary
+  dark:to-tertiary bg-clip-text text-transparent;
+}
+
+h2 {
+  @apply text-5xl md:text-6xl lg:text-7xl font-bold
+  bg-gradient-to-r from-red-600 via-red-500
+to-red-400 dark:from-primary dark:via-secondary
+dark:to-tertiary bg-clip-text text-transparent;
+}
+h3 {
+  @apply text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-red-600 via-red-500
+  to-red-400 dark:from-primary dark:via-secondary
+  dark:to-tertiary bg-clip-text text-transparent;
+}
+button{
+  @apply overflow-hidden px-8 py-4 rounded-full bg-surface border
+  border-white/10 hover:border-primary/30 transition-all
+}
+
+p {
+  @apply text-xl text-gray-500 dark:text-content/80;
 }

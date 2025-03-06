@@ -4,6 +4,7 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { ThemeProvider } from "next-themes";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -78,12 +79,14 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
+        className={`${poppins.variable} font-poppins dark:bg-blue-50 antialiased text-black  dark:text-white`}
         suppressHydrationWarning
-        className={`${poppins.variable} font-poppins antialiased `}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <ThemeProvider attribute="class" enableSystem defaultTheme="system">
+          <Navbar />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -56,7 +56,7 @@ const SkillsPage = () => {
     <div className="bg-gray-900 overflow-hidden" ref={ref}>
       <div
         className="py-24 sm:py-32 bg-gradient-to-r 
-        from-primary/10 to-tertiary/10 text-white  xl:py-24 h-auto lg:justify-between p-4"
+        dark:from-primary/10 dark:to-tertiary/10 from-slate-50 to-gray-300 text-white  xl:py-24 h-auto lg:justify-between p-4"
       >
         <div className="grid lg:grid-cols-2 max-w-7xl mx-auto">
           <motion.div
@@ -79,8 +79,7 @@ const SkillsPage = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.6 }}
-              className="px-12 mt-16 bg-gradient-to-r from-primary via-secondary
-        to-tertiary bg-clip-text text-transparent py-4 font-extrabold leading-tight text-5xl md:text-6xl lg:text-7xl text-center"
+              className="px-12 mt-16  py-4 text-center"
             >
               We are awards Winning Company
             </motion.h2>
@@ -89,7 +88,7 @@ const SkillsPage = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.6 }}
-              className="px-12 tracking-wider text-3xl text-center  uppercase text-gray-400 mt-3"
+              className="px-12 tracking-wider text-3xl text-center  uppercase text-gray-600 mt-3"
             >
               World Award
             </motion.p>
@@ -98,7 +97,7 @@ const SkillsPage = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.6 }}
-              className="px-12 pb-4 mt-4 text-xl text-content/80 mb-8"
+              className="px-12 pb-4 mt-4 text-xl text-gray-500 dark:text-content/80 mb-8"
             >
               This is a company engaged in the field of interior design. We
               provide the best interior design fr your home. We have been
@@ -110,7 +109,7 @@ const SkillsPage = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.6 }}
-              className="text-xl text-content/80 mb-8 px-12"
+              className="text-xl  mb-8 px-12"
             >
               This is a company engaged in the field of interior design. We
               provide the best interior design fr your home. We have been
@@ -196,8 +195,9 @@ const SkillsPage = () => {
                 </a>
               </div>
               <div
-                className="inset-0 bg-gradient-to-t from-primary via-secondary
-        to-tertiary flex-col items-center justify-end md:flex md:absolute gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 group-hover:translate-y-full md:border-b-0 hidden cursor-pointer"
+                className="inset-0 from-red-600 via-red-700
+        to-red-800 dark:from-primary dark:via-secondary
+         dark:to-tertiary  bg-gradient-to-b flex-col items-center justify-end md:flex md:absolute gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 group-hover:translate-y-full md:border-b-0 hidden cursor-pointer"
               >
                 <p className="tracking-wider -rotate-90">{item.category}</p>
                 <span>{item.id}</span>

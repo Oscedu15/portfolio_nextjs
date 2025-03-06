@@ -99,9 +99,7 @@ export default function Main() {
           className="flex flex-col items-center mb-20"
         >
           <h2
-            className="text-5xl md:text-6xl lg:text-7xl font-bold
-            bg-gradient-to-r from-primary via-secondary
-        to-tertiary bg-clip-text text-transparent mb-4 text-center"
+            className=" mb-4 text-center"
           >
             Trabajos Seleccionados
           </h2>
@@ -127,7 +125,7 @@ export default function Main() {
                 transition: { duration: 0.2 },
               }}
               className="group relative h-[500px] rounded-3xl overflow-hidden
-            bg-surface border border-white/10 cursor-pointer"
+            dark:bg-surface bg-red-700/90 border border-white/10 cursor-pointer"
             >
               {/* Image Section */}
               <motion.div
@@ -141,13 +139,13 @@ export default function Main() {
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-fill "
-                  priority
+                  loading="lazy"
                 />
               </motion.div>
 
               {/* Content Section */}
               <motion.div
-                className="p-6 h-[25px] bg-surface"
+                className="p-6 h-[25px] bg-red-700/900 dark:bg-surface"
                 transition={{ duration: 0.3 }}
               >
                 <div
@@ -157,7 +155,9 @@ export default function Main() {
                   <Link href={project.href} target="_blank" rel="noopener">
                     <h3
                       className="text-2xl font-bold text-content hover:bg-gradient-to-r
-        from-primary via-secondary to-tertiary 
+        from-red-600 via-red-500
+        to-red-400 dark:from-primary dark:via-secondary
+        dark:to-tertiary 
         hover:bg-clip-text hover:text-transparent duration-300 transition-colors"
                     >
                       {project.title}
@@ -175,9 +175,9 @@ export default function Main() {
                   {project.tech.map((tech, j) => (
                     <span
                       key={j}
-                      className="px-3 py-1 rounded-full bg-white/5 text-content/80
-                    text-sm border border-white/5
-                    hover:bg-surface transition-colors flex items-center
+                      className="px-3 py-1 rounded-full bg-white/5 text-white dark:text-content/80
+                    text-sm border border-white/5 hover:bg-red-700/100
+                    dark:hover:bg-surface transition-colors flex items-center
                      gap-1.5 group/tech"
                     >
                       <tech.icon
@@ -201,23 +201,23 @@ export default function Main() {
           transition={{ delay: 0.4 }}
           className="flex justify-center mt-20 relative z-[5]"
         >
-           <motion.button
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.2 }}
-              whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-              className="relative overflow-hidden px-8 py-4 rounded-full bg-surface border
+          <motion.button
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.2 }}
+            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+            className="relative overflow-hidden px-8 py-4 rounded-full bg-surface border
        border-white/10 hover:border-primary/30 transition-all group"
-            >
-              <span className="text-content group-hover:text-primary transition-colors">
+          >
+            <span className="text-content group-hover:text-primary transition-colors">
               View All Projects
-              </span>
-              <div
-                className="absolute inset-0 bg-gradient-to-r 
+            </span>
+            <div
+              className="absolute inset-0 bg-gradient-to-r 
         from-primary/10 to-tertiary/10 opacity-0
         group-hover:opacity-100 transition-opacity"
-              />
-            </motion.button>
+            />
+          </motion.button>
         </motion.div>
       </div>
     </section>

@@ -38,19 +38,18 @@ export default function Contact() {
   };
 
   return (
-    <div className="bg-gray-900">
+    <div className="">
       <div
         className="bg-gradient-to-r
-    from-primary/10 to-tertiary/10 p-4 py-24 sm:py-32"
+    dark:from-primary/10 dark:to-tertiary/10 from-slate-50 to-gray-300 p-4 py-24 sm:py-32"
       >
         <div className="mx-auto max-w-2xl text-center">
           <motion.h2
             initial="offscreen"
             whileInView={"onscreen"}
             variants={titleVariants}
-            className="font-bold text-5xl md:text-6xl lg:text-7xl text-center tracking-tight 
-    bg-gradient-to-r from-primary via-secondary
-    to-tertiary bg-clip-text text-transparent"
+            className="text-center
+    "
           >
             Contactanos.{" "}
           </motion.h2>
@@ -58,7 +57,7 @@ export default function Contact() {
             initial="offscreen"
             whileInView={"onscreen"}
             variants={desVariants}
-            className="mt-2 text-3xl text-center text-white leading-8 text-muted-foreground"
+            className="mt-2 text-3xl text-center dark:text-white text-gray-700 leading-8 text-muted-foreground"
           >
             Por Favor, no dudes en realizar tu consulta.
           </motion.p>
@@ -75,7 +74,7 @@ export default function Contact() {
           action="https://formspree.io/f/xgvogldq"
           method="POST"
           onSubmit={handleSubmit}
-          className="mx-auto mt-14 pt-6 max-w-xl sm:mt-16 shadow-xl shadow-primary rounded-xl bg-gradient-to-r
+          className="mx-auto mt-14 pt-6 max-w-xl sm:mt-16 shadow-xl shadow-[#c24b4bcc] dark:shadow-primary rounded-xl bg-gradient-to-r
         from-primary/10 to-tertiary/10"
         >
           <div className="flex flex-col  justify-center items-center gap-x-8 gap-y-6">
@@ -85,7 +84,7 @@ export default function Contact() {
                 required
                 name="firstname"
                 placeholder="Nombre"
-                className="bg-primary/10 text-gray-300 placeholder:text-primary placeholder:italic w-full border rounded-md border-gray-600  focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2"
+                className="dark:bg-primary/10 bg-[#c24b4bcc] text-gray-300 placeholder:text-gray-300  dark:placeholder:text-primary placeholder:italic w-full border rounded-md border-gray-600  focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2"
               />
             </div>
             <div className="mt-2.5 w-9/12">

@@ -25,5 +25,5 @@ export default function SocialLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return <div className="bg-white text-black dark:bg-gray-900 dark:text-white">{children}</div>;
 }

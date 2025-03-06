@@ -38,7 +38,9 @@ const WhyUs = () => {
   });
 
   return (
-    <section className="relative flex w-full flex-col-reverse items-center justify-center gap-16 px-6 pb-16 pt-6 md:flex-row md:px-10 md:pt-10 xl:px-[159px]">
+    <section
+      className="relative flex w-full flex-col-reverse items-center justify-center gap-16 px-6 pb-16 pt-6 md:flex-row md:px-10 md:pt-10 xl:px-[159px]"
+    >
       <div className="relative flex w-full flex-col-reverse gap-16 md:flex-row 3xl:max-w-[1200px]">
         {/* Left Panel Content */}
 
@@ -94,16 +96,14 @@ const WhyUs = () => {
         </motion.div>
         {/* Left Panel Control */}
         <div ref={cardRef} className="flex flex-col pt-[0px]">
-          <h3 className="text-[32px] leading-[44px] tracking-[-0.72px] text-[#0e1829] md:text-[36px] font-bold">
-            Medical departments
-          </h3>
+          <h3 className="text-center">Medical departments</h3>
           {/* Right Panel Control */}
           <div className="relative mt-6 w-full flex-col items-center justify-center gap-6">
             {/* Border Line Content */}
             <div className="[544px] absolute left-0 top-0 h-full w-1 bg-[#eaecf0]">
               <motion.div
                 style={{ height: height }}
-                className="h-[70px] w-1 rounded-full bg-violet-700"
+                className="h-[70px] w-1 rounded-full bg-red-600 dark:bg-violet-700"
               />
             </div>
             {/* Border Line Content */}
@@ -112,7 +112,7 @@ const WhyUs = () => {
                 position === 1 ? "opacity-100" : "opacity-30"
               }`}
             >
-              <h5 className="text-[20px] font-bold leading-[30px] text-[#0e1829]">
+              <h5 className="text-[20px] font-bold leading-[30px] text-red-600  dark:text-violet-700">
                 Emergency Department
               </h5>
               <p className="mt-2 text-base font-medium leading-4 text-[#445469]">
@@ -125,7 +125,7 @@ const WhyUs = () => {
                 position === 2 ? "opacity-100" : "opacity-30"
               }`}
             >
-              <h5 className="text-[20px] font-bold leading-[30px] text-[#0e1829]">
+              <h5 className="text-[20px] font-bold leading-[30px] text-red-600  dark:text-violet-700">
                 Restorative Dentistry
               </h5>
               <p className="mt-2 text-base font-medium leading-4 text-[#445469]">
@@ -138,7 +138,7 @@ const WhyUs = () => {
                 position === 3 ? "opacity-100" : "opacity-30"
               }`}
             >
-              <h5 className="text-[20px] font-bold leading-[30px] text-[#0e1829]">
+              <h5 className="text-[20px] font-bold leading-[30px] text-red-600  dark:text-violet-700">
                 Surgical Interventions
               </h5>
               <p className="mt-2 text-base font-medium leading-4 text-[#445469]">
@@ -151,7 +151,7 @@ const WhyUs = () => {
                 position === 4 ? "opacity-100" : "opacity-30"
               }`}
             >
-              <h5 className="text-[20px] font-bold leading-[30px] text-[#0e1829]">
+              <h5 className="text-[20px] font-bold leading-[30px] text-red-600  dark:text-violet-700">
                 Health Monitoring
               </h5>
               <p className="mt-2 text-base font-medium leading-4 text-[#445469]">

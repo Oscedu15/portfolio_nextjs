@@ -43,7 +43,9 @@ export default function Faqs() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="text-4xl text-center md:text-5xl lg:text-6xl font-bold bg-gradient-to-r
-        from-primary via-secondary to-tertiary 
+        from-red-600 via-red-500
+        to-red-400 dark:from-primary dark:via-secondary
+        dark:to-tertiary 
         bg-clip-text text-transparent mb-6"
             >
               ¿Tienes preguntas? 
@@ -52,8 +54,9 @@ export default function Faqs() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="bg-gradient-to-r from-primary via-secondary
-        to-tertiary bg-clip-text text-transparent"
+                className="bg-gradient-to-r from-red-600 via-red-500
+        to-red-400 dark:from-primary dark:via-secondary
+        dark:to-tertiary bg-clip-text text-transparent"
               >
               Tenemos respuestas.
               </motion.span>
@@ -72,7 +75,7 @@ export default function Faqs() {
                 className="flex justify-between items-center mx-auto"
                 onClick={() => setSelectedIndex(faqIndex)}
               >
-                <h3 className="font-medium">{faq.question}</h3>
+                <span className="font-medium">{faq.question}</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -84,7 +87,7 @@ export default function Faqs() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   className={twMerge(
-                    "feather feather-plus text-lime-400 flex-shrink-0 transition duration-300 cursor-pointer",
+                    "feather feather-plus text-red-700 dark:text-lime-400 flex-shrink-0 transition duration-300 cursor-pointer",
                     selectedIndex === faqIndex && "rotate-45"
                   )}
                 >

@@ -29,19 +29,18 @@ export default function Introduction() {
   }, [wordIndex]);
 
   return (
-    <section className="py-20 md:py-24">
+    <section className="py-28 lg:py-40">
       <div className="container">
-        <div className="sticky top-20 md:top-24">
-          <motion.span
+        <div className="sticky top-20 md:top-28 lg:top-40">
+          <motion.h2
             initial="offscreen"
             whileInView={"onscreen"}
             variants={titleVariants}
-            className="text-5xl md:text-6xl lg:text-7xl flex items-center justify-center font-semibold text-center lg:p-10
-                       mt-20 bg-gradient-to-r from-primary via-secondary
-                    to-tertiary bg-clip-text text-transparent mb-4"
+            className=" flex items-center justify-center font-semibold text-center lg:p-10
+                       mt-20 mb-4"
           >
             Your creative process deserves better.{" "}
-          </motion.span>
+          </motion.h2>
           <div className="text-3xl md:text-4xl lg:text-5xl text-center font-medium mt-10">
             <span className="text-white">
               {words?.map((word, wordIndex) => (
@@ -50,7 +49,7 @@ export default function Introduction() {
                   className={twMerge(
                     "transition duration-500 text-white",
                     wordIndex < currentWord &&
-                      "bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text text-transparent"
+                      "bg-gradient-to-r from-red-600 via-red-500 to-red-400 dark:from-primary dark:via-secondary dark:to-tertiary bg-clip-text text-transparent"
                   )}
                 >{`${word}`}</span>
               ))}
@@ -63,5 +62,7 @@ export default function Introduction() {
         <div className="h-[150vh]" ref={scrollTarget}></div>
       </div>
     </section>
-  );
+  )
 }
+
+

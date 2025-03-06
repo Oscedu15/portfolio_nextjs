@@ -33,9 +33,9 @@ const ProjectsPage = () => {
   return (
     <div>
       <div className="bg-[url('/programacion.jpg')] text-center bg-center bg-cover">
-        <h1 className="mx-auto max-w-7xl py-64 text-6xl font-semibold tracking-widest text-white ">
+        <h2 className="mx-auto max-w-7xl py-64 ">
           Our Projects
-        </h1>
+        </h2>
       </div>
       {/* <div className="mx-auto grid lg:grid-cols-2 gap-8 py-8">
         {projects?.map((project, index) => (

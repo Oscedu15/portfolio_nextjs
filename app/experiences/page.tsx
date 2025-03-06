@@ -17,19 +17,18 @@ const ExperiencesPage = () => {
   const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
 
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray-900 overflow-hidden">
       <div
         className="bg-gradient-to-r p-4 py-24 sm:py-32
-        from-primary/10 to-tertiary/10 text-white"
+        dark:from-primary/10 dark:to-tertiary/10 from-slate-50 to-gray-300 text-white"
       >
         <div className="mx-auto max-w-7xl">
           <motion.h2
             initial="offscreen"
             whileInView={"onscreen"}
             variants={titleVariants}
-            className="text-5xl md:text-6xl lg:text-7xl font-bold text-center lg:p-10
-           mt-20 bg-gradient-to-r from-primary via-secondary
-        to-tertiary bg-clip-text text-transparent"
+            className="text-center lg:p-10
+           mt-20"
           >
             We have great idea & Interior Design
           </motion.h2>
@@ -106,8 +105,9 @@ const ExperiencesPage = () => {
               initial="offscreen"
               whileInView={"onscreen"}
               variants={titleVariants}
-              className="text-4xl font-bold tracking-wider text-center  bg-gradient-to-r from-primary via-secondary
-        to-tertiary bg-clip-text text-transparent"
+              className="text-4xl font-bold tracking-wider text-center  bg-gradient-to-r from-red-600 via-red-500
+        to-red-400 dark:from-primary dark:via-secondary
+        dark:to-tertiary bg-clip-text text-transparent"
             >
               Testimonios
             </motion.h1>
