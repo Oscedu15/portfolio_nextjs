@@ -36,10 +36,10 @@ body {
   animation: gradient-pulse 3s ease-in-out infinite;
 }
 
-h1{
+h1 {
   @apply text-6xl md:text-8xl font-bold bg-gradient-to-r from-red-600 via-red-500
   to-red-400 dark:from-primary dark:via-secondary
-  dark:to-tertiary bg-clip-text text-transparent;
+  dark:to-tertiary bg-clip-text text-transparent font-poppins;
 }
 
 h2 {
@@ -53,11 +53,19 @@ h3 {
   to-red-400 dark:from-primary dark:via-secondary
   dark:to-tertiary bg-clip-text text-transparent;
 }
-button{
+button {
   @apply overflow-hidden px-8 py-4 rounded-full bg-surface border
-  border-white/10 hover:border-primary/30 transition-all
+  border-white/10 hover:border-primary/30 transition-all;
 }
 
 p {
-  @apply text-xl text-gray-500 dark:text-content/80;
+  @apply text-xl text-gray-500 dark:text-content/80 font-ponnala;
+}
+
+.btn {
+  @apply bg-gradient-to-r
+  from-red-600 via-red-500
+  to-red-600 border dark:from-surface dark:via-surface
+  dark:to-surface
+ dark:border-white/10 dark:hover:border-primary/30 overflow-hidden  px-8 py-4;
 }

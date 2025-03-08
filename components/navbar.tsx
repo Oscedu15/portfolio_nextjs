@@ -36,7 +36,7 @@ export default function Navbar() {
       animate={{ y: 0 }}
       className={`fixed w-full z-50 ${
         isScrolled
-          ? "backdrop-blur-2xl dark:bg-background/90 bg-white/40 dark:shadow-2xl shadow-sm shadow-[#c24b4bcc] dark:shadow-primary/10"
+          ? "backdrop-blur-3xl dark:bg-background/90 bg-white/40 dark:shadow-2xl shadow-sm shadow-[#c24b4bcc] dark:shadow-primary/10"
           : "backdrop-blur-lg dark:bg-background/50  bg-white/50  text-black shadow-md"
       } transition-all duration-300 ease-out`}
     >
@@ -49,7 +49,7 @@ export default function Navbar() {
           >
             <div className="relative h-8 w-8 rounded-full overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-r from-red-700 to-[#c24b4bcc] dark:from-primary dark:to-tertiary animate-spin-slow [mask-image:linear-gradient(transparent,white)]" />
-              <div className="absolute inset-[2px] bg-white/60  dark:bg-background rounded-full flex items-center justify-center">
+              <div className="absolute inset-[2px] bg-slate-200  dark:bg-background rounded-full flex items-center justify-center">
                 <span className="font-bold bg-gradient-to-r from-red-700 to-[#c24b4bcc] dark:from-primary dark:to-tertiary bg-clip-text text-transparent">
                   OG
                 </span>
@@ -126,7 +126,7 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="block z-20 px-4 py-2 text-red-500 hover:text-primary hover:bg-white/5 
+                className="block z-20 px-4 py-2 text-red-500 hover:text-red-600 hover:bg-gray-200 dark:text-primary dark:hover:text-primary/90 dark:hover:bg-white/5 
                 rounded-lg transition-colors"
               >
                 {item.name}
@@ -137,17 +137,17 @@ export default function Navbar() {
                 href={socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-lg bg-white/5 hover:bg-primary/10 transition-colors group"
+                className="p-2 rounded-lg bg-red-600 dark:bg-white/5 dark:hover:bg-primary/10 transition-colors group"
               >
-                <GithubIcon className="h-5 w-5 text-content/80 group-hover:text-primary transition-colors" />
+                <GithubIcon className="h-5 w-5 text-white  dark:text-content/80 dark:group-hover:text-primary transition-colors" />
               </Link>
               <Link
                 href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-lg bg-white/5 hover:bg-primary/10 transition-colors group"
+                className="p-2 rounded-lg bg-red-600 dark:bg-white/5 dark:hover:bg-primary/10 transition-colors group"
               >
-                <LinkedInIcon className="h-5 w-5 text-content/80 group-hover:text-primary transition-colors" />
+                <LinkedInIcon className="h-5 w-5 text-white  dark:text-content/80 dark:group-hover:text-primary transition-colors" />
               </Link>
             </div>
           </motion.div>

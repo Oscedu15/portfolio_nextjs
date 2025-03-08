@@ -47,8 +47,7 @@ const Badge = () => {
             variants={tagVariants}
           >
             <button
-              className="relative overflow-hidden px-8 py-4 rounded-full bg-surface border
-       border-white/10 hover:border-primary/30 transition-all group"
+              className="relative btn transition-all group"
             >
               <span className="text-content group-hover:text-primary transition-colors flex">
                 Book Now <TbArrowUpRight className="w-5 h-5 ml-2" />

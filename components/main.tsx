@@ -112,7 +112,7 @@ export default function Main() {
 
         <div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
-            gap-8 relative z-10"
+            gap-8 relative z-10 px-2 lg:px-0"
         >
           {projects?.map((project, i) => (
             <motion.div
@@ -125,7 +125,10 @@ export default function Main() {
                 transition: { duration: 0.2 },
               }}
               className="group relative h-[500px] rounded-3xl overflow-hidden
-            dark:bg-surface bg-red-700/90 border border-white/10 cursor-pointer"
+            dark:bg-surface bg-gradient-to-r from-red-600 via-red-500
+        to-red-600 border border-gray-400 dark:border-white/10 cursor-pointer
+        dark:from-surface dark:via-surface
+        dark:to-surface"
             >
               {/* Image Section */}
               <motion.div
@@ -138,7 +141,7 @@ export default function Main() {
                   alt={project.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-fill "
+                  className="object-fill overflow-hidden"
                   loading="lazy"
                 />
               </motion.div>
@@ -154,19 +157,19 @@ export default function Main() {
                 >
                   <Link href={project.href} target="_blank" rel="noopener">
                     <h3
-                      className="text-2xl font-bold text-content hover:bg-gradient-to-r
-        from-red-600 via-red-500
-        to-red-400 dark:from-primary dark:via-secondary
+                      className="text-2xl font-bold text-content dark:bg-gradient-to-r
+              hover:text-3xl hover:text-white
+         dark:from-primary dark:via-secondary
         dark:to-tertiary 
-        hover:bg-clip-text hover:text-transparent duration-300 transition-colors"
+        hover:bg-clip-text dark:hover:text-transparent duration-500 transition-all"
                     >
                       {project.title}
                     </h3>
                   </Link>
 
                   <ArrowUpRightIcon
-                    className="h-6 w-6 text-content/50
-                 group-hover/title:text-primary transition-colors duration-300"
+                    className="h-6 w-6 text-content/50 group-hover/title:text-white
+                 dark:group-hover/title:text-lime-400  transition-colors duration-300"
                   />
                 </div>
                 <p className="text-content/80 mb-4">{project.description}</p>
@@ -206,10 +209,9 @@ export default function Main() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
             whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-            className="relative overflow-hidden px-8 py-4 rounded-full bg-surface border
-       border-white/10 hover:border-primary/30 transition-all group"
+            className="relative overflow-hidden btn rounded-full  transition-all group"
           >
-            <span className="text-content group-hover:text-primary transition-colors">
+            <span className="text-content dark:group-hover:text-primary group-hover:text-white transition-colors">
               View All Projects
             </span>
             <div

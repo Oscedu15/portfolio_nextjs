@@ -57,7 +57,7 @@ export default function Contact() {
             initial="offscreen"
             whileInView={"onscreen"}
             variants={desVariants}
-            className="mt-2 text-3xl text-center dark:text-white text-gray-700 leading-8 text-muted-foreground"
+            className="mt-6 lg:mt-2 text-3xl text-center dark:text-white text-gray-700 leading-8 text-muted-foreground"
           >
             Por Favor, no dudes en realizar tu consulta.
           </motion.p>
@@ -140,8 +140,8 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="flex w-full flex-col relative max-w-sm items-center px-8 py-3  text-white rounded-full shadow-lg duration-200  bg-surface border
-   border-white/10 hover:border-primary/30 transition-all group"
+                  className="flex w-full btn flex-col relative max-w-sm items-center  text-white rounded-full shadow-lg duration-200  border
+    transition-all group"
                 >
                   <span className="text-content group-hover:text-primary transition-colors">
                     Enviar

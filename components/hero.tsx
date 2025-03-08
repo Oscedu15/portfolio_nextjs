@@ -40,7 +40,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.1 }}
-              className="text-xl text-content/80 mb-8"
+              className="text-2xl text-content/80 mb-8"
             >
               Especializado en React, Next.js, Tailwindcss y Prisma. Creación de
               aplicaciones escalables con tecnologías modernas.
@@ -51,13 +51,13 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.2 }}
               whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-              className="relative group"
+              className="relative btn"
             >
-              <span className="text-content group-hover:text-primary transition-colors">
+              <span className="text-content rounded-full group-hover:text-primary transition-colors">
                 Explorar
               </span>
               <div
-                className="absolute inset-0 bg-gradient-to-r 
+                className="absolute rounded-full inset-0 bg-gradient-to-r 
         from-primary/10 to-tertiary/10 opacity-0
         group-hover:opacity-100 transition-opacity"
               />

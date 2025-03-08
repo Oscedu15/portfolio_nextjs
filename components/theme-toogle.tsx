@@ -32,17 +32,17 @@ export const ThemeToggle = () => {
   }, [theme]);
 
   return (
-    <div className={isMounted ? "light" : ""} style={{ colorScheme: "light" }}>
-      <button
-        className="p-2 rounded-lg dark:bg-white/5 dark:hover:bg-primary/10 bg-[#c24b4bcc]  hover:bg-[#c24b4bcc]/80 transition-colors group"
-        onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      >
-        {theme === "light" ? (
-          <MoonIcon className="h-5 w-5 text-content/80 group-hover:text-[#c24b4bcc]/50 group-hover:text-primary transition-colors" />
-        ) : (
-          <SunIcon className="h-5 w-5 text-content/80 group-hover:text-primary transition-colors" />
-        )}
-      </button>
-    </div>
+    <button
+      className={`${isMounted ? "light" : ""}
+    p-2 rounded-lg dark:bg-white/5 dark:hover:bg-primary/10 bg-red-600  hover:bg-[#c24b4bcc]/80 transition-colors group`}
+      style={{ colorScheme: "light" }}
+      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+    >
+      {theme === "light" ? (
+        <MoonIcon className="h-5 w-5 text-content/80 group-hover:text-[#c24b4bcc]/50 group-hover:text-primary transition-colors" />
+      ) : (
+        <SunIcon className="h-5 w-5 text-content/80 group-hover:text-primary transition-colors" />
+      )}
+    </button>
   );
 };

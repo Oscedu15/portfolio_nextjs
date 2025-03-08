@@ -64,16 +64,17 @@ const SkillsPage = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.6 }}
+            className=""
           >
             <Image
               src="/perfil.jpeg"
               alt="About"
               width={900}
               height={500}
-              className="w-[600px] lg:w-[900px] max-md:hidden"
+              className="w-[600px] mt-20 h-[400px] lg:w-[900px] max-md:hidden"
             />{" "}
           </motion.div>
-          <div className="items-center">
+          <div className="items-star md:items-center">
             <motion.h2
               variants={fadeIn("up", 0.2)}
               initial="hidden"
