@@ -67,15 +67,15 @@ export default function Faqs() {
           {faqs?.map((faq, faqIndex) => (
             <div
               key={faqIndex}
-              className="bg-gradient-to-r 
-        from-primary/10 to-tertiary/10 text-white rounded-2xl border border-white/10 p-6
-        shadow-2xl shadow-primary/10"
+              className="bg-gradient-to-r
+        dark:from-primary/10 dark:to-tertiary/10 from-gray-300/50 to-gray-400/50 text-white rounded-2xl border border-white/10 p-6
+        dark:shadow-2xl dark:shadow-primary/10 shadow-xl shadow-[#c24b4bcc]"
             >
               <div
                 className="flex justify-between items-center mx-auto"
                 onClick={() => setSelectedIndex(faqIndex)}
               >
-                <p className="font-poppins font-semibold text-red-600">{faq.question}</p>
+                <p className="font-poppins font-semibold text-center text-red-600">{faq.question}</p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -109,7 +109,7 @@ export default function Faqs() {
                     exit={{ height: 0, marginTop: 0 }}
                     className={twMerge("overflow-hidden")}
                   >
-                    <span className="dark:text-white/50 font-semibold text-gray-800 font-ponnala">{faq.answer}</span>
+                    <span className="dark:text-white/50 text-gray-500 font-semibold font-ponnala">{faq.answer}</span>
                   </motion.div>
                 )}
               </AnimatePresence>

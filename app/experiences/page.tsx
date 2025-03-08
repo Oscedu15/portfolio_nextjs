@@ -27,22 +27,22 @@ const ExperiencesPage = () => {
             initial="offscreen"
             whileInView={"onscreen"}
             variants={titleVariants}
-            className="text-center lg:p-10
-           mt-20"
+            className="text-center lg:p-10 mt-10
+           md:mt-20"
           >
             We have great idea & Interior Design
           </motion.h2>
-          <motion.p
+          <motion.h4
             initial="offscreen"
             whileInView={"onscreen"}
             variants={desVariants}
-            className="text-2xl text-center text-white/50 pb-10 mt-5"
+            className="text-gray-600  text-center dark:text-white/50 pb-10 mt-5"
           >
             Our interior design company is a company that provides interior
             design services for homes, offices, apartments, and others. We
             provide the best interior design services for you. We have a team
             that is experienced in the field of interior.
-          </motion.p>
+          </motion.h4>
         </div>
         <div className="items-center max-w-7xl mx-auto lg:flex gap-x-8">
           <motion.div style={{ scale }} ref={ref} className="w-full">
@@ -85,8 +85,8 @@ const ExperiencesPage = () => {
               </span>
             </p>
             <button
-              className="flex  relative max-w-sm items-center px-8 py-3 text-content group-hover:text-primary rounded-full shadow-lg duration-200  bg-surface border
-       border-white/10 hover:border-primary/30 text-center transition-all group"
+              className="flex  relative max-w-sm items-center   shadow-lg duration-200 btn
+        text-center transition-all group"
             >
               Read More
               <TbArrowUpRight className="w-5 h-5 ml-2" />
@@ -138,7 +138,7 @@ const ExperiencesPage = () => {
                 <h2 className="py-4 text-2xl font-semibold uppercase">
                   Building Surveys
                 </h2>
-                <p className="text-sm">
+                <p className="text-base">
                   Creativity is the obility to generate, create, or discover new
                   ideas, solutions, and possibilities.
                 </p>

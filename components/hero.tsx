@@ -26,14 +26,7 @@ export default function Hero() {
             >
               Front End
               <br />
-              <motion.span
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
-                className=""
-              >
-                Developer
-              </motion.span>
+              Developer
             </motion.h1>
 
             <motion.p

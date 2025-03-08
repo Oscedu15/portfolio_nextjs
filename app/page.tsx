@@ -5,7 +5,7 @@ import WhyUs from "@/components/whyus";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-r dark:bg-gray-900 dark:from-primary/10 dark:to-tertiary/10 from-slate-50 to-gray-300 overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-r dark:bg-gray-900 dark:from-primary/10 dark:to-tertiary/10 from-slate-50 to-gray-300">
       <Hero />
       <Badge />
       <ProjectsPage />

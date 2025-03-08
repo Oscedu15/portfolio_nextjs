@@ -53,14 +53,14 @@ export default function Contact() {
           >
             Contactanos.{" "}
           </motion.h2>
-          <motion.p
+          <motion.h4
             initial="offscreen"
             whileInView={"onscreen"}
             variants={desVariants}
-            className="mt-6 lg:mt-2 text-3xl text-center dark:text-white text-gray-700 leading-8 text-muted-foreground"
+            className="mt-6 lg:my-6 text-3xl text-center dark:text-white text-gray-700 leading-8 text-muted-foreground"
           >
             Por Favor, no dudes en realizar tu consulta.
-          </motion.p>
+          </motion.h4>
         </div>
 
         <motion.form
@@ -75,7 +75,7 @@ export default function Contact() {
           method="POST"
           onSubmit={handleSubmit}
           className="mx-auto mt-14 pt-6 max-w-xl sm:mt-16 shadow-xl shadow-[#c24b4bcc] dark:shadow-primary rounded-xl bg-gradient-to-r
-        from-primary/10 to-tertiary/10"
+        dark:from-primary/10 dark:to-tertiary/10 from-gray-200 to-gray-300"
         >
           <div className="flex flex-col  justify-center items-center gap-x-8 gap-y-6">
             <div className="mt-2.5 w-9/12">
@@ -84,7 +84,7 @@ export default function Contact() {
                 required
                 name="firstname"
                 placeholder="Nombre"
-                className="dark:bg-primary/10 bg-[#c24b4bcc] text-gray-300 placeholder:text-gray-300  dark:placeholder:text-primary placeholder:italic w-full border rounded-md border-gray-600  focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2"
+                className="input w-full border rounded-md ring-0 outline-0 transition-all duration-300 px-3 py-2"
               />
             </div>
             <div className="mt-2.5 w-9/12">
@@ -93,7 +93,7 @@ export default function Contact() {
                 required
                 name="lastname"
                 placeholder="Apellido"
-                className="bg-primary/10 text-gray-300 placeholder:text-primary placeholder:italic w-full border rounded-md border-gray-600  focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2"
+                className="input w-full border rounded-md ring-0 outline-0 transition-all duration-300 px-3 py-2"
               />
             </div>
 
@@ -103,7 +103,7 @@ export default function Contact() {
                 required
                 name="phone"
                 placeholder="Telefono"
-                className="bg-primary/10 text-gray-300 placeholder:text-primary placeholder:italic w-full border rounded-md border-gray-600  focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2"
+                className="input w-full border rounded-md ring-0 outline-0 transition-all duration-300 px-3 py-2"
               />
             </div>
 
@@ -113,7 +113,7 @@ export default function Contact() {
                 required
                 name="Email"
                 placeholder="Correo Electronico"
-                className="bg-primary/10 text-gray-300 placeholder:text-primary placeholder:italic w-full border rounded-md border-gray-600  focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2"
+                className="input w-full border rounded-md ring-0 outline-0 transition-all duration-300 px-3 py-2"
               />
             </div>
 
@@ -122,7 +122,7 @@ export default function Contact() {
                 placeholder="Ingresa tu mensaje aqui..."
                 required
                 name="mensaje"
-                className="bg-primary/10 text-gray-300 placeholder:text-primary placeholder:italic w-full text-clip  border rounded-md border-gray-600  focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2 resize-none"
+                className="input w-full text-clip  border rounded-md ring-0 outline-0 transition-all duration-300 px-3 py-2 resize-none"
               />
             </div>
 
@@ -156,9 +156,9 @@ export default function Contact() {
             </div>
             {message && (
               <div className="flex flex-col max-w-80 justify-center items-center pb-6">
-                <span className="text-center text-white hover:text-[#16f2b3] transition-colors duration-300 mx-auto font-medium capitalize">
+                <p className="text-center transition-colors duration-300 mx-auto font-medium capitalize">
                   {message} Pronto me comunicare con usted. Gracias
-                </span>
+                </p>
               </div>
             )}
           </div>

@@ -6,7 +6,10 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="dark:bg-gray-900 border-t bg-[#c24b4bcc] dark:border-gray-800">
+    <footer className="dark:bg-gray-900 border-t bg-gradient-to-b
+  from-red-600 via-red-500
+  to-red-600 border dark:from-surface dark:via-surface
+  dark:to-surface dark:border-gray-800">
       <div
         className="max-w-7xl mx-auto px-4 sm:px-6
          lg:px-8 py-12"
@@ -14,7 +17,7 @@ export default function Footer() {
         <div className="grid text-center grid-cols-1 md:grid-cols-4 gap-8">
           <motion.div initial={{ x: -100 }} animate={{ x: 0 }}>
             <h3 className="text-lg font-semibold text-white mb-4">About</h3>
-            <p className="text-gray-400">
+            <p className="dark:text-gray-400 text-[#d6dae0]">
               Construyendo experiencias digitales que combinan tecnología
               moderna con un diseño excepcional.
             </p>
@@ -25,7 +28,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#projects"
-                  className="text-gray-400
+                  className="dark:text-gray-400 text-[#d6dae0]
                          hover:text-white transition-colors"
                 >
                   Projectos
@@ -34,7 +37,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#about"
-                  className="text-gray-400
+                  className="dark:text-gray-400 text-[#d6dae0]
                          hover:text-white transition-colors"
                 >
                   About
@@ -43,7 +46,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#contact"
-                  className="text-gray-400
+                  className="dark:text-gray-400 text-[#d6dae0]
                          hover:text-white transition-colors"
                 >
                   Contacto
@@ -58,7 +61,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#privacy"
-                  className="text-gray-400
+                  className="dark:text-gray-400 text-[#d6dae0]
                          hover:text-white transition-colors"
                 >
                   Privacy
@@ -67,7 +70,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#terms"
-                  className="text-gray-400
+                  className="dark:text-gray-400 text-[#d6dae0]
                          hover:text-white transition-colors"
                 >
                   Terms
@@ -85,7 +88,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
               >
                 <GithubIcon
-                  className="text-gray-400 h-6 w-6
+                  className="dark:text-gray-400 text-[#d6dae0] h-6 w-6
                         hover:text-white transition-colors"
                 />
               </Link>
@@ -95,23 +98,23 @@ export default function Footer() {
                 rel="noopener noreferrer"
               >
                 <LinkedInIcon
-                  className="text-gray-400 h-6 w-6
+                  className="dark:text-gray-400 text-[#d6dae0] h-6 w-6
                         hover:text-white transition-colors"
                 />
               </Link>
               <Link href="" target="_blank" rel="noopener noreferrer">
                 <EnvelopeIcon
-                  className="text-gray-400 h-6 w-6
+                  className="dark:text-gray-400 text-[#d6dae0] h-6 w-6
                         hover:text-white transition-colors"
                 />
               </Link>
             </ul>
           </motion.div>
         </div>
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center">
-          <p className="text-gray-400">
+        <div className="border-t dark:border-gray-800  border-gray-400 mt-12 pt-8 text-center">
+          <span className="dark:text-gray-400 text-[#d6dae0]">
             &copy; {new Date().getFullYear()} Oscar Garcia. All rights reserved
-          </p>
+          </span>
         </div>
       </div>
     </footer>

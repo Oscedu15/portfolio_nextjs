@@ -104,8 +104,9 @@ export default function Main() {
             Trabajos Seleccionados
           </h2>
           <div
-            className="w-24 h-1 bg-gradient-to-r from-primary
-            to-tertiary rounded-full"
+            className="w-24 h-1 bg-gradient-to-r  from-red-600 via-red-500
+        to-red-400 dark:from-primary dark:via-secondary
+        dark:to-tertiary  rounded-full"
           />
         </motion.div>
         {/* Project Grid */}
@@ -125,8 +126,8 @@ export default function Main() {
                 transition: { duration: 0.2 },
               }}
               className="group relative h-[500px] rounded-3xl overflow-hidden
-            dark:bg-surface bg-gradient-to-r from-red-600 via-red-500
-        to-red-600 border border-gray-400 dark:border-white/10 cursor-pointer
+            dark:bg-surface bg-gradient-to-r from-red-600/90 via-red-500/90
+        to-red-600/90 border border-gray-400 dark:border-white/10 cursor-pointer
         dark:from-surface dark:via-surface
         dark:to-surface"
             >
@@ -142,7 +143,7 @@ export default function Main() {
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-fill overflow-hidden"
-                  loading="lazy"
+                  priority
                 />
               </motion.div>
 

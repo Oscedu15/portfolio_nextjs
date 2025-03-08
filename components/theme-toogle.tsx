@@ -34,14 +34,14 @@ export const ThemeToggle = () => {
   return (
     <button
       className={`${isMounted ? "light" : ""}
-    p-2 rounded-lg dark:bg-white/5 dark:hover:bg-primary/10 bg-red-600  hover:bg-[#c24b4bcc]/80 transition-colors group`}
+    p-2 rounded-lg dark:bg-white/5 dark:hover:bg-primary/10 bg-[#c24b4bcc]/80 transition-colors group hover:border-red-600 hover:border dark:border-none`}
       style={{ colorScheme: "light" }}
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
       {theme === "light" ? (
-        <MoonIcon className="h-5 w-5 text-content/80 group-hover:text-[#c24b4bcc]/50 group-hover:text-primary transition-colors" />
+        <MoonIcon className="h-5 w-5 text-content/80 group-hover:text-[#c24b4bcc]/50 dark:group-hover:text-primary transition-colors group-hover:text-white" />
       ) : (
-        <SunIcon className="h-5 w-5 text-content/80 group-hover:text-primary transition-colors" />
+        <SunIcon className="h-5 w-5 text-content/80 dark:group-hover:text-primary group-hover:text-white transition-colors" />
       )}
     </button>
   );

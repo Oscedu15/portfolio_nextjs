@@ -5,7 +5,7 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-const text = `You're racing to create exceptional work, but traditional design tools slow you down with unnecessary complexity and steep learning curves.`;
+const text = `Estás compitiendo para crear un trabajo excepcional, pero las herramientas de diseño tradicionales te ralentizan con una complejidad innecesaria y curvas de aprendizaje pronunciadas.`;
 
 const words = text.split("");
 
@@ -39,7 +39,7 @@ export default function Introduction() {
             className=" flex items-center justify-center font-semibold text-center lg:p-10
                        mt-20 mb-4"
           >
-            Your creative process deserves better.{" "}
+            Tu proceso creativo merece algo mejor.{" "}
           </motion.h2>
           <div className="text-3xl md:text-4xl lg:text-5xl text-center font-medium mt-10">
             <span className="text-white">

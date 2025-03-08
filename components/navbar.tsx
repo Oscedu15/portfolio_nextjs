@@ -36,8 +36,8 @@ export default function Navbar() {
       animate={{ y: 0 }}
       className={`fixed w-full z-50 ${
         isScrolled
-          ? "backdrop-blur-3xl dark:bg-background/90 bg-white/40 dark:shadow-2xl shadow-sm shadow-[#c24b4bcc] dark:shadow-primary/10"
-          : "backdrop-blur-lg dark:bg-background/50  bg-white/50  text-black shadow-md"
+          ? "backdrop-blur-3xl dark:bg-background/90 bg-white/50 dark:shadow-2xl shadow-sm shadow-[#c24b4bcc] dark:shadow-primary/10"
+          : "backdrop-blur-lg dark:bg-background/50  bg-white/60  text-black shadow-md"
       } transition-all duration-300 ease-out`}
     >
       <div className="max-w-7xl mx-auto px-6 py-3">
@@ -84,7 +84,7 @@ export default function Navbar() {
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg dark:bg-white/5 bg-[#c24b4bcc] hover:bg-primary/10 transition-colors group"
               >
-                <GithubIcon className="h-5 w-5 text-content/80 group-hover:text-[#c24b4bcc]/50   transition-colors" />
+                <GithubIcon className="h-5 w-5 text-content/80 group-hover:text-[#c24b4bcc]/50  dark:group-hover:text-primary transition-colors group-hover:text-white" />
               </Link>
               <Link
                 href={socialLinks.linkedin}
@@ -92,7 +92,7 @@ export default function Navbar() {
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg dark:bg-white/5 bg-[#c24b4bcc]  hover:bg-primary/10 transition-colors group"
               >
-                <LinkedInIcon className="h-5 w-5 text-content/80 group-hover:text-primary transition-colors" />
+                <LinkedInIcon className="h-5 w-5 text-content/80 dark:group-hover:text-primary transition-colors group-hover:text-white " />
               </Link>
               <ThemeToggle />
             </div>
@@ -102,7 +102,7 @@ export default function Navbar() {
           <div className="flex gap-x-2 md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 rounded-lg bg-red-600 hover:bg-[#c24b4bcc]/50 dark:bg-white/5 dark:hover:bg-primary/10 transition-colors"
+              className="md:hidden p-2 rounded-lg bg-[#c24b4bcc]/80 group hover:border-red-600 hover:border dark:border-none  dark:bg-white/5 dark:hover:bg-primary/10 transition-colors"
             >
               {isMenuOpen ? (
                 <XMarkIcon className="h-6 w-6 text-content/80" />

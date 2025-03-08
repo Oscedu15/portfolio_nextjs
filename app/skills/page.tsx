@@ -12,7 +12,7 @@ import {
 } from "react-icons/md";
 import CountUp from "react-countup";
 
-import { fadeIn } from "@/utils/animation";
+import { fadeIn, titleVariants } from "@/utils/animation";
 
 const SkillsPage = () => {
   const items = [
@@ -60,9 +60,9 @@ const SkillsPage = () => {
       >
         <div className="grid lg:grid-cols-2 max-w-7xl mx-auto">
           <motion.div
-            variants={fadeIn("up", 0.2)}
-            initial="hidden"
-            whileInView={"show"}
+            initial="offscreen"
+            whileInView={"onscreen"}
+            variants={titleVariants}
             viewport={{ once: false, amount: 0.6 }}
             className=""
           >
@@ -71,7 +71,8 @@ const SkillsPage = () => {
               alt="About"
               width={900}
               height={500}
-              className="w-[600px] mt-20 h-[400px] lg:w-[900px] max-md:hidden"
+              className="w-[600px] rounded-lg transition-all duration-300 hover:scale-105
+            hover:grayscale cursor-pointer grayscale-0 mt-20 h-4/6 lg:w-[900px] max-md:hidden"
             />{" "}
           </motion.div>
           <div className="items-star md:items-center">
@@ -130,7 +131,9 @@ const SkillsPage = () => {
                 <div className="text-3xl font-black mb-2">
                   {inView ? (
                     <CountUp start={0} end={50} duration={3} delay={1} />
-                  ) : (<CountUp start={0} end={50} duration={3} delay={1} />)}
+                  ) : (
+                    <CountUp start={0} end={50} duration={3} delay={1} />
+                  )}
                   +
                 </div>
                 <div className="uppercase text-[13px] font-semibold text-secondary">
@@ -143,7 +146,9 @@ const SkillsPage = () => {
                 <div className="text-3xl font-black mb-2">
                   {inView ? (
                     <CountUp start={0} end={135} duration={3} delay={1} />
-                  ) : <CountUp start={0} end={135} duration={3} delay={1} />}
+                  ) : (
+                    <CountUp start={0} end={135} duration={3} delay={1} />
+                  )}
                   +
                 </div>
                 <div className="uppercase text-[13px] font-semibold text-secondary">
@@ -156,7 +161,9 @@ const SkillsPage = () => {
                 <div className="text-3xl font-black mb-2">
                   {inView ? (
                     <CountUp start={0} end={35} duration={3} delay={1} />
-                  ) : <CountUp start={0} end={135} duration={3} delay={1} />}
+                  ) : (
+                    <CountUp start={0} end={135} duration={3} delay={1} />
+                  )}
                   +
                 </div>
                 <div className="uppercase text-[13px] font-semibold text-secondary">

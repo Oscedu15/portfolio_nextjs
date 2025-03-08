@@ -1,4 +1,3 @@
-// import whyGradient from "../assets/why-gradient.svg";
 "use client";
 import Image from "next/image";
 //Animation
@@ -9,6 +8,7 @@ import {
   useTransform,
 } from "framer-motion";
 import { useRef, useState } from "react";
+import { desVariants, tagVariants } from "@/utils/animation";
 
 const WhyUs = () => {
   const cardRef = useRef<HTMLDivElement | null>(null);
@@ -38,9 +38,7 @@ const WhyUs = () => {
   });
 
   return (
-    <section
-      className="relative flex w-full flex-col-reverse items-center justify-center gap-16 px-6 pb-16 pt-6 md:flex-row md:px-10 md:pt-10 xl:px-[159px]"
-    >
+    <section className="relative flex w-full flex-col-reverse items-center justify-center gap-16 px-6 pb-16 pt-6 md:flex-row md:px-10 md:pt-10 xl:px-[159px]">
       <div className="relative flex w-full flex-col-reverse gap-16 md:flex-row 3xl:max-w-[1200px]">
         {/* Left Panel Content */}
 
@@ -96,7 +94,14 @@ const WhyUs = () => {
         </motion.div>
         {/* Left Panel Control */}
         <div ref={cardRef} className="flex flex-col pt-[0px]">
-          <h3 className="text-center">Medical departments</h3>
+          <motion.h3
+            initial="offscreen"
+            whileInView={"onscreen"}
+            variants={tagVariants}
+            className="text-center"
+          >
+            Medical departments
+          </motion.h3>
           {/* Right Panel Control */}
           <div className="relative mt-6 w-full flex-col items-center justify-center gap-6">
             {/* Border Line Content */}
@@ -112,52 +117,92 @@ const WhyUs = () => {
                 position === 1 ? "opacity-100" : "opacity-30"
               }`}
             >
-              <h5 className="text-[20px] font-bold leading-[30px] text-red-600  dark:text-violet-700">
+              <motion.h5
+                initial="offscreen"
+                whileInView={"onscreen"}
+                variants={desVariants}
+                className="text-[20px] font-bold leading-[30px] text-red-600  dark:text-violet-700"
+              >
                 Emergency Department
-              </h5>
-              <p className="mt-2 text-base font-medium leading-4 text-[#445469]">
+              </motion.h5>
+              <motion.p
+                initial="offscreen"
+                whileInView={"onscreen"}
+                variants={tagVariants}
+                className="mt-2 text-base font-medium leading-4 text-[#445469]"
+              >
                 Even the all-powerful Pointing has no control about the blind
                 texts it is an almost unorthographic life.
-              </p>
+              </motion.p>
             </div>
             <div
               className={`py-4 pl-6 transition-all ${
                 position === 2 ? "opacity-100" : "opacity-30"
               }`}
             >
-              <h5 className="text-[20px] font-bold leading-[30px] text-red-600  dark:text-violet-700">
+              <motion.h5
+                initial="offscreen"
+                whileInView={"onscreen"}
+                variants={desVariants}
+                className="text-[20px] font-bold leading-[30px] text-red-600  dark:text-violet-700"
+              >
                 Restorative Dentistry
-              </h5>
-              <p className="mt-2 text-base font-medium leading-4 text-[#445469]">
+              </motion.h5>
+              <motion.p
+                initial="offscreen"
+                whileInView={"onscreen"}
+                variants={tagVariants}
+                className="mt-2 text-base font-medium leading-4 text-[#445469]"
+              >
                 Our dedicated team of medical professionals is here to guide you
                 on your health journey
-              </p>
+              </motion.p>
             </div>
             <div
               className={`py-4 pl-6 transition-all ${
                 position === 3 ? "opacity-100" : "opacity-30"
               }`}
             >
-              <h5 className="text-[20px] font-bold leading-[30px] text-red-600  dark:text-violet-700">
+              <motion.h5
+                initial="offscreen"
+                whileInView={"onscreen"}
+                variants={desVariants}
+                className="text-[20px] font-bold leading-[30px] text-red-600  dark:text-violet-700"
+              >
                 Surgical Interventions
-              </h5>
-              <p className="mt-2 text-base font-medium leading-4 text-[#445469]">
+              </motion.h5>
+              <motion.p
+                initial="offscreen"
+                whileInView={"onscreen"}
+                variants={tagVariants}
+                className="mt-2 text-base font-medium leading-4 text-[#445469]"
+              >
                 Even the all-powerful Pointing has no control about the blind
                 texts it is an almost unorthographic life.
-              </p>
+              </motion.p>
             </div>
             <div
               className={`py-4 pl-6 transition-all ${
                 position === 4 ? "opacity-100" : "opacity-30"
               }`}
             >
-              <h5 className="text-[20px] font-bold leading-[30px] text-red-600  dark:text-violet-700">
+              <motion.h5
+                initial="offscreen"
+                whileInView={"onscreen"}
+                variants={desVariants}
+                className="text-[20px] font-bold leading-[30px] text-red-600  dark:text-violet-700"
+              >
                 Health Monitoring
-              </h5>
-              <p className="mt-2 text-base font-medium leading-4 text-[#445469]">
+              </motion.h5>
+              <motion.p
+                initial="offscreen"
+                whileInView={"onscreen"}
+                variants={tagVariants}
+                className="mt-2 text-base font-medium leading-4 text-[#445469]"
+              >
                 Our dedicated team of medical professionals is here to guide you
                 un your health journey.
-              </p>
+              </motion.p>
             </div>
           </div>
           {/* Right Panel Control */}

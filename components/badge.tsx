@@ -21,14 +21,14 @@ const Badge = () => {
             Offer for the best Interior
           </motion.h2>
 
-          <motion.p
+          <motion.h3
             initial="offscreen"
             whileInView={"onscreen"}
             variants={desVariants}
-            className="md:text-2xl text-content/80 my-8 px-12 text-3xl text-center  uppercase text-gray-600 mt-3"
+            className=" text-content/80 my-8 px-12 text-3xl text-center  uppercase text-gray-600 mt-3"
           >
             Make your home a piece of art
-          </motion.p>
+          </motion.h3>
           <motion.p
             initial="offscreen"
             whileInView={"onscreen"}
@@ -64,7 +64,7 @@ const Badge = () => {
         <motion.div
           initial="offscreen"
           whileInView={"onscreen"}
-          variants={titleVariants}
+          variants={desVariants}
           className="w-1/2
         "
         >

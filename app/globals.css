@@ -48,18 +48,24 @@ h2 {
 to-red-400 dark:from-primary dark:via-secondary
 dark:to-tertiary bg-clip-text text-transparent;
 }
+
 h3 {
   @apply text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-red-600 via-red-500
   to-red-400 dark:from-primary dark:via-secondary
   dark:to-tertiary bg-clip-text text-transparent;
 }
+
+h4{
+  @apply text-3xl md:text-4xl lg:text-5xl font-sans
+}
+
 button {
   @apply overflow-hidden px-8 py-4 rounded-full bg-surface border
   border-white/10 hover:border-primary/30 transition-all;
 }
 
 p {
-  @apply text-xl text-gray-500 dark:text-content/80 font-ponnala;
+  @apply text-xl md:text-2xl text-gray-600  dark:text-content/80 font-ponnala;
 }
 
 .btn {
@@ -68,4 +74,8 @@ p {
   to-red-600 border dark:from-surface dark:via-surface
   dark:to-surface
  dark:border-white/10 dark:hover:border-primary/30 overflow-hidden  px-8 py-4;
+}
+
+.input{
+  @apply dark:bg-primary/10 bg-gray-200/50 text-gray-700 dark:text-gray-300 placeholder:text-gray-900/40  dark:placeholder:text-primary placeholder:italic border-gray-600  dark:focus:border-[#16f2b3] focus:border-[#c24b4bcc]
 }
