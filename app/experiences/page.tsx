@@ -105,8 +105,8 @@ const ExperiencesPage = () => {
               initial="offscreen"
               whileInView={"onscreen"}
               variants={titleVariants}
-              className="text-4xl font-bold tracking-wider text-center  bg-gradient-to-r from-red-600 via-red-500
-        to-red-400 dark:from-primary dark:via-secondary
+              className="text-4xl font-bold tracking-wider text-center
+         dark:from-primary dark:via-secondary
         dark:to-tertiary bg-clip-text text-transparent"
             >
               Testimonios

@@ -7,8 +7,7 @@ import { motion } from "framer-motion";
 export default function Footer() {
   return (
     <footer className="dark:bg-gray-900 border-t bg-gradient-to-b
-  from-red-600 via-red-500
-  to-red-600 border dark:from-surface dark:via-surface
+  bg-[#174d4d]/60 border dark:from-surface dark:via-surface
   dark:to-surface dark:border-gray-800">
       <div
         className="max-w-7xl mx-auto px-4 sm:px-6
@@ -17,10 +16,10 @@ export default function Footer() {
         <div className="grid text-center grid-cols-1 md:grid-cols-4 gap-8">
           <motion.div initial={{ x: -100 }} animate={{ x: 0 }}>
             <h3 className="text-lg font-semibold text-white mb-4">About</h3>
-            <p className="dark:text-gray-400 text-[#d6dae0]">
+            <span className="dark:text-gray-400 text-[#d6dae0]">
               Construyendo experiencias digitales que combinan tecnología
               moderna con un diseño excepcional.
-            </p>
+            </span>
           </motion.div>
           <motion.div initial={{ x: -100 }} animate={{ x: 0 }}>
             <h3 className="text-lg font-semibold text-white mb-4">Links</h3>

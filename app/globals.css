@@ -37,21 +37,18 @@ body {
 }
 
 h1 {
-  @apply text-6xl md:text-8xl font-bold bg-gradient-to-r from-red-600 via-red-500
-  to-red-400 dark:from-primary dark:via-secondary
+  @apply text-6xl md:text-8xl font-bold bg-gradient-to-r from-[#03363D]/60 via-[#03363D]/70 to-[#03363D]/80 dark:from-primary dark:via-secondary
   dark:to-tertiary bg-clip-text text-transparent font-poppins;
 }
 
 h2 {
-  @apply text-5xl md:text-6xl lg:text-7xl font-bold
-  bg-gradient-to-r from-red-600 via-red-500
-to-red-400 dark:from-primary dark:via-secondary
+  @apply text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#174d4d]/70 via-[#174d4d]/80
+  to-[#174d4d]/90 dark:from-primary dark:via-secondary
 dark:to-tertiary bg-clip-text text-transparent;
 }
 
 h3 {
-  @apply text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-red-600 via-red-500
-  to-red-400 dark:from-primary dark:via-secondary
+  @apply text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#174d4d]/70 via-[#174d4d]/80 to-[#174d4d]/90 dark:from-primary dark:via-secondary
   dark:to-tertiary bg-clip-text text-transparent;
 }
 
@@ -70,12 +67,11 @@ p {
 
 .btn {
   @apply bg-gradient-to-r
-  from-red-600 via-red-500
-  to-red-600 border dark:from-surface dark:via-surface
+  from-[#174d4d]/70 via-[#174d4d]/50 to-[#174d4d]/30 border dark:from-surface dark:via-surface
   dark:to-surface
  dark:border-white/10 dark:hover:border-primary/30 overflow-hidden  px-8 py-4;
 }
 
 .input{
-  @apply dark:bg-primary/10 bg-gray-200/50 text-gray-700 dark:text-gray-300 placeholder:text-gray-900/40  dark:placeholder:text-primary placeholder:italic border-gray-600  dark:focus:border-[#16f2b3] focus:border-[#c24b4bcc]
+  @apply dark:bg-primary/10 bg-gray-200/50 text-gray-700 dark:text-gray-300 placeholder:text-gray-900/40  dark:placeholder:text-primary placeholder:italic border-gray-600  dark:focus:border-[#16f2b3] focus:border-[#366b48cc]
 }

@@ -36,8 +36,8 @@ export default function Navbar() {
       animate={{ y: 0 }}
       className={`fixed w-full z-50 ${
         isScrolled
-          ? "backdrop-blur-3xl dark:bg-background/90 bg-white/50 dark:shadow-2xl shadow-sm shadow-[#c24b4bcc] dark:shadow-primary/10"
-          : "backdrop-blur-lg dark:bg-background/50  bg-white/60  text-black shadow-md"
+          ? "backdrop-blur-3xl dark:bg-background/90 bg-[#174d4d]/50 dark:shadow-2xl shadow-sm shadow-[#366b48cc] dark:shadow-primary/10"
+          : "backdrop-blur-lg dark:bg-background/50  bg-[#174d4d]/60  text-black shadow-md"
       } transition-all duration-300 ease-out`}
     >
       <div className="max-w-7xl mx-auto px-6 py-3">
@@ -48,15 +48,15 @@ export default function Navbar() {
             className="flex items-center gap-2 group"
           >
             <div className="relative h-8 w-8 rounded-full overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-red-700 to-[#c24b4bcc] dark:from-primary dark:to-tertiary animate-spin-slow [mask-image:linear-gradient(transparent,white)]" />
-              <div className="absolute inset-[2px] bg-slate-200  dark:bg-background rounded-full flex items-center justify-center">
-                <span className="font-bold bg-gradient-to-r from-red-700 to-[#c24b4bcc] dark:from-primary dark:to-tertiary bg-clip-text text-transparent">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#174D4D] to-[#03363D] dark:from-primary dark:to-tertiary animate-spin-slow [mask-image:linear-gradient(transparent,white)]" />
+              <div className="absolute inset-[2px] bg-[#91b99ecc]  dark:bg-background rounded-full flex items-center justify-center">
+                <span className="font-bold bg-gradient-to-r from-[#174D4D] to-[#03363D] dark:from-primary dark:to-tertiary bg-clip-text text-transparent">
                   OG
                 </span>
               </div>
             </div>
             <Link href="/" onClick={() => setIsMenuOpen(false)}>
-              <span className="font-semibold text-red-700 group-hover:text-red-800  dark:text-content/90 dark:group-hover:text-primary transition-colors">
+              <span className="font-semibold text-[#174D4D] group-hover:text-[#03363D]  dark:text-content/90 dark:group-hover:text-primary transition-colors">
                 Oscar Garcia
               </span>
             </Link>
@@ -65,7 +65,7 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
             <div
-              className="flex items-center gap-6 bg-[#c24b4bcc] dark:bg-background/80 px-4 py-2 
+              className="flex items-center gap-6 bg-[#03363D] dark:bg-background/80 px-4 py-2 
             rounded-full border border-white/5 shadow-lg shadow-primary/5"
             >
               {navItems?.map((item, i) => (
@@ -82,7 +82,7 @@ export default function Navbar() {
                 href={socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-lg dark:bg-white/5 bg-[#c24b4bcc] hover:bg-primary/10 transition-colors group"
+                className="p-2 rounded-lg dark:bg-white/5 bg-[#03363D] hover:bg-primary/10 transition-colors group"
               >
                 <GithubIcon className="h-5 w-5 text-content/80 group-hover:text-[#c24b4bcc]/50  dark:group-hover:text-primary transition-colors group-hover:text-white" />
               </Link>
@@ -90,7 +90,7 @@ export default function Navbar() {
                 href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-lg dark:bg-white/5 bg-[#c24b4bcc]  hover:bg-primary/10 transition-colors group"
+                className="p-2 rounded-lg dark:bg-white/5 bg-[#03363D]  hover:bg-primary/10 transition-colors group"
               >
                 <LinkedInIcon className="h-5 w-5 text-content/80 dark:group-hover:text-primary transition-colors group-hover:text-white " />
               </Link>

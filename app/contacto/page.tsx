@@ -74,7 +74,7 @@ export default function Contact() {
           action="https://formspree.io/f/xgvogldq"
           method="POST"
           onSubmit={handleSubmit}
-          className="mx-auto mt-14 pt-6 max-w-xl sm:mt-16 shadow-xl shadow-[#c24b4bcc] dark:shadow-primary rounded-xl bg-gradient-to-r
+          className="mx-auto mt-14 pt-6 max-w-xl sm:mt-16 shadow-xl shadow-[#366b48cc] dark:shadow-primary rounded-xl bg-gradient-to-r
         dark:from-primary/10 dark:to-tertiary/10 from-gray-200 to-gray-300"
         >
           <div className="flex flex-col  justify-center items-center gap-x-8 gap-y-6">

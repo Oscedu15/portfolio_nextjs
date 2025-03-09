@@ -34,7 +34,7 @@ export const ThemeToggle = () => {
   return (
     <button
       className={`${isMounted ? "light" : ""}
-    p-2 rounded-lg dark:bg-white/5 dark:hover:bg-primary/10 bg-[#c24b4bcc]/80 transition-colors group hover:border-red-600 hover:border dark:border-none`}
+    p-2 rounded-lg dark:bg-white/5 dark:hover:bg-primary/10 bg-[#03363D] transition-colors group hover:border-red-600 hover:border dark:border-none`}
       style={{ colorScheme: "light" }}
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >

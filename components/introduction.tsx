@@ -49,7 +49,7 @@ export default function Introduction() {
                   className={twMerge(
                     "transition duration-500 text-white",
                     wordIndex < currentWord &&
-                      "bg-gradient-to-r from-red-600 via-red-500 to-red-400 dark:from-primary dark:via-secondary dark:to-tertiary bg-clip-text text-transparent"
+                      "bg-gradient-to-r from-[#03363D]/60 via-[#03363D]/70 to-[#03363D]/80 dark:from-primary dark:via-secondary dark:to-tertiary bg-clip-text text-transparent"
                   )}
                 >{`${word}`}</span>
               ))}

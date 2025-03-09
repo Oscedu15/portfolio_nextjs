@@ -55,8 +55,7 @@ export default function Integrations() {
               initial="offscreen"
               whileInView={"onscreen"}
               variants={titleVariants}
-              className="text-5xl md:text-6xl flex-col lg:text-7xl flex items-center justify-center font-semibold text-center lg:p-10
-                       mt-20 bg-gradient-to-r from-red-600 via-red-500  to-red-400 dark:from-primary dark:via-secondary dark:to-tertiary bg-clip-text text-transparent mb-4"
+              className="text-5xl md:text-6xl flex-col lg:text-7xl flex items-center justify-center font-semibold text-center lg:p-10 mt-20 mb-4"
             >
               Juega bien con los <span className="text-lime-400">demás.</span>
             </motion.h2>

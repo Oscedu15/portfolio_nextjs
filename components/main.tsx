@@ -126,8 +126,7 @@ export default function Main() {
                 transition: { duration: 0.2 },
               }}
               className="group relative h-[500px] rounded-3xl overflow-hidden
-            dark:bg-surface bg-gradient-to-r from-red-600/90 via-red-500/90
-        to-red-600/90 border border-gray-400 dark:border-white/10 cursor-pointer
+            dark:bg-surface bg-gradient-to-r from-[#174d4d]/70 via-[#174d4d]/80 to-[#174d4d]/90 border border-gray-400 dark:border-white/10 cursor-pointer
         dark:from-surface dark:via-surface
         dark:to-surface"
             >
