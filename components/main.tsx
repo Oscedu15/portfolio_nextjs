@@ -104,8 +104,8 @@ export default function Main() {
             Trabajos Seleccionados
           </h2>
           <div
-            className="w-24 h-1 bg-gradient-to-r  from-red-600 via-red-500
-        to-red-400 dark:from-primary dark:via-secondary
+            className="w-24 h-1 bg-gradient-to-l from-[#174d4d]/70 via-[#174d4d]/80
+  to-[#174d4d]/90 dark:from-primary dark:via-secondary
         dark:to-tertiary  rounded-full"
           />
         </motion.div>
@@ -179,7 +179,7 @@ export default function Main() {
                     <span
                       key={j}
                       className="px-3 py-1 rounded-full bg-white/5 text-white dark:text-content/80
-                    text-sm border border-white/5 hover:bg-red-700/100
+                    text-sm border border-white/5 hover:bg-[#174d4d]/90
                     dark:hover:bg-surface transition-colors flex items-center
                      gap-1.5 group/tech"
                     >

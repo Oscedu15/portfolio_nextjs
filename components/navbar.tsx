@@ -82,7 +82,7 @@ export default function Navbar() {
                 href={socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-lg dark:bg-white/5 bg-[#03363D] hover:bg-primary/10 transition-colors group"
+                className="p-2 rounded-lg dark:bg-white/5 bg-[#03363D] hover:bg-[#03363D]/90 transition-colors group"
               >
                 <GithubIcon className="h-5 w-5 text-content/80 group-hover:text-[#c24b4bcc]/50  dark:group-hover:text-primary transition-colors group-hover:text-white" />
               </Link>
@@ -90,7 +90,7 @@ export default function Navbar() {
                 href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-lg dark:bg-white/5 bg-[#03363D]  hover:bg-primary/10 transition-colors group"
+                className="p-2 rounded-lg dark:bg-white/5 bg-[#03363D] hover:bg-[#03363D]/90  transition-colors group"
               >
                 <LinkedInIcon className="h-5 w-5 text-content/80 dark:group-hover:text-primary transition-colors group-hover:text-white " />
               </Link>
@@ -102,7 +102,7 @@ export default function Navbar() {
           <div className="flex gap-x-2 md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 rounded-lg bg-[#c24b4bcc]/80 group hover:border-red-600 hover:border dark:border-none  dark:bg-white/5 dark:hover:bg-primary/10 transition-colors"
+              className="md:hidden p-2 rounded-lg bg-[#03363D] group hover:border-[#03363D]/90 hover:border dark:border-none  dark:bg-white/5 dark:hover:bg-primary/10 transition-colors"
             >
               {isMenuOpen ? (
                 <XMarkIcon className="h-6 w-6 text-content/80" />
@@ -126,7 +126,8 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="block z-20 px-4 py-2 text-red-500 hover:text-red-600 hover:bg-gray-200 dark:text-primary dark:hover:text-primary/90 dark:hover:bg-white/5 
+                className="block z-20 px-4 py-2 text-[#174D4D] hover:text-[#d6dae0]/70
+                 hover:bg-[#174D4D]/50 dark:text-primary dark:hover:text-primary/90 dark:hover:bg-white/5 
                 rounded-lg transition-colors"
               >
                 {item.name}
@@ -137,7 +138,7 @@ export default function Navbar() {
                 href={socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-lg bg-red-600 dark:bg-white/5 dark:hover:bg-primary/10 transition-colors group"
+                className="p-2 rounded-lg bg-[#03363D] dark:bg-white/5 dark:hover:bg-primary/10 transition-colors group"
               >
                 <GithubIcon className="h-5 w-5 text-white  dark:text-content/80 dark:group-hover:text-primary transition-colors" />
               </Link>
@@ -145,7 +146,7 @@ export default function Navbar() {
                 href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-lg bg-red-600 dark:bg-white/5 dark:hover:bg-primary/10 transition-colors group"
+                className="p-2 rounded-lg bg-[#03363D] dark:bg-white/5 dark:hover:bg-primary/10 transition-colors group"
               >
                 <LinkedInIcon className="h-5 w-5 text-white  dark:text-content/80 dark:group-hover:text-primary transition-colors" />
               </Link>

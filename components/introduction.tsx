@@ -47,7 +47,7 @@ export default function Introduction() {
                 <span
                   key={wordIndex}
                   className={twMerge(
-                    "transition duration-500 text-white",
+                    "transition duration-500 text-[#8b93a3]",
                     wordIndex < currentWord &&
                       "bg-gradient-to-r from-[#03363D]/60 via-[#03363D]/70 to-[#03363D]/80 dark:from-primary dark:via-secondary dark:to-tertiary bg-clip-text text-transparent"
                   )}

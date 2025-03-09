@@ -46,8 +46,10 @@ const loadingCircleTransition = {
 const Loader = () => {
   return (
     <div>
-      <div className="fixed bg-gradient-to-r from-slate-50 to-gray-300
-       dark:bg-gray-900 w-full min-h-screen bg-no-repeat " />
+      <div
+        className="fixed bg-gradient-to-r from-slate-50 to-gray-300
+       dark:bg-gray-900 w-full min-h-screen bg-no-repeat "
+      />
       <div
         className="flex  w-full justify-center items-center h-screen bg-gradient-to-r
     dark:from-primary/10 dark:to-tertiary/10 from-slate-50 to-gray-300"
@@ -60,24 +62,24 @@ const Loader = () => {
         >
           <motion.span
             style={loadingCircle}
-            className="from-red-600 via-red-500
-        to-red-400 dark:from-primary dark:via-secondary
+            className="from-[#174d4d]/70 via-[#174d4d]/80
+  to-[#174d4d]/90 dark:from-primary dark:via-secondary
          dark:to-tertiary  bg-gradient-to-r"
             variants={loadingCircleVariants}
             transition={loadingCircleTransition}
           ></motion.span>
           <motion.span
             style={loadingCircle}
-            className="from-red-600 via-red-500
-        to-red-400 dark:from-primary dark:via-secondary
+            className="from-[#174d4d]/70 via-[#174d4d]/80
+  to-[#174d4d]/90 dark:from-primary dark:via-secondary
          dark:to-tertiary  bg-gradient-to-r"
             variants={loadingCircleVariants}
             transition={loadingCircleTransition}
           ></motion.span>
           <motion.span
             style={loadingCircle}
-            className="from-red-600 via-red-500
-        to-red-400 dark:from-primary dark:via-secondary
+            className="from-[#174d4d]/70 via-[#174d4d]/80
+  to-[#174d4d]/90 dark:from-primary dark:via-secondary
          dark:to-tertiary  bg-gradient-to-r
           "
             variants={loadingCircleVariants}

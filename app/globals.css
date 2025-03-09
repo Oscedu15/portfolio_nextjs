@@ -37,7 +37,7 @@ body {
 }
 
 h1 {
-  @apply text-6xl md:text-8xl font-bold bg-gradient-to-r from-[#03363D]/60 via-[#03363D]/70 to-[#03363D]/80 dark:from-primary dark:via-secondary
+  @apply text-6xl md:text-8xl font-bold bg-gradient-to-r from-[#06b4cccc]/70 via-[#06b4cccc]/80 to-[#06b4cccc]/90 dark:from-primary dark:via-secondary
   dark:to-tertiary bg-clip-text text-transparent font-poppins;
 }
 

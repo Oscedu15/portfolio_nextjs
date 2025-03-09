@@ -203,8 +203,7 @@ const SkillsPage = () => {
                 </a>
               </div>
               <div
-                className="inset-0 from-[#174d4d]/70 via-[#174d4d]/80 to-[#174d4d]/90 dark:from-primary dark:via-secondary
-         dark:to-tertiary  bg-gradient-to-b flex-col items-center justify-end md:flex md:absolute gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 group-hover:translate-y-full md:border-b-0 hidden cursor-pointer"
+                className="inset-0 bg-gradient-to-b from-[#174d4d]/90 via-[#174d4d]/80 to-[#174d4d]/90 dark:from-primary dark:via-secondary dark:to-tertiary   flex-col items-center justify-end md:flex md:absolute gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 group-hover:translate-y-full md:border-b-0 hidden cursor-pointer"
               >
                 <p className="tracking-wider -rotate-90">{item.category}</p>
                 <span>{item.id}</span>

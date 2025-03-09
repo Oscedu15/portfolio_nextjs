@@ -66,18 +66,19 @@ const ExperiencesPage = () => {
               incorporates new methods and contemporary tools linked to
               creativity, production and communication. De-signed and
               handcrafted to hold and showcase my year two architecture
-              portfolio, the unfolding box allows portfolio sheets. <br className="hidden md:block"/>
+              portfolio, the unfolding box allows portfolio sheets.{" "}
+              <br className="hidden md:block" />
               <br />
               <span className="hidden md:block text-xl">
                 We are international Architects. We believe that today it is
-              fundamental to totally rethink archi-tectural education.
-              Confluence not only integrates new visions on society but also
-              incorporates new methods and contemporary tools linked to
-              creativity, production and communication. De-signed and
-              handcrafted to hold and showcase my year two architecture
-              portfolio, the unfolding box allows portfolio sheets.
+                fundamental to totally rethink archi-tectural education.
+                Confluence not only integrates new visions on society but also
+                incorporates new methods and contemporary tools linked to
+                creativity, production and communication. De-signed and
+                handcrafted to hold and showcase my year two architecture
+                portfolio, the unfolding box allows portfolio sheets.
               </span>
-               <br className="hidden md:block"/>
+              <br className="hidden md:block" />
               <br />
               <span className="text-xl font-extrabold tracking-tight">
                 The backpiperARCH, we share a belief in the transformational
@@ -105,9 +106,9 @@ const ExperiencesPage = () => {
               initial="offscreen"
               whileInView={"onscreen"}
               variants={titleVariants}
-              className="text-4xl font-bold tracking-wider text-center
-         dark:from-primary dark:via-secondary
-        dark:to-tertiary bg-clip-text text-transparent"
+              className="text-4xl bg-gradient-to-r from-[#174d4d]/70 via-[#174d4d]/80
+  to-[#174d4d]/90 dark:from-primary dark:via-secondary
+dark:to-tertiary font-bold tracking-wider text-center"
             >
               Testimonios
             </motion.h1>
@@ -118,22 +119,19 @@ const ExperiencesPage = () => {
               initial="offscreen"
               whileInView={"onscreen"}
               variants={titleVariants}
-              className="border-2 border-primary"
+              className="border-2 border-[#366b48cc] dark:border-primary"
             >
               <div
                 className="p-4 text-center  bg-gradient-to-r from-primary via-secondary
         to-tertiary bg-clip-text text-transparent -m-0.5 aspect-square dark:bg-tertiary transition hover:-translate-y-3 hover:-translate-x-3"
-                //!!!!!!!!!!!!!!!!!!!!
               >
-                <div className="w-32">
-                  <Image
-                    src="/perfil.jpeg"
-                    width={200}
-                    height={200}
-                    className="rounded-full mx-auto"
-                    alt="profile2"
-                  />
-                </div>
+                <Image
+                  src="/perfil.jpeg"
+                  width={200}
+                  height={200}
+                  className="rounded-full mx-auto"
+                  alt="profile2"
+                />
 
                 <h2 className="py-4 text-2xl font-semibold uppercase">
                   Building Surveys
@@ -148,7 +146,7 @@ const ExperiencesPage = () => {
               initial="offscreen"
               whileInView={"onscreen"}
               variants={desVariants}
-              className="border-2 border-primary"
+              className="border-2 border-[#366b48cc] dark:border-primary"
             >
               <div
                 className="p-4 text-center  bg-gradient-to-r from-primary via-secondary
@@ -174,7 +172,7 @@ const ExperiencesPage = () => {
               initial="offscreen"
               whileInView={"onscreen"}
               variants={tagVariants}
-              className="border-2 border-primary"
+              className="border-2 border-[#366b48cc] dark:border-primary"
             >
               <div
                 className="p-4 text-center  bg-gradient-to-r from-primary via-secondary

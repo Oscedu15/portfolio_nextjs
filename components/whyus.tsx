@@ -108,7 +108,7 @@ const WhyUs = () => {
             <div className="[544px] absolute left-0 top-0 h-full w-1 bg-[#eaecf0]">
               <motion.div
                 style={{ height: height }}
-                className="h-[70px] w-1 rounded-full bg-red-600 dark:bg-violet-700"
+                className="h-[70px] w-1 rounded-full bg-[#174d4d]/90 dark:bg-violet-700"
               />
             </div>
             {/* Border Line Content */}
@@ -121,7 +121,7 @@ const WhyUs = () => {
                 initial="offscreen"
                 whileInView={"onscreen"}
                 variants={desVariants}
-                className="text-[20px] font-bold leading-[30px] text-red-600  dark:text-violet-700"
+                className="text-[20px] font-bold leading-[30px] text-[#366b48cc]  dark:text-violet-700"
               >
                 Emergency Department
               </motion.h5>
@@ -144,7 +144,7 @@ const WhyUs = () => {
                 initial="offscreen"
                 whileInView={"onscreen"}
                 variants={desVariants}
-                className="text-[20px] font-bold leading-[30px] text-red-600  dark:text-violet-700"
+                className="text-[20px] font-bold leading-[30px] text-[#366b48cc]  dark:text-violet-700"
               >
                 Restorative Dentistry
               </motion.h5>
@@ -167,7 +167,7 @@ const WhyUs = () => {
                 initial="offscreen"
                 whileInView={"onscreen"}
                 variants={desVariants}
-                className="text-[20px] font-bold leading-[30px] text-red-600  dark:text-violet-700"
+                className="text-[20px] font-bold leading-[30px] text-[#366b48cc]  dark:text-violet-700"
               >
                 Surgical Interventions
               </motion.h5>
@@ -190,7 +190,7 @@ const WhyUs = () => {
                 initial="offscreen"
                 whileInView={"onscreen"}
                 variants={desVariants}
-                className="text-[20px] font-bold leading-[30px] text-red-600  dark:text-violet-700"
+                className="text-[20px] font-bold leading-[30px] text-[#366b48cc]  dark:text-violet-700"
               >
                 Health Monitoring
               </motion.h5>
