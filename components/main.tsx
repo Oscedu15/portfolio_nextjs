@@ -101,7 +101,7 @@ export default function Main() {
           <h2
             className=" mb-4 text-center"
           >
-            Trabajos Seleccionados
+            Sobre mi trabajo.
           </h2>
           <div
             className="w-24 h-1 bg-gradient-to-l from-[#174d4d]/70 via-[#174d4d]/80

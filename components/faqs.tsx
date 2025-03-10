@@ -38,26 +38,24 @@ export default function Faqs() {
   return (
     <section className="pb-28 mx-auto max-w-7xl">
       <div className="mx-auto">
-      <motion.span
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-4xl text-center md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-[#03363D]/60 via-[#03363D]/70 to-[#03363D]/80 dark:from-primary dark:via-secondary
-  dark:to-tertiary bg-clip-text text-transparent"
-            >
-              ¿Tienes preguntas? 
-              <br />
-              <motion.span
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
-                className=""
-              >
-              Tenemos respuestas.
-              </motion.span>
-            </motion.span>
-        
-    
+        <motion.span
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-4xl text-center md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-[#03363D]/60 via-[#03363D]/70 to-[#03363D]/80 dark:from-primary dark:via-secondary dark:to-tertiary bg-clip-text text-transparent flex flex-col"
+        >
+          ¿Tienes preguntas?
+          <br />
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className=" px-12 md:px-0"
+          >
+            Tenemos respuestas.
+          </motion.span>
+        </motion.span>
+
         <div className="mt-12 flex flex-col gap-6 max-w-xl mx-auto">
           {faqs?.map((faq, faqIndex) => (
             <div
@@ -70,7 +68,9 @@ export default function Faqs() {
                 className="flex justify-between items-center mx-auto"
                 onClick={() => setSelectedIndex(faqIndex)}
               >
-                <p className="font-poppins font-semibold text-center text-[#03363D]/70">{faq.question}</p>
+                <p className="font-poppins font-semibold text-center text-[#03363D]/70">
+                  {faq.question}
+                </p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -104,7 +104,9 @@ export default function Faqs() {
                     exit={{ height: 0, marginTop: 0 }}
                     className={twMerge("overflow-hidden")}
                   >
-                    <span className="dark:text-white/50 text-[#174d4d]/60 font-semibold font-ponnala">{faq.answer}</span>
+                    <span className="dark:text-white/50 text-[#174d4d]/60 font-semibold font-ponnala">
+                      {faq.answer}
+                    </span>
                   </motion.div>
                 )}
               </AnimatePresence>

@@ -7,7 +7,7 @@ export default function Hero() {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 100]);
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center relative overflow-hidden dark:bg-black">
+    <section className="min-h-screen flex flex-col justify-center items-center text-center relative overflow-hidden bg-black">
       <ParticleCanvas />
       <div className="max-w-7xl mx-auto px-6 pt-32">
         <div className="flex flex-col lg:flex-row items-center gap-16">
@@ -113,9 +113,7 @@ export default function Hero() {
                   <div className="text-2xl font-bold text-content">
                     Actualmente en:
                     <motion.span
-                      className="block bg-gradient-to-r from-red-600 via-red-500
-  to-red-400 dark:from-primary dark:via-secondary
-  dark:to-tertiary bg-clip-text text-transparent"
+                      className="block bg-gradient-to-r from-[#06b4cccc]/70 via-[#06b4cccc]/80 to-[#06b4cccc]/90 dark:from-primary dark:via-secondary dark:to-tertiary bg-clip-text text-transparent"
                       animate={{ backgroundPosition: ["0% 50%", "100% 50%"] }}
                       transition={{
                         duration: 3,

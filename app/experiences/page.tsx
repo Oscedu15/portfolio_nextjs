@@ -38,10 +38,7 @@ const ExperiencesPage = () => {
             variants={desVariants}
             className="text-gray-600  text-center dark:text-white/50 pb-10 mt-5"
           >
-            Our interior design company is a company that provides interior
-            design services for homes, offices, apartments, and others. We
-            provide the best interior design services for you. We have a team
-            that is experienced in the field of interior.
+           Aquí encontrarás mis escritos sobre temas que van desde la codificación y la industria web hasta la lingüística y el procesamiento del lenguaje natural; también hay un práctico canal RSS, si prefieres suscribirte.
           </motion.h4>
         </div>
         <div className="items-center max-w-7xl mx-auto lg:flex gap-x-8">
@@ -60,23 +57,11 @@ const ExperiencesPage = () => {
             variants={tagVariants}
           >
             <p className="pb-8 tracking-wide text-xl mt-6 mx-auto">
-              We are international Architects. We believe that today it is
-              fundamental to totally rethink archi-tectural education.
-              Confluence not only integrates new visions on society but also
-              incorporates new methods and contemporary tools linked to
-              creativity, production and communication. De-signed and
-              handcrafted to hold and showcase my year two architecture
-              portfolio, the unfolding box allows portfolio sheets.{" "}
+            Soy un desarrollador radicado en Manchester, Reino Unido, enfocado en crear experiencias digitales interactivas en la web, trabajando con marcas y líderes de la industria como GOOGLE FONTS, PAYSTACK, HEVA HEALTH, DISNEY, JELLY y NULL, entre otros, para lograr esto.
               <br className="hidden md:block" />
               <br />
               <span className="hidden md:block text-xl">
-                We are international Architects. We believe that today it is
-                fundamental to totally rethink archi-tectural education.
-                Confluence not only integrates new visions on society but also
-                incorporates new methods and contemporary tools linked to
-                creativity, production and communication. De-signed and
-                handcrafted to hold and showcase my year two architecture
-                portfolio, the unfolding box allows portfolio sheets.
+              Soy un desarrollador apasionado por crear interfaces de usuario accesibles y perfectas en cuanto a píxeles que combinen un diseño bien pensado con una ingeniería sólida. Mi trabajo favorito se encuentra en la intersección del diseño y el desarrollo. Creando experiencias que no sólo se ven geniales sino que están meticulosamente diseñadas para el rendimiento y la facilidad de uso.
               </span>
               <br className="hidden md:block" />
               <br />

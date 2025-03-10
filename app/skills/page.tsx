@@ -77,10 +77,9 @@ const SkillsPage = () => {
           </motion.div>
           <div className="items-star md:items-center">
             <motion.h2
-              variants={fadeIn("up", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.6 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
               className="px-12 mt-16  py-4 text-center"
             >
               We are awards Winning Company
@@ -95,7 +94,7 @@ const SkillsPage = () => {
               World Award
             </motion.p>
             <motion.p
-              variants={fadeIn("up", 0.6)}
+              variants={fadeIn("left", 0.6)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.6 }}
@@ -107,7 +106,7 @@ const SkillsPage = () => {
               many awards from various countries for our work.
             </motion.p>
             <motion.p
-              variants={fadeIn("up", 0.8)}
+              variants={fadeIn("right", 0.8)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.6 }}
@@ -202,9 +201,7 @@ const SkillsPage = () => {
                   See Details <TbArrowNarrowRight className="ml-2" />
                 </a>
               </div>
-              <div
-                className="inset-0 bg-gradient-to-b from-[#174d4d]/90 via-[#174d4d]/80 to-[#174d4d]/90 dark:from-primary dark:via-secondary dark:to-tertiary   flex-col items-center justify-end md:flex md:absolute gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 group-hover:translate-y-full md:border-b-0 hidden cursor-pointer"
-              >
+              <div className="inset-0 bg-gradient-to-b from-[#174d4d]/90 via-[#174d4d]/80 to-[#174d4d]/90 dark:from-primary dark:via-secondary dark:to-tertiary   flex-col items-center justify-end md:flex md:absolute gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 group-hover:translate-y-full md:border-b-0 hidden cursor-pointer">
                 <p className="tracking-wider -rotate-90">{item.category}</p>
                 <span>{item.id}</span>
               </div>
@@ -217,11 +214,3 @@ const SkillsPage = () => {
 };
 
 export default SkillsPage;
-
-// const SkillsPage = () => {
-//   return (
-//     <div className="h-screen flex justify-center items-center bg-gradient-to-r from-slate-300 to-slate-500">SkillsPage</div>
-//   )
-// }
-
-// export default SkillsPage

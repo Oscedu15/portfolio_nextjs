@@ -5,7 +5,7 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-const text = `Estás compitiendo para crear un trabajo excepcional, pero las herramientas de diseño tradicionales te ralentizan con una complejidad innecesaria y curvas de aprendizaje pronunciadas.`;
+const text = `Trabajo con personas con visión de futuro para diseñar y crear sitios web y productos interactivos y accesibles. He trabajado en proyectos para Aardman Animations, UNHCR, RNLI y Hondaa, trabajar en empresas emergentes en Tokio, he dedicado más de una década a hacer que la web sea un poco más brillante.`;
 
 const words = text.split("");
 

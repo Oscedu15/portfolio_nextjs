@@ -100,7 +100,7 @@ const WhyUs = () => {
             variants={tagVariants}
             className="text-center"
           >
-            Medical departments
+            Trabajemos juntos
           </motion.h3>
           {/* Right Panel Control */}
           <div className="relative mt-6 w-full flex-col items-center justify-center gap-6">

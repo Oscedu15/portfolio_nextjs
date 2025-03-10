@@ -11,35 +11,33 @@ const Badge = () => {
       <div className="block md:flex  md:flex-row-reverse">
         {/* left section */}
         <div className="lg:w-1/2 py-0 md:py-8 lg:text-left">
-          <motion.h2
-            initial="offscreen"
-            whileInView={"onscreen"}
-            variants={titleVariants}
-            className="text-center lg:p-10
-             md:mt-0"
-          >
-            Offer for the best Interior
-          </motion.h2>
+         
 
           <motion.h3
             initial="offscreen"
             whileInView={"onscreen"}
             variants={desVariants}
-            className=" text-content/80 my-8 px-12 text-3xl text-center  uppercase text-gray-600 mt-3"
-          >
-            Make your home a piece of art
+            className=" text-content/80 px-12 text-3xl text-center  uppercase text-gray-600 mt-3"
+          >Hola mi nombre es Oscar
           </motion.h3>
+          <motion.h2
+            initial="offscreen"
+            whileInView={"onscreen"}
+            variants={titleVariants}
+            className="text-center lg:p-10 my-8
+             md:mt-0"
+          >
+            Yo hago paginas web.
+          </motion.h2>
           <motion.p
             initial="offscreen"
             whileInView={"onscreen"}
             variants={tagVariants}
             className="pb-6 text-muted-foreground xl:pb-10 px-4 md:px-0"
           >
-            Change your view with the best interior design. Lorem ipsum dolor
-            sit amet consectetur, adipisicing elit. Repudiandae, provident! Eos,
-            quaerat fugit quasi aut saepe magnam tempora. Sit, asperiores.
-            Repudiandae, provident! Eos, quaerat fugit quasi aut saepe magnam
-            tempora. Sit, asperiores.
+            El equipo técnico de un solo hombre listo para darle vida a tu próxima gran idea.
+            Trabajemos juntos. Desde diseño de interacción hasta sistemas de diseño escalables, aplicaciones de una sola página y algo más experimental con WebGL. Ayudo a gente increíble a crear proyectos web ambiciosos y accesibles: cuanto más atrevidos, mejor.
+
           </motion.p>
           <motion.div
             initial="offscreen"

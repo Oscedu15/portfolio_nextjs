@@ -6,9 +6,8 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="dark:bg-gray-900 border-t bg-gradient-to-b
-  bg-[#174d4d]/60 border dark:from-surface dark:via-surface
-  dark:to-surface dark:border-gray-800">
+    <footer className="dark:bg-gray-900 border-t bg-gradient-to-l from-[#174d4d]/90 via-[#174d4d]/80
+  to-[#174d4d]/90 border dark:from-surface dark:via-surface dark:to-surface dark:border-gray-800">
       <div
         className="max-w-7xl mx-auto px-4 sm:px-6
          lg:px-8 py-12"

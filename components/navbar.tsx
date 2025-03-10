@@ -36,8 +36,8 @@ export default function Navbar() {
       animate={{ y: 0 }}
       className={`fixed w-full z-50 ${
         isScrolled
-          ? "backdrop-blur-3xl dark:bg-background/90 bg-[#174d4d]/50 dark:shadow-2xl shadow-sm shadow-[#366b48cc] dark:shadow-primary/10"
-          : "backdrop-blur-lg dark:bg-background/50  bg-[#174d4d]/60  text-black shadow-md"
+          ? "backdrop-blur-3xl dark:bg-background/90 bg-[#174d4d]/50 md:bg-[#174d4d]/80 dark:shadow-2xl shadow-sm shadow-[#366b48cc] dark:shadow-primary/10"
+          : "backdrop-blur-lg dark:bg-background/50  bg-[#174d4d]/60 md:bg-[#174d4d]/60  text-black shadow-md"
       } transition-all duration-300 ease-out`}
     >
       <div className="max-w-7xl mx-auto px-6 py-3">
@@ -48,7 +48,7 @@ export default function Navbar() {
             className="flex items-center gap-2 group"
           >
             <div className="relative h-8 w-8 rounded-full overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#174D4D] to-[#03363D] dark:from-primary dark:to-tertiary animate-spin-slow [mask-image:linear-gradient(transparent,white)]" />
+              <div className="absolute inset-0 bg-gradient-to-r from-content/80 to-content/90 dark:from-primary dark:to-tertiary animate-spin-slow [mask-image:linear-gradient(transparent,white)]" />
               <div className="absolute inset-[2px] bg-[#91b99ecc]  dark:bg-background rounded-full flex items-center justify-center">
                 <span className="font-bold bg-gradient-to-r from-[#174D4D] to-[#03363D] dark:from-primary dark:to-tertiary bg-clip-text text-transparent">
                   OG
@@ -56,7 +56,7 @@ export default function Navbar() {
               </div>
             </div>
             <Link href="/" onClick={() => setIsMenuOpen(false)}>
-              <span className="font-semibold text-[#174D4D] group-hover:text-[#03363D]  dark:text-content/90 dark:group-hover:text-primary transition-colors">
+              <span className="font-semibold text-[#d6dae0]/90 md:text-content/80 md:dark:text-content/90 md:dark:group-hover:text-primary transition-colors">
                 Oscar Garcia
               </span>
             </Link>
@@ -126,9 +126,9 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="block z-20 px-4 py-2 text-[#174D4D] hover:text-[#d6dae0]/70
+                className="block z-20 px-4 py-2 text-[#d6dae0]/70 hover:text-[#d6dae0]
                  hover:bg-[#174D4D]/50 dark:text-primary dark:hover:text-primary/90 dark:hover:bg-white/5 
-                rounded-lg transition-colors"
+                rounded-lg transition-colors italic"
               >
                 {item.name}
               </Link>
