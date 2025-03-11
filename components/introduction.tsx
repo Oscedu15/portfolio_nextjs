@@ -5,7 +5,11 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-const text = `Trabajo con personas con visión de futuro para diseñar y crear sitios web y productos interactivos y accesibles. He trabajado en proyectos para Aardman Animations, UNHCR, RNLI y Hondaa, trabajar en empresas emergentes en Tokio, he dedicado más de una década a hacer que la web sea un poco más brillante.`;
+const text = `El equipo técnico de un solo hombre listo para darle vida a tu
+              próxima gran idea. Trabajemos juntos. Desde diseño de interacción
+              hasta sistemas de diseño escalables, aplicaciones de una sola
+              página y algo más experimental con WebGL. Ayudo a gente increíble
+              a crear proyectos web ambiciosos y accesibles:`;
 
 const words = text.split("");
 
@@ -29,13 +33,14 @@ export default function Introduction() {
   }, [wordIndex]);
 
   return (
-    <section className="py-28 lg:py-40">
+    <section className="">
       <div className="container">
         <div className="sticky top-20 md:top-28 lg:top-40">
           <motion.h2
             initial="offscreen"
             whileInView={"onscreen"}
-            variants={titleVariants} className=" flex items-center justify-center font-semibold text-center lg:p-10 mt-20 mb-4"
+            variants={titleVariants}
+            className=" flex items-center justify-center font-semibold text-center lg:p-10 mt-20 mb-4"
           >
             Tu proceso creativo merece algo mejor.{" "}
           </motion.h2>
@@ -53,14 +58,12 @@ export default function Introduction() {
               ))}
             </span>
             <span className="text-lime-400 block">
-              That&apos;s why we built Layers.
+              cuanto más atrevidos, mejor.
             </span>
           </div>
         </div>
         <div className="h-[150vh]" ref={scrollTarget}></div>
       </div>
     </section>
-  )
+  );
 }
-
-

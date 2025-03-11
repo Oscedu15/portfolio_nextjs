@@ -48,7 +48,7 @@ const Loader = () => {
     <div>
       <div
         className="fixed bg-gradient-to-r from-slate-50 to-gray-300
-       dark:bg-gray-900 w-full min-h-screen bg-no-repeat "
+       dark:from-gray-900 dark:to-gray-800 w-full min-h-screen bg-no-repeat "
       />
       <div
         className="flex  w-full justify-center items-center h-screen bg-gradient-to-r

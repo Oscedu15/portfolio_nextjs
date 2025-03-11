@@ -5,6 +5,7 @@ import { TbArrowUpRight } from "react-icons/tb";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { desVariants, tagVariants, titleVariants } from "@/utils/animation";
 import { useRef } from "react";
+import Link from "next/link";
 
 const ExperiencesPage = () => {
   const ref = useRef(null);
@@ -30,7 +31,7 @@ const ExperiencesPage = () => {
             className="text-center lg:p-10 mt-10
            md:mt-20"
           >
-            We have great idea & Interior Design
+            Un poco sobre mi.
           </motion.h2>
           <motion.h5
             initial="offscreen"
@@ -38,10 +39,10 @@ const ExperiencesPage = () => {
             variants={desVariants}
             className="text-gray-600  text-center dark:text-white/50 pb-10 mt-5"
           >
-            Aquí encontrarás mis escritos sobre temas que van desde la
-            codificación y la industria web hasta la lingüística y el
-            procesamiento del lenguaje natural; también hay un práctico canal
-            RSS, si prefieres suscribirte.
+            De origen venezolano y autodidacta, aporto una mezcla única de
+            pasión y al desarrollo y el diseño. Enfocado con el rendimiento y
+            dedicado a crear diseños limpios e impactantes, espero con mi
+            trabajo dejar un testamento de la fusión de habilidad y creatividad.
           </motion.h5>
         </div>
         <div className="items-center max-w-7xl mx-auto lg:flex gap-x-8">
@@ -59,42 +60,45 @@ const ExperiencesPage = () => {
             whileInView={"onscreen"}
             variants={tagVariants}
           >
-            <p className="pb-8 tracking-wide  mt-6 mx-auto">
-              El equipo técnico de un solo hombre listo para darle vida a tu
-              próxima gran idea. Trabajemos juntos. Desde diseño de interacción
-              hasta sistemas de diseño escalables, aplicaciones de una sola
-              página y algo más experimental con WebGL. Ayudo a gente increíble
-              a crear proyectos web ambiciosos y accesibles: cuanto más
-              atrevidos, mejor.
-              <br className="hidden md:block" />
+            <p className="pb-8 flex flex-col gap-y-2 mt-6 mx-auto">
+              Desde que escribí mis primeras líneas de código a fines de 2022
+              hasta este punto, he perfeccionado continuamente mis habilidades
+              de desarrollo con el tiempo y resolviendo desafíos complejos
+              aumentando la complejidad a medida que pasa el tiempo para
+              garantizar la mejora.
               <br />
-              <span className="hidden md:block ">
-                Soy un desarrollador apasionado por crear interfaces de usuario
-                accesibles y perfectas en cuanto a píxeles que combinen un
-                diseño bien pensado con una ingeniería sólida. Mi trabajo
-                favorito se encuentra en la intersección del diseño y el
-                desarrollo. Creando experiencias que no sólo se ven geniales
-                sino que están meticulosamente diseñadas para el rendimiento y
-                la facilidad de uso.
+              <span>
+                Cada desafío es único, por lo que me aseguro de aprender y
+                crecer en cada uno de ellos, asegurándome de no solo dar lo
+                mejor de mí, sino también de ofrecer soluciones que las empresas
+                se enorgullezcan de llamar propias. ¿Quieres saber más?!!!
               </span>
-              <br className="hidden md:block" />
-              <br />
-              <span className="text-xl font-extrabold tracking-tight">
-                The backpiperARCH, we share a belief in the transformational
-                power of people united in a common purpose.
+              <span className="hidden md:block">
+                Nos encanta llevar las marcas del punto A al punto B de sus
+                sueños y mejorar iterativamente a medida que pasa el tiempo.
+              </span>
+              <span>
+                Explora una recopilación de mis mejores esfuerzos que abarcan
+                Diseño Web y y Desarrollo Web. En un viaje digital dinámico,
+                durante los últimos 3 años, adaptándome a la constante evolución
+                de diseño y el desarrollo. Sigo comprometido con el aprendizaje
+                continuo adquirir nuevas habilidades para mantenerme a la
+                vanguardia de la innovación.
               </span>
             </p>
             <button
-              className="flex  relative max-w-sm items-center   shadow-lg duration-200 btn
+              className="flex  relative max-w-sm items-center shadow-lg duration-200 btn
         text-center transition-all group"
             >
-              Read More
-              <TbArrowUpRight className="w-5 h-5 ml-2" />
-              <div
-                className="absolute rounded-full inset-0 bg-gradient-to-r 
-        from-primary/10 to-tertiary/10 opacity-0
+              <Link href="/projects" className="flex ">
+                Projectos
+                <TbArrowUpRight className="w-5 h-5 duration-500 ml-2 group-hover:rotate-45" />
+                <div
+                  className="absolute rounded-full inset-0 bg-gradient-to-r 
+        from-primary/10 to-tertiary/10 opacity-0 
         group-hover:opacity-100 transition-opacity"
-              />
+                />
+              </Link>
             </button>
           </motion.div>
         </div>
@@ -109,7 +113,7 @@ const ExperiencesPage = () => {
   to-[#174d4d]/90 dark:from-primary dark:via-secondary
 dark:to-tertiary font-bold tracking-wider text-center"
             >
-              Testimonios
+              Certificados
             </motion.h4>
           </div>
 
@@ -121,24 +125,26 @@ dark:to-tertiary font-bold tracking-wider text-center"
               className="border-2 border-[#366b48cc] dark:border-primary"
             >
               <div
-                className="p-4 text-center  bg-gradient-to-r from-primary via-secondary
+                className="p-4 text-center flex flex-col justify-center md:justify-end items-center   bg-gradient-to-r from-primary via-secondary
         to-tertiary bg-clip-text text-transparent -m-0.5 aspect-square dark:bg-tertiary transition hover:-translate-y-3 hover:-translate-x-3"
               >
                 <Image
-                  src="/perfil.jpeg"
+                  src="/alura.jpg"
                   width={200}
                   height={200}
                   className="rounded-full mx-auto"
                   alt="profile2"
                 />
-
-                <h2 className="py-4 text-2xl font-semibold uppercase">
-                  Building Surveys
-                </h2>
-                <p className="text-base">
-                  Creativity is the obility to generate, create, or discover new
-                  ideas, solutions, and possibilities.
-                </p>
+                <Link
+                  href="https://app.aluracursos.com/program/certificate/d723b325-177b-488f-83bb-98946cf2326b"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h3 className="py-4 text-2xl font-semibold uppercase">
+                    Programa Oracle Next Education F2 T4 Front-end
+                  </h3>
+                </Link>
+                <p className="">Alura Latam</p>
               </div>
             </motion.div>
             <motion.div
@@ -148,23 +154,26 @@ dark:to-tertiary font-bold tracking-wider text-center"
               className="border-2 border-[#366b48cc] dark:border-primary"
             >
               <div
-                className="p-4 text-center  bg-gradient-to-r from-primary via-secondary
+                className="p-4 text-center flex flex-col justify-center md:justify-end items-center   bg-gradient-to-r from-primary via-secondary
         to-tertiary bg-clip-text text-transparent -m-0.5 aspect-square dark:bg-tertiary transition hover:-translate-y-3 hover:-translate-x-3"
               >
                 <Image
-                  src="/perfil.jpeg"
+                  src="/alura.jpg"
                   width={200}
                   height={200}
                   className="rounded-full mx-auto"
                   alt="profile3"
                 />
-                <h2 className="py-4 text-2xl font-semibold uppercase">
-                  Building Surveys
-                </h2>
-                <p className="text-sm">
-                  Creativity is the obility to generate, create, or discover new
-                  ideas, solutions, and possibilities.
-                </p>
+                <Link
+                  href="https://app.aluracursos.com/certificate/9139fa0f-fd71-4b5e-95b3-e4e3dc64aada"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h3 className="py-4 text-2xl font-semibold uppercase">
+                    Consultas SQL: Avanzando en SQL con MySQL
+                  </h3>
+                </Link>
+                <p className="">Alura Latam</p>
               </div>
             </motion.div>
             <motion.div
@@ -174,23 +183,26 @@ dark:to-tertiary font-bold tracking-wider text-center"
               className="border-2 border-[#366b48cc] dark:border-primary"
             >
               <div
-                className="p-4 text-center  bg-gradient-to-r from-primary via-secondary
+                className="p-4 text-center flex flex-col justify-center md:justify-end items-center  bg-gradient-to-r from-primary via-secondary
         to-tertiary bg-clip-text text-transparent -m-0.5 aspect-square  transition hover:-translate-y-3 hover:-translate-x-3"
               >
                 <Image
-                  src="/perfil.jpeg"
+                  src="/alura.jpg"
                   width={200}
                   height={200}
                   className="rounded-full mx-auto"
                   alt="profile1"
                 />
-                <h2 className="py-4 text-2xl font-semibold uppercase">
-                  Building Surveys
-                </h2>
-                <p className="text-sm">
-                  Creativity is the obility to generate, create, or discover new
-                  ideas, solutions, and possibilities.
-                </p>
+                <Link
+                  href="https://app.aluracursos.com/degree/certificate/c7b6d717-0550-45a0-915c-e678013740ba"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h3 className="py-4 mt-4 text-2xl font-semibold uppercase">
+                    Formación Front End G4 - ONE
+                  </h3>
+                </Link>
+                <p className="">Alura Latam</p>
               </div>
             </motion.div>
           </div>
@@ -201,11 +213,3 @@ dark:to-tertiary font-bold tracking-wider text-center"
 };
 
 export default ExperiencesPage;
-
-// const ExperiencesPage = () => {
-//   return (
-//     <div className="h-screen flex justify-center items-center bg-gradient-to-r from-stone-500 to-stone-700 text-white">ExperiencesPage</div>
-//   )
-// }
-
-// export default ExperiencesPage

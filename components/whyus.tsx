@@ -94,14 +94,14 @@ const WhyUs = () => {
         </motion.div>
         {/* Left Panel Control */}
         <div ref={cardRef} className="flex flex-col pt-[0px]">
-          <motion.h3
+          <motion.h4
             initial="offscreen"
             whileInView={"onscreen"}
             variants={tagVariants}
             className="text-center"
           >
-            Las etapas de desarrollo web
-          </motion.h3>
+           Etapas del desarrollo web
+          </motion.h4>
           {/* Right Panel Control */}
           <div className="relative mt-6 w-full flex-col items-center justify-center gap-6">
             {/* Border Line Content */}
