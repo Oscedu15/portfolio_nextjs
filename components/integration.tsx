@@ -1,9 +1,9 @@
 import figmaIcon from "@/public/integration/figma-logo.svg";
-import notionIcon from "@/public/integration/notion-logo.svg";
-import slackIcon from "@/public/integration/slack-logo.svg";
-import relumeIcon from "@/public/integration/relume-logo.svg";
+import nextjsIcon from "@/public/integration/next-logo.svg";
+import reactIcon from "@/public/integration/react-logo.svg";
 import framerIcon from "@/public/integration/framer-logo.svg";
 import githubIcon from "@/public/integration/github-logo.svg";
+import tailwindIcon from "@/public/integration/tailwind-logo.svg";
 import IntegrationsColumn from "./IntegrationsColumn";
 import { motion } from "framer-motion";
 import { titleVariants, desVariants } from "@/utils/animation";
@@ -15,25 +15,25 @@ const integrations = [
     description: "Figma es una herramienta de diseño de interfaz colaborativa.",
   },
   {
-    name: "Notion",
-    icon: notionIcon,
-    description: "Notion is an all-in-one workspace for notes and docs.",
+    name: "Nextjs",
+    icon: nextjsIcon,
+    description: "Crea aplicaciones web de alta calidad con el poder de los componentes React.",
   },
   {
-    name: "Slack",
-    icon: slackIcon,
-    description: "Slack is a powerful team communication platform.",
+    name: "Tailwind",
+    icon: tailwindIcon,
+    description: "Es un framework de CSS que usamos para crear interfaces de usuario personalizadas.",
   },
   {
-    name: "Relume",
-    icon: relumeIcon,
-    description: "Relume is a no-code website builder and design system.",
+    name: "React",
+    icon: reactIcon,
+    description: "Es una biblioteca de JavaScript, que permite crear interfaces para aplicaciones web y móviles",
   },
   {
     name: "Framer",
     icon: framerIcon,
     description:
-      "Framer Motion es una herramienta profesional de creación de prototipos de sitios web.",
+      "Es una biblioteca de animación, que permite crear animaciones e interacciones en aplicaciones.",
   },
   {
     name: "GitHub",

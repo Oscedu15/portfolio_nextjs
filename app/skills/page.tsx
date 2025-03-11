@@ -84,15 +84,15 @@ const SkillsPage = () => {
             >
               We are awards Winning Company
             </motion.h2>
-            <motion.p
+            <motion.h4
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.6 }}
-              className="px-12 tracking-wider text-3xl text-center  uppercase text-gray-600 mt-3"
+              className="px-12  text-center  uppercase text-gray-600 mt-3"
             >
               World Award
-            </motion.p>
+            </motion.h4>
             <motion.p
               variants={fadeIn("left", 0.6)}
               initial="hidden"
@@ -201,7 +201,7 @@ const SkillsPage = () => {
                   See Details <TbArrowNarrowRight className="ml-2" />
                 </a>
               </div>
-              <div className="inset-0 bg-gradient-to-b from-[#174d4d]/90 via-[#174d4d]/80 to-[#174d4d]/90 dark:from-primary dark:via-secondary dark:to-tertiary   flex-col items-center justify-end md:flex md:absolute gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 group-hover:translate-y-full md:border-b-0 hidden cursor-pointer">
+              <div className="inset-0 bg-gradient-to-b from-[#174d4d]/10 via-[#174d4d]/20 to-[#174d4d]/30 dark:from-primary dark:via-secondary dark:to-tertiary flex-col items-center justify-end md:flex md:absolute gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 group-hover:translate-y-full md:border-b-0 hidden cursor-pointer">
                 <p className="tracking-wider -rotate-90">{item.category}</p>
                 <span>{item.id}</span>
               </div>

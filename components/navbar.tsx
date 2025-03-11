@@ -8,11 +8,11 @@ import Link from "next/link";
 import { ThemeToggle } from "./theme-toogle";
 
 const navItems = [
-  { name: "Projects", href: "projects" },
   { name: "About", href: "about" },
+  { name: "Projects", href: "projects" },
   { name: "Skills", href: "skills" },
   { name: "Experience", href: "experiences" },
-  { name: "Contact", href: "contacto" },
+  { name: "Contacto", href: "contacto" },
 ];
 
 const socialLinks = {
@@ -26,6 +26,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { scrollY } = useScroll();
 
+
   useMotionValueEvent(scrollY, "change", (latest) => {
     setIsScrolled(latest > 50);
   });
@@ -36,7 +37,7 @@ export default function Navbar() {
       animate={{ y: 0 }}
       className={`fixed w-full z-50 ${
         isScrolled
-          ? "backdrop-blur-3xl dark:bg-background/90 bg-[#174d4d]/50 md:bg-[#174d4d]/80 dark:shadow-2xl shadow-sm shadow-[#366b48cc] dark:shadow-primary/10"
+          ? "backdrop-blur-3xl dark:bg-background/90 bg-[#174d4d]/50 md:bg-[#174d4d]/80 dark:shadow-2xl shadow-md shadow-[#366b48cc] dark:shadow-primary/10"
           : "backdrop-blur-lg dark:bg-background/50  bg-[#174d4d]/60 md:bg-[#174d4d]/60  text-black shadow-md"
       } transition-all duration-300 ease-out`}
     >

@@ -35,9 +35,7 @@ export default function Introduction() {
           <motion.h2
             initial="offscreen"
             whileInView={"onscreen"}
-            variants={titleVariants}
-            className=" flex items-center justify-center font-semibold text-center lg:p-10
-                       mt-20 mb-4"
+            variants={titleVariants} className=" flex items-center justify-center font-semibold text-center lg:p-10 mt-20 mb-4"
           >
             Tu proceso creativo merece algo mejor.{" "}
           </motion.h2>

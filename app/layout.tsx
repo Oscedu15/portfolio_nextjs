@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import { Poppins, Ponnala } from "next/font/google";
+import { Poppins, Open_Sans } from "next/font/google";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "next-themes";
@@ -12,10 +12,10 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-const ponnala = Ponnala({
+const open_sans = Open_Sans({
   subsets: ["latin"],
-  weight:["400"],
-  variable: "--font-ponnala",
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-open-sans",
 });
 
 // export const metadata: Metadata = {
@@ -85,7 +85,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${poppins.variable} ${ponnala.variable} font-poppins dark:bg-blue-50 antialiased text-black  dark:text-white`}
+        className={`${poppins.variable} ${open_sans.variable} font-poppins dark:bg-blue-50 antialiased text-black  dark:text-white`}
         suppressHydrationWarning
       >
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">

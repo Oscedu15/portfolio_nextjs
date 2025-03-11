@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const ProjectsPage = () => {
   return (
     <div>
-      <div className="bg-[url('/programacion.jpg')] text-center bg-center bg-cover">
+      <div className="bg-[url('/programacion1.avif')] h-5/6 md:h-full text-center bg-center bg-cover">
         <motion.h2
           initial="offscreen"
           whileInView={"onscreen"}

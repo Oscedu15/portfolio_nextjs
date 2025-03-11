@@ -68,7 +68,7 @@ export default function Faqs() {
                 className="flex justify-between items-center mx-auto"
                 onClick={() => setSelectedIndex(faqIndex)}
               >
-                <p className="font-poppins font-semibold text-center text-[#03363D]/70">
+                <p className="font-bold text-center text-[#03363D]/70">
                   {faq.question}
                 </p>
                 <svg
@@ -104,9 +104,9 @@ export default function Faqs() {
                     exit={{ height: 0, marginTop: 0 }}
                     className={twMerge("overflow-hidden")}
                   >
-                    <span className="dark:text-white/50 text-[#174d4d]/60 font-semibold font-ponnala">
+                    <p className="dark:text-white/50 text-[#174d4d]/60 ">
                       {faq.answer}
-                    </span>
+                    </p>
                   </motion.div>
                 )}
               </AnimatePresence>

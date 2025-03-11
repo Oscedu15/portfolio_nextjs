@@ -34,7 +34,7 @@ export default {
       },
       fontFamily: {
         poppins: ["var(--font-poppins)"],
-        ponnala: ["var(--font-ponnala)"],
+        opensans: ["var(--font-open-sans)"],
       },
       keyframes: {
         fadeIn: {

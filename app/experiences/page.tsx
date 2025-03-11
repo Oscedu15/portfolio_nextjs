@@ -32,14 +32,17 @@ const ExperiencesPage = () => {
           >
             We have great idea & Interior Design
           </motion.h2>
-          <motion.h4
+          <motion.h5
             initial="offscreen"
             whileInView={"onscreen"}
             variants={desVariants}
             className="text-gray-600  text-center dark:text-white/50 pb-10 mt-5"
           >
-           Aquí encontrarás mis escritos sobre temas que van desde la codificación y la industria web hasta la lingüística y el procesamiento del lenguaje natural; también hay un práctico canal RSS, si prefieres suscribirte.
-          </motion.h4>
+            Aquí encontrarás mis escritos sobre temas que van desde la
+            codificación y la industria web hasta la lingüística y el
+            procesamiento del lenguaje natural; también hay un práctico canal
+            RSS, si prefieres suscribirte.
+          </motion.h5>
         </div>
         <div className="items-center max-w-7xl mx-auto lg:flex gap-x-8">
           <motion.div style={{ scale }} ref={ref} className="w-full">
@@ -56,12 +59,23 @@ const ExperiencesPage = () => {
             whileInView={"onscreen"}
             variants={tagVariants}
           >
-            <p className="pb-8 tracking-wide text-xl mt-6 mx-auto">
-            Soy un desarrollador radicado en Manchester, Reino Unido, enfocado en crear experiencias digitales interactivas en la web, trabajando con marcas y líderes de la industria como GOOGLE FONTS, PAYSTACK, HEVA HEALTH, DISNEY, JELLY y NULL, entre otros, para lograr esto.
+            <p className="pb-8 tracking-wide  mt-6 mx-auto">
+              El equipo técnico de un solo hombre listo para darle vida a tu
+              próxima gran idea. Trabajemos juntos. Desde diseño de interacción
+              hasta sistemas de diseño escalables, aplicaciones de una sola
+              página y algo más experimental con WebGL. Ayudo a gente increíble
+              a crear proyectos web ambiciosos y accesibles: cuanto más
+              atrevidos, mejor.
               <br className="hidden md:block" />
               <br />
-              <span className="hidden md:block text-xl">
-              Soy un desarrollador apasionado por crear interfaces de usuario accesibles y perfectas en cuanto a píxeles que combinen un diseño bien pensado con una ingeniería sólida. Mi trabajo favorito se encuentra en la intersección del diseño y el desarrollo. Creando experiencias que no sólo se ven geniales sino que están meticulosamente diseñadas para el rendimiento y la facilidad de uso.
+              <span className="hidden md:block ">
+                Soy un desarrollador apasionado por crear interfaces de usuario
+                accesibles y perfectas en cuanto a píxeles que combinen un
+                diseño bien pensado con una ingeniería sólida. Mi trabajo
+                favorito se encuentra en la intersección del diseño y el
+                desarrollo. Creando experiencias que no sólo se ven geniales
+                sino que están meticulosamente diseñadas para el rendimiento y
+                la facilidad de uso.
               </span>
               <br className="hidden md:block" />
               <br />
@@ -87,16 +101,16 @@ const ExperiencesPage = () => {
         {/* Team Section */}
         <div className="lg:py-20 mx-auto max-w-7xl">
           <div className="pt-8 pb-4">
-            <motion.h1
+            <motion.h4
               initial="offscreen"
               whileInView={"onscreen"}
               variants={titleVariants}
-              className="text-4xl bg-gradient-to-r from-[#174d4d]/70 via-[#174d4d]/80
+              className="bg-gradient-to-r from-[#174d4d]/70 via-[#174d4d]/80
   to-[#174d4d]/90 dark:from-primary dark:via-secondary
 dark:to-tertiary font-bold tracking-wider text-center"
             >
               Testimonios
-            </motion.h1>
+            </motion.h4>
           </div>
 
           <div className="grid py-8 gap-20 lg:grid-cols-3">

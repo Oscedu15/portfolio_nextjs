@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { desVariants, titleVariants } from "@/utils/animation";
 
 export default function Contact() {
-  const [message, setMessage] = useState("Gracias por contactame,");
+  const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -28,7 +28,7 @@ export default function Contact() {
     }
 
     if (response.ok) {
-      setMessage("Su Mensaje se a Enviado Correctamente");
+      setMessage("Gracias por comunicarte! Pronto me comunicare con usted, gracias.");
       setTimeout(() => {
         setLoading(false);
       }, 4000);
@@ -44,23 +44,23 @@ export default function Contact() {
     dark:from-primary/10 dark:to-tertiary/10 from-slate-50 to-gray-300 p-4 py-24 sm:py-32"
       >
         <div className="mx-auto max-w-2xl text-center">
-          <motion.h2
+          <motion.h3
             initial="offscreen"
             whileInView={"onscreen"}
             variants={titleVariants}
             className="text-center
     "
           >
-            Contactanos.{" "}
-          </motion.h2>
-          <motion.h4
+            ¿Tienes un proyecto en mente?
+          </motion.h3>
+          <motion.h5
             initial="offscreen"
             whileInView={"onscreen"}
             variants={desVariants}
-            className="mt-6 lg:my-6 text-3xl text-center dark:text-white text-gray-700 leading-8 text-muted-foreground"
+            className="mt-6 lg:my-6 text-center text-gray-600  dark:text-content/80 text-muted-foreground"
           >
             Por Favor, no dudes en realizar tu consulta.
-          </motion.h4>
+          </motion.h5>
         </div>
 
         <motion.form
@@ -156,9 +156,9 @@ export default function Contact() {
             </div>
             {message && (
               <div className="flex flex-col max-w-80 justify-center items-center pb-6">
-                <p className="text-center transition-colors duration-300 mx-auto font-medium capitalize">
-                  {message} Pronto me comunicare con usted. Gracias
-                </p>
+                <span className="text-center text-gray-600  dark:text-content/80 transition-colors duration-300 mx-auto font-medium capitalize">
+                  {message} 
+                </span>
               </div>
             )}
           </div>

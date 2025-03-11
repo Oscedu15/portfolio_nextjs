@@ -13,31 +13,34 @@ const Badge = () => {
         <div className="lg:w-1/2 py-0 md:py-8 lg:text-left">
          
 
-          <motion.h3
+          {/* <motion.h5
             initial="offscreen"
             whileInView={"onscreen"}
             variants={desVariants}
-            className=" text-content/80 px-12 text-3xl text-center  uppercase text-gray-600 mt-3"
-          >Hola mi nombre es Oscar
-          </motion.h3>
+            className="  px-12  text-center  capitalize mt-3"
+          >
+          </motion.h5> */}
           <motion.h2
             initial="offscreen"
             whileInView={"onscreen"}
             variants={titleVariants}
-            className="text-center lg:p-10 my-8
+            className="text-center lg:p-10 my-4
              md:mt-0"
           >
-            Yo hago paginas web.
+            Hola, mi nombre es Oscar
           </motion.h2>
           <motion.p
             initial="offscreen"
             whileInView={"onscreen"}
             variants={tagVariants}
-            className="pb-6 text-muted-foreground xl:pb-10 px-4 md:px-0"
-          >
-            El equipo técnico de un solo hombre listo para darle vida a tu próxima gran idea.
-            Trabajemos juntos. Desde diseño de interacción hasta sistemas de diseño escalables, aplicaciones de una sola página y algo más experimental con WebGL. Ayudo a gente increíble a crear proyectos web ambiciosos y accesibles: cuanto más atrevidos, mejor.
-
+            className="pb-6  xl:pb-10 px-4 md:px-0"
+          >Soy un desarrollador front-end jr, radicado en Cordoba - Argentina, enfocado en crear interfaces de usuario
+                accesibles e interactivas. Trabajando con herramientas líderes en la industria como Prisma, Nextjs, React, Tailwindcss, FramerMotion, entre otros. <br/><br/> Mi trabajo
+                favorito se encuentra en la intersección del diseño y el
+                desarrollo. Creando experiencias que no sólo se ven geniales
+                sino que están meticulosamente diseñadas para el rendimiento y
+                la facilidad de uso.
+         
           </motion.p>
           <motion.div
             initial="offscreen"

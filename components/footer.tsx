@@ -87,7 +87,7 @@ export default function Footer() {
               >
                 <GithubIcon
                   className="dark:text-gray-400 text-[#d6dae0] h-6 w-6
-                        hover:text-white transition-colors"
+                        hover:text-white dark:hover:text-white transition-colors"
                 />
               </Link>
               <Link
@@ -97,13 +97,13 @@ export default function Footer() {
               >
                 <LinkedInIcon
                   className="dark:text-gray-400 text-[#d6dae0] h-6 w-6
-                        hover:text-white transition-colors"
+                        hover:text-white dark:hover:text-white transition-colors"
                 />
               </Link>
-              <Link href="" target="_blank" rel="noopener noreferrer">
+              <Link href="mailto:oscaregarcialeon@gmail.com" target="_blank" rel="noopener noreferrer">
                 <EnvelopeIcon
                   className="dark:text-gray-400 text-[#d6dae0] h-6 w-6
-                        hover:text-white transition-colors"
+                        hover:text-white dark:hover:text-white transition-colors"
                 />
               </Link>
             </ul>
@@ -111,7 +111,7 @@ export default function Footer() {
         </div>
         <div className="border-t dark:border-gray-800  border-gray-400 mt-12 pt-8 text-center">
           <span className="dark:text-gray-400 text-[#d6dae0]">
-            &copy; {new Date().getFullYear()} Oscar Garcia. All rights reserved
+            &copy; {new Date().getFullYear()} Oscar Garcia. Todos los derchos reservados.
           </span>
         </div>
       </div>

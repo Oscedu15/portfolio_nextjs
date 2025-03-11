@@ -60,7 +60,7 @@ const WhyUs = () => {
         >
           <Image
             fill
-            src="/perfil.jpeg"
+            src="/bg.jpg"
             alt="emergency"
             className={`absolute z-[13] h-full w-full scale-[1.01] object-cover transition-all duration-300 ${
               position === 1 ? "opacity-100" : "opacity-0"
@@ -69,7 +69,7 @@ const WhyUs = () => {
           />
           <Image
             fill
-            src="/projects/mobile.jpg"
+            src="/bg1.jpg"
             alt="desntisty"
             className={`absolute z-[13] h-full w-full scale-[1.01] object-cover transition-all duration-300 ${
               position === 2 ? "opacity-100" : "opacity-0"
@@ -77,7 +77,7 @@ const WhyUs = () => {
           />
           <Image
             fill
-            src="/projects/ecommerce.png"
+            src="/bg2.jpg"
             alt="surgical"
             className={`absolute z-[11] h-full w-full scale-[1.01] object-cover transition-all duration-300 ${
               position <= 3 ? "opacity-100" : "opacity-0"
@@ -85,7 +85,7 @@ const WhyUs = () => {
           />
           <Image
             fill
-            src="/perfil.jpeg"
+            src="/bg3.png"
             alt="health"
             className={`absolute z-[10] h-full w-full scale-[1.01] object-cover transition-all duration-300 ${
               position <= 4 ? "opacity-100" : "opacity-0"
@@ -100,7 +100,7 @@ const WhyUs = () => {
             variants={tagVariants}
             className="text-center"
           >
-            Trabajemos juntos
+            Las etapas de desarrollo web
           </motion.h3>
           {/* Right Panel Control */}
           <div className="relative mt-6 w-full flex-col items-center justify-center gap-6">
@@ -123,7 +123,7 @@ const WhyUs = () => {
                 variants={desVariants}
                 className="text-[20px] font-bold leading-[30px] text-[#366b48cc]  dark:text-violet-700"
               >
-                Emergency Department
+                Investigación y análisis
               </motion.h5>
               <motion.p
                 initial="offscreen"
@@ -131,8 +131,7 @@ const WhyUs = () => {
                 variants={tagVariants}
                 className="mt-2 text-base font-medium leading-4 text-[#445469]"
               >
-                Even the all-powerful Pointing has no control about the blind
-                texts it is an almost unorthographic life.
+                Estudiar el negocio y las necesidades del cliente
               </motion.p>
             </div>
             <div
@@ -146,7 +145,7 @@ const WhyUs = () => {
                 variants={desVariants}
                 className="text-[20px] font-bold leading-[30px] text-[#366b48cc]  dark:text-violet-700"
               >
-                Restorative Dentistry
+                Diseño
               </motion.h5>
               <motion.p
                 initial="offscreen"
@@ -154,8 +153,7 @@ const WhyUs = () => {
                 variants={tagVariants}
                 className="mt-2 text-base font-medium leading-4 text-[#445469]"
               >
-                Our dedicated team of medical professionals is here to guide you
-                on your health journey
+                Crear la estructura y el diseño de la página web.
               </motion.p>
             </div>
             <div
@@ -169,7 +167,7 @@ const WhyUs = () => {
                 variants={desVariants}
                 className="text-[20px] font-bold leading-[30px] text-[#366b48cc]  dark:text-violet-700"
               >
-                Surgical Interventions
+                Desarrollo y lanzamiento
               </motion.h5>
               <motion.p
                 initial="offscreen"
@@ -177,8 +175,7 @@ const WhyUs = () => {
                 variants={tagVariants}
                 className="mt-2 text-base font-medium leading-4 text-[#445469]"
               >
-                Even the all-powerful Pointing has no control about the blind
-                texts it is an almost unorthographic life.
+                Programar la página web y la publicacion de la misma.
               </motion.p>
             </div>
             <div
@@ -192,7 +189,7 @@ const WhyUs = () => {
                 variants={desVariants}
                 className="text-[20px] font-bold leading-[30px] text-[#366b48cc]  dark:text-violet-700"
               >
-                Health Monitoring
+                Mantenimiento
               </motion.h5>
               <motion.p
                 initial="offscreen"
@@ -200,8 +197,7 @@ const WhyUs = () => {
                 variants={tagVariants}
                 className="mt-2 text-base font-medium leading-4 text-[#445469]"
               >
-                Our dedicated team of medical professionals is here to guide you
-                un your health journey.
+                Mantener la página web actualizada y funcionando
               </motion.p>
             </div>
           </div>

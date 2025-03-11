@@ -10,6 +10,7 @@ import {
   SiPrisma,
   SiFramer,
   SiVite,
+  SiJavascript,
 } from "react-icons/si";
 import Image from "next/image";
 import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
@@ -18,12 +19,12 @@ import Link from "next/link";
 const projects = [
   {
     title: "Carland Rent",
-    description: "Modern shopping experinece with Next.js and Typescript",
+    description: "Experiencia de reserva de autos con Next.js y Javacript",
     tech: [
-      { name: "React", icon: FaReact, color: "#61DAFB" },
       { name: "Next.js", icon: SiNextdotjs, color: "000000" },
       { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
       { name: "Framer Motion", icon: SiFramer, color: "06B6D4" },
+      { name: "Framer Motion", icon: SiJavascript, color: "FF0000" },
     ],
     image: "/projects/carland.png",
     href: "https://centro-odontologico-od-enerirt.vercel.app/",
