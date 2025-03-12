@@ -1,34 +1,33 @@
 "use client";
 import { useState } from "react";
-// import Tag from "../components/Tag";
 import { twMerge } from "tailwind-merge";
 import { AnimatePresence, motion } from "framer-motion";
 
 const faqs = [
   {
-    question: "How is Layers different from other design tools?",
+    question: "Mejora de la visibilidad",
     answer:
-      "Unlike traditional design tools, Layers prioritizes speed and simplicity without sacrificing power. Our intelligent interface adapts to your workflow, reducing clicks and keeping you in your creative flow.",
+      "Tener un sitio web permite que tu negocio sea encontrado fácilmente en línea, lo que aumenta la exposición a clientes potenciales.",
   },
   {
-    question: "Is there a learning curve?",
+    question: "Credibilidad y confianza",
     answer:
-      "Layers is designed to feel intuitive from day one. Most designers are productive within hours, not weeks. We also provide interactive tutorials and comprehensive documentation to help you get started.",
+      "Un sitio web profesional genera confianza en los consumidores, ya que les proporciona información clara sobre tu negocio y productos.",
   },
   {
-    question: "How do you handle version control?",
+    question: "Análisis de datos",
     answer:
-      "Every change in Layers is automatically saved and versioned. You can review history, restore previous versions, and create named versions for important milestones.",
+      "Un sitio web te permite recopilar datos sobre el comportamiento de los usuarios, lo que puede ayudarte a ajustar tus estrategias de marketing y mejorar la experiencia del cliente.",
   },
   {
-    question: "Can I work offline?",
+    question: "Facilitación de la comunicación",
     answer:
-      "Yes! Layers includes a robust offline mode. Changes sync automatically when you're back online, so you can keep working anywhere.",
+      "Puedes ofrecer múltiples canales de contacto, como formularios, chat en vivo y correos electrónicos, mejorando la atención al cliente.",
   },
   {
-    question: "How does Layers handle collaboration?",
+    question: "Disponibilidad 24/7",
     answer:
-      "Layers is built for collaboration. You can invite team members to your projects, share feedback, and work together in real-time.",
+      "A diferencia de un negocio físico, un sitio web está disponible todo el tiempo, lo que permite a los clientes realizar compras o consultas en cualquier momento.",
   },
 ];
 
@@ -44,7 +43,7 @@ export default function Faqs() {
           transition={{ duration: 0.6 }}
           className="text-4xl text-center md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-[#03363D]/60 via-[#03363D]/70 to-[#03363D]/80 dark:from-primary dark:via-secondary dark:to-tertiary bg-clip-text text-transparent flex flex-col"
         >
-          ¿Tienes preguntas?
+          Beneficios de adquirir un
           <br />
           <motion.span
             initial={{ opacity: 0, y: 20 }}
@@ -52,7 +51,7 @@ export default function Faqs() {
             transition={{ duration: 0.8, delay: 0.8 }}
             className=" px-12 md:px-0"
           >
-            Tenemos respuestas.
+            servicio de página web.
           </motion.span>
         </motion.span>
 
@@ -62,7 +61,7 @@ export default function Faqs() {
               key={faqIndex}
               className="bg-gradient-to-r
         dark:from-primary/10 dark:to-tertiary/10 from-gray-300/50 to-gray-400/50 text-white rounded-2xl border border-white/10 p-6
-        dark:shadow-2xl dark:shadow-primary/10 shadow-xl shadow-[#366b48cc]"
+        dark:shadow-2xl dark:shadow-primary/10 shadow-lg shadow-[#366b48cc]"
             >
               <div
                 className="flex justify-between items-center mx-auto"

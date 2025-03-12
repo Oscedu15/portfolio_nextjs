@@ -35,12 +35,12 @@ export default function Introduction() {
   return (
     <section className="">
       <div className="container">
-        <div className="sticky top-20 md:top-28 lg:top-40">
+        <div className="sticky top-16 md:top-28 lg:top-40">
           <motion.h2
             initial="offscreen"
             whileInView={"onscreen"}
             variants={titleVariants}
-            className=" flex items-center justify-center font-semibold text-center lg:p-10 mt-20 mb-4"
+            className=" flex items-center justify-center font-semibold text-center lg:p-10 mt-16 mb-4"
           >
             Tu proceso creativo merece algo mejor.{" "}
           </motion.h2>

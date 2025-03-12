@@ -9,9 +9,8 @@ import { ThemeToggle } from "./theme-toogle";
 
 const navItems = [
   { name: "About", href: "about" },
-  { name: "Projects", href: "projects" },
-  { name: "Skills", href: "skills" },
-  { name: "Experience", href: "experiences" },
+  { name: "Proyectos", href: "proyectos" },
+  { name: "Experiencia", href: "experiencia" },
   { name: "Contacto", href: "contacto" },
 ];
 

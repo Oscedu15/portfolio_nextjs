@@ -55,7 +55,7 @@ export default function Integrations() {
     <section className="py-0 md:py-16 overflow-hidden">
       <div className="container">
         <div className="grid lg:grid-cols-2 items-center lg:gap-16">
-          <div>
+          <div className="flex flex-col justify-center items-center">
             <motion.h2
               initial="offscreen"
               whileInView={"onscreen"}
@@ -68,18 +68,18 @@ export default function Integrations() {
               initial="offscreen"
               whileInView={"onscreen"}
               variants={desVariants}
-              className="dark:text-white/50 text-gray-400 mt-4 text-xl italic mb-8"
+              className="dark:text-white/50 text-center text-gray-400 mt-4 text-xl italic mb-8"
             >
               Cada desafío es único, por lo que me aseguro de aprender y crecer
               en cada uno de ellos, asegurándome de no solo dar lo mejor de mí,
               sino también de ofrecer soluciones que las empresas se
-              enorgullezcan de llamar propias. ¿Quieres saber más? Contactame!
+              enorgullezcan de llamar propias. ¿Quieres saber más?<br/> Contactame!
             </motion.p>
             <button
               className="flex text-white relative max-w-sm items-center shadow-lg duration-200 btn
                     text-center transition-all group"
             >
-              <Link href="/contacto" className="flex ">
+              <Link href="/contacto" className="flex group-hover:text-primary ">
                 Contacto
                 <TbArrowUpRight className="w-5 h-5 duration-500 ml-2 group-hover:rotate-45" />
                 <div

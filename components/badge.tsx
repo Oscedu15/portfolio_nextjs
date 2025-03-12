@@ -3,7 +3,9 @@
 // import { TbArrowUpRight } from "react-icons/tb";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import {  fadeIn, tagVariants, titleVariants } from "@/utils/animation";
+import { fadeIn, tagVariants, titleVariants } from "@/utils/animation";
+import { TbArrowUpRight } from "react-icons/tb";
+import Link from "next/link";
 
 const Badge = () => {
   return (
@@ -11,13 +13,6 @@ const Badge = () => {
       <div className="block md:flex  md:flex-row-reverse">
         {/* left section */}
         <div className="lg:w-1/2 py-0 md:py-8 lg:text-left">
-          {/* <motion.h5
-            initial="offscreen"
-            whileInView={"onscreen"}
-            variants={desVariants}
-            className="  px-12  text-center  capitalize mt-3"
-          >
-          </motion.h5> */}
           <motion.h3
             initial="offscreen"
             whileInView={"onscreen"}
@@ -47,23 +42,29 @@ const Badge = () => {
             Embárcate en un viaje a través de mi experiencia dinámica, que
             abarca el diseño web, desarrollo, mantenimiento, diseño de
             aplicaciones y desarrollo.
+            <br />
+            ¿Interesado en colaborar conmigo?
           </motion.p>
-          {/* <motion.div
+          <motion.div
             initial="offscreen"
             whileInView={"onscreen"}
             variants={tagVariants}
           >
-            <button className="relative btn transition-all group">
-              <span className="text-content group-hover:text-primary transition-colors flex">
-                Book Now <TbArrowUpRight className="w-5 h-5 ml-2" />
-              </span>
-              <div
-                className="absolute inset-0 bg-gradient-to-r 
-        from-primary/10 to-tertiary/10 opacity-0
+                    <button
+              className="flex  relative max-w-sm items-center shadow-lg duration-200 btn
+        text-center transition-all group"
+            >
+              <Link href="/proyectos" className="flex group-hover:text-primary ">
+                Proyectos
+                <TbArrowUpRight className="w-5 h-5 duration-500 ml-2 group-hover:rotate-45" />
+                <div
+                  className="absolute rounded-full inset-0 bg-gradient-to-r 
+        from-primary/10 to-tertiary/10 opacity-0 
         group-hover:opacity-100 transition-opacity"
-              />
+                />
+              </Link>
             </button>
-          </motion.div> */}
+          </motion.div>
         </div>
         {/* right section */}
         <motion.div

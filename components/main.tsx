@@ -85,6 +85,39 @@ const projects = [
     image: "/projects/linktree.png",
     href: "https://linktree-clone-lac-seven.vercel.app/",
   },
+  {
+    title: "LinkTree Clone",
+    description: "Cross-platform mobile app for health tracking",
+    tech: [
+      { name: "React Native", icon: FaReact, color: "#61DAFB" },
+      { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
+      { name: "GraphQL", icon: SiGraphql, color: "#E535AB" },
+    ],
+    image: "/projects/linktree.png",
+    href: "https://linktree-clone-lac-seven.vercel.app/",
+  },
+  {
+    title: "LinkTree Clone",
+    description: "Cross-platform mobile app for health tracking",
+    tech: [
+      { name: "React Native", icon: FaReact, color: "#61DAFB" },
+      { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
+      { name: "GraphQL", icon: SiGraphql, color: "#E535AB" },
+    ],
+    image: "/projects/linktree.png",
+    href: "https://linktree-clone-lac-seven.vercel.app/",
+  },
+  {
+    title: "LinkTree Clone",
+    description: "Cross-platform mobile app for health tracking",
+    tech: [
+      { name: "React Native", icon: FaReact, color: "#61DAFB" },
+      { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
+      { name: "GraphQL", icon: SiGraphql, color: "#E535AB" },
+    ],
+    image: "/projects/linktree.png",
+    href: "https://linktree-clone-lac-seven.vercel.app/",
+  },
 ];
 
 export default function Main() {
@@ -99,11 +132,7 @@ export default function Main() {
           transition={{ duration: 0.6 }}
           className="flex flex-col items-center mb-20"
         >
-          <h2
-            className=" mb-4 text-center"
-          >
-            Sobre mi trabajo.
-          </h2>
+          <h2 className=" mb-4 text-center">Sobre mi trabajo.</h2>
           <div
             className="w-24 h-1 bg-gradient-to-l from-[#174d4d]/70 via-[#174d4d]/80
   to-[#174d4d]/90 dark:from-primary dark:via-secondary

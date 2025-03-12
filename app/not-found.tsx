@@ -9,19 +9,15 @@ const NotFound = () => {
       <div className="absolute flex justify-center items-center flex-col">
         <FaRegFaceFrownOpen className="w-20 text-gray-200 text-6xl" />
         <h2
-          className=" text-4xl font-bold bg-gradient-to-r
-        from-primary via-secondary to-tertiary 
-        bg-clip-text text-transparent"
+          className="from-[#06b4cccc]/70 via-[#06b4cccc]/80 to-[#06b4cccc]/90 dark:from-primary dark:via-secondary dark:to-tertiary"
         >
           404 Not Found
         </h2>
-        <p
-          className="text-xl font-semibold bg-gradient-to-r
-        from-primary via-secondary to-tertiary 
-        bg-clip-text text-transparent"
+        <h3
+          className="from-[#06b4cccc]/70 via-[#06b4cccc]/80 to-[#06b4cccc]/90 dark:from-primary dark:via-secondary dark:to-tertiary"
         >
-          Could not find the requested invoice.
-        </p>
+           Pagina no encontrada.
+        </h3>
 
         <Link
           href="/"
@@ -29,7 +25,7 @@ const NotFound = () => {
        border-white/10 hover:border-primary/30 transition-all group"
         >
           <span className="text-content cursor-pointer group-hover:text-primary transition-colors">
-            Go Back
+            Regresar
           </span>
           <div
             className="absolute rounded-full inset-0 bg-gradient-to-r 
