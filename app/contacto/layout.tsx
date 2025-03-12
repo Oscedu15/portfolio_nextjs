@@ -10,7 +10,8 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       title: "Oscar Garcia",
       description: "Portfolio Nextjs 15 layout contacto opengraph",
-      images: "/perfil.jpeg",
+      url: "https://portfolio-nextjs-pied-six.vercel.app/contact",
+      images: "/logo1.jpg",
     },
     twitter: {
       card: "summary_large_image",
@@ -27,5 +28,9 @@ export default function SocialLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <div className="bg-white text-black dark:bg-gray-900 dark:text-white">{children}</div>;
+  return (
+    <div className="bg-white text-black dark:bg-gray-900 dark:text-white">
+      {children}
+    </div>
+  );
 }

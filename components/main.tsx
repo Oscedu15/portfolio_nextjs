@@ -1,9 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaNode, FaReact } from "react-icons/fa";
 import {
   SiFirebase,
-  SiGraphql,
+ SiReact,
   SiNextdotjs,
   SiTailwindcss,
   SiTypescript,
@@ -11,10 +10,12 @@ import {
   SiFramer,
   SiVite,
   SiJavascript,
+  SiSwiper,
 } from "react-icons/si";
 import Image from "next/image";
 import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
 import Link from "next/link";
+import { TbArrowUpRight } from "react-icons/tb";
 
 const projects = [
   {
@@ -24,52 +25,57 @@ const projects = [
       { name: "Next.js", icon: SiNextdotjs, color: "000000" },
       { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
       { name: "Framer Motion", icon: SiFramer, color: "06B6D4" },
-      { name: "Framer Motion", icon: SiJavascript, color: "FF0000" },
+      { name: "Javascript", icon: SiJavascript, color: "#FFCA28" },
     ],
     image: "/projects/carland.png",
-    href: "https://centro-odontologico-od-enerirt.vercel.app/",
+    href: "https://carland-og.vercel.app/",
   },
   {
     title: "Hotel",
     description: "Real-time data visualization platform",
     tech: [
-      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-      { name: "Node.js", icon: FaNode, color: "#339933" },
-      { name: "Vite", icon: SiVite, color: "#339933" },
-      { name: "Prisma", icon: SiPrisma, color: "06B6D4" },
+    
+      { name: "Next.js", icon: SiNextdotjs, color: "000000" },
+      { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
+      { name: "Framer Motion", icon: SiFramer, color: "00000" },
+      { name: "Javascript", icon: SiJavascript, color: "#FFCA28" },
     ],
     image: "/projects/hotel.png",
-    href: "https://centro-odontologico-od-enerirt.vercel.app/",
+    href: "https://hotey-next-js.vercel.app/",
   },
   {
     title: "Spa Irene",
     description: "Cross-platform mobile app for health tracking",
     tech: [
-      { name: "React Native", icon: FaReact, color: "#61DAFB" },
-      { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
-      { name: "GraphQL", icon: SiGraphql, color: "#E535AB" },
+      { name: "React", icon: SiReact, color: "#61DAFB" },
+      { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
+      { name: "Next.js", icon: SiNextdotjs, color: "000000" },
+      { name: "Framer Motion", icon: SiFramer, color: "00000" },
     ],
     image: "/projects/spa.png",
-    href: "https://centro-odontologico-od-enerirt.vercel.app/",
+    href: "https://serene-hazel.vercel.app/",
   },
   {
-    title: "Osocially",
+    title: "Administrador de Productos",
     description: "Cross-platform mobile app for health tracking",
     tech: [
-      { name: "React Native", icon: FaReact, color: "#61DAFB" },
+      { name: "Next.js", icon: SiNextdotjs, color: "000000" },
+      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
       { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
-      { name: "GraphQL", icon: SiGraphql, color: "#E535AB" },
+      { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
+
     ],
-    image: "/projects/socially.png",
-    href: "https://osocially.vercel.app/",
+    image: "/projects/firebase.png",
+    href: "https://product-admin-project-nextjs.vercel.app/",
   },
   {
     title: "Mediprime Salud",
     description: "Cross-platform mobile app for health tracking",
     tech: [
-      { name: "React Native", icon: FaReact, color: "#61DAFB" },
-      { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
-      { name: "GraphQL", icon: SiGraphql, color: "#E535AB" },
+      { name: "React", icon: SiReact, color: "#61DAFB" },
+      { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
+      { name: "Vite", icon: SiVite, color: "#FFCA28" },
+      { name: "Framer Motion", icon: SiFramer, color: "00000" },
     ],
     image: "/projects/mediprime.png",
     href: "https://mediprime.vercel.app/",
@@ -78,45 +84,54 @@ const projects = [
     title: "LinkTree Clone",
     description: "Cross-platform mobile app for health tracking",
     tech: [
-      { name: "React Native", icon: FaReact, color: "#61DAFB" },
-      { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
-      { name: "GraphQL", icon: SiGraphql, color: "#E535AB" },
+      { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
+      { name: "Prisma", icon: SiPrisma, color: "06B6D4" },
+      { name: "Next.js", icon: SiNextdotjs, color: "000000" },
+      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+      { name: "Framer Motion", icon: SiFramer, color: "00000" },
     ],
     image: "/projects/linktree.png",
     href: "https://linktree-clone-lac-seven.vercel.app/",
   },
   {
-    title: "LinkTree Clone",
+    title: "Maverick",
     description: "Cross-platform mobile app for health tracking",
     tech: [
-      { name: "React Native", icon: FaReact, color: "#61DAFB" },
-      { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
-      { name: "GraphQL", icon: SiGraphql, color: "#E535AB" },
+      { name: "React", icon: SiReact, color: "#61DAFB" },
+      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+      { name: "Next.js", icon: SiNextdotjs, color: "000000" },
+      { name: "Framer Motion", icon: SiFramer, color: "00000" },
+      { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
+
     ],
-    image: "/projects/linktree.png",
-    href: "https://linktree-clone-lac-seven.vercel.app/",
+    image: "/projects/maverickcars.png",
+    href: "https://maverick-lemon.vercel.app/",
   },
   {
-    title: "LinkTree Clone",
+    title: "Space",
     description: "Cross-platform mobile app for health tracking",
     tech: [
-      { name: "React Native", icon: FaReact, color: "#61DAFB" },
-      { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
-      { name: "GraphQL", icon: SiGraphql, color: "#E535AB" },
+      { name: "React", icon: SiReact, color: "#61DAFB" },
+      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+      { name: "Next.js", icon: SiNextdotjs, color: "000000" },
+      { name: "Framer Motion", icon: SiFramer, color: "00000" },
+      { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
     ],
-    image: "/projects/linktree.png",
-    href: "https://linktree-clone-lac-seven.vercel.app/",
+    image: "/projects/space.png",
+    href: "https://espacio-flax.vercel.app/",
   },
   {
-    title: "LinkTree Clone",
+    title: "Gym",
     description: "Cross-platform mobile app for health tracking",
     tech: [
-      { name: "React Native", icon: FaReact, color: "#61DAFB" },
-      { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
-      { name: "GraphQL", icon: SiGraphql, color: "#E535AB" },
+      { name: "Swiper", icon: SiSwiper, color: "#61DAFB" },
+      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+      { name: "Next.js", icon: SiNextdotjs, color: "000000" },
+      { name: "Framer Motion", icon: SiFramer, color: "00000" },
+      { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
     ],
-    image: "/projects/linktree.png",
-    href: "https://linktree-clone-lac-seven.vercel.app/",
+    image: "/projects/gym.png",
+    href: "https://gym-tawny-nu.vercel.app/",
   },
 ];
 
@@ -132,7 +147,7 @@ export default function Main() {
           transition={{ duration: 0.6 }}
           className="flex flex-col items-center mb-20"
         >
-          <h2 className=" mb-4 text-center">Sobre mi trabajo.</h2>
+          <h2 className=" mb-4 text-center">Parte de mis Proyetos</h2>
           <div
             className="w-24 h-1 bg-gradient-to-l from-[#174d4d]/70 via-[#174d4d]/80
   to-[#174d4d]/90 dark:from-primary dark:via-secondary
@@ -241,14 +256,20 @@ export default function Main() {
             whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
             className="relative overflow-hidden btn rounded-full  transition-all group"
           >
-            <span className="text-content dark:group-hover:text-primary group-hover:text-white transition-colors">
-              View All Projects
-            </span>
-            <div
-              className="absolute inset-0 bg-gradient-to-r 
-        from-primary/10 to-tertiary/10 opacity-0
+            <Link
+              href="https://github.com/Oscedu15?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex group-hover:text-primary text-white"
+            >
+              Ver más proyectos
+              <TbArrowUpRight className="w-5 h-5 duration-500 ml-2 group-hover:rotate-45" />
+              <div
+                className="absolute rounded-full inset-0 bg-gradient-to-r 
+        from-primary/10 to-tertiary/10 opacity-0 
         group-hover:opacity-100 transition-opacity"
-            />
+              />
+            </Link>
           </motion.button>
         </motion.div>
       </div>

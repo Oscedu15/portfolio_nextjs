@@ -17,8 +17,7 @@ const Badge = () => {
             initial="offscreen"
             whileInView={"onscreen"}
             variants={titleVariants}
-            className="text-center lg:p-10 my-4
-             md:mt-0"
+            className="text-center lg:p-10 my-4 px-4 md:px-0 md:mt-0"
           >
             Hola, mi nombre es Oscar
           </motion.h3>
@@ -49,9 +48,9 @@ const Badge = () => {
             initial="offscreen"
             whileInView={"onscreen"}
             variants={tagVariants}
+            className="flex justify-center"
           >
-                    <button
-              className="flex  relative max-w-sm items-center shadow-lg duration-200 btn
+                    <button  className="flex  relative max-w-sm items-center shadow-lg duration-200 btn
         text-center transition-all group"
             >
               <Link href="/proyectos" className="flex group-hover:text-primary ">
