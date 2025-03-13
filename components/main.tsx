@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import {
   SiFirebase,
- SiReact,
+  SiReact,
   SiNextdotjs,
   SiTailwindcss,
   SiTypescript,
@@ -10,12 +10,11 @@ import {
   SiFramer,
   SiVite,
   SiJavascript,
-  SiSwiper,
 } from "react-icons/si";
 import Image from "next/image";
 import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
 import Link from "next/link";
-import { TbArrowUpRight } from "react-icons/tb";
+import ShowMoreButton from "./button-special";
 
 const projects = [
   {
@@ -34,7 +33,6 @@ const projects = [
     title: "Hotel",
     description: "Real-time data visualization platform",
     tech: [
-    
       { name: "Next.js", icon: SiNextdotjs, color: "000000" },
       { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
       { name: "Framer Motion", icon: SiFramer, color: "00000" },
@@ -63,7 +61,6 @@ const projects = [
       { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
       { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
       { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
-
     ],
     image: "/projects/firebase.png",
     href: "https://product-admin-project-nextjs.vercel.app/",
@@ -92,46 +89,6 @@ const projects = [
     ],
     image: "/projects/linktree.png",
     href: "https://linktree-clone-lac-seven.vercel.app/",
-  },
-  {
-    title: "Maverick",
-    description: "Cross-platform mobile app for health tracking",
-    tech: [
-      { name: "React", icon: SiReact, color: "#61DAFB" },
-      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-      { name: "Next.js", icon: SiNextdotjs, color: "000000" },
-      { name: "Framer Motion", icon: SiFramer, color: "00000" },
-      { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
-
-    ],
-    image: "/projects/maverickcars.png",
-    href: "https://maverick-lemon.vercel.app/",
-  },
-  {
-    title: "Space",
-    description: "Cross-platform mobile app for health tracking",
-    tech: [
-      { name: "React", icon: SiReact, color: "#61DAFB" },
-      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-      { name: "Next.js", icon: SiNextdotjs, color: "000000" },
-      { name: "Framer Motion", icon: SiFramer, color: "00000" },
-      { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
-    ],
-    image: "/projects/space.png",
-    href: "https://espacio-flax.vercel.app/",
-  },
-  {
-    title: "Gym",
-    description: "Cross-platform mobile app for health tracking",
-    tech: [
-      { name: "Swiper", icon: SiSwiper, color: "#61DAFB" },
-      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-      { name: "Next.js", icon: SiNextdotjs, color: "000000" },
-      { name: "Framer Motion", icon: SiFramer, color: "00000" },
-      { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
-    ],
-    image: "/projects/gym.png",
-    href: "https://gym-tawny-nu.vercel.app/",
   },
 ];
 
@@ -243,35 +200,7 @@ export default function Main() {
           ))}
         </div>
         {/* View More Button */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="flex justify-center mt-20 relative z-[5]"
-        >
-          <motion.button
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
-            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-            className="relative overflow-hidden btn rounded-full  transition-all group"
-          >
-            <Link
-              href="https://github.com/Oscedu15?tab=repositories"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex group-hover:text-primary text-white"
-            >
-              Ver más proyectos
-              <TbArrowUpRight className="w-5 h-5 duration-500 ml-2 group-hover:rotate-45" />
-              <div
-                className="absolute rounded-full inset-0 bg-gradient-to-r 
-        from-primary/10 to-tertiary/10 opacity-0 
-        group-hover:opacity-100 transition-opacity"
-              />
-            </Link>
-          </motion.button>
-        </motion.div>
+        <ShowMoreButton />
       </div>
     </section>
   );
