@@ -5,11 +5,14 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-const text = `El equipo técnico de un solo hombre listo para darle vida a tu
-              próxima gran idea. Trabajemos juntos. Desde diseño de interacción
-              hasta sistemas de diseño escalables, aplicaciones de una sola
-              página y algo más experimental con WebGL. Ayudo a gente increíble
-              a crear proyectos web ambiciosos y accesibles:`;
+//Desde diseño de interacción
+// hasta sistemas de diseño escalables, aplicaciones de una sola
+// página y algo más experimental con WebGL. Ayudo a gente increíble
+// a crear proyectos web ambiciosos y accesibles:
+// Mi enfoque se basa en la colaboración y la mejora continua. Estoy comprometido con el aprendizaje constante y la adopción de nuevas tecnologías y mejores prácticas en el desarrollo web. Me apasiona crear soluciones que no solo sean funcionales, sino también visualmente atractivas y accesibles para todos los usuarios. El equipo técnico de un solo hombre listo para darle vida a tu
+// próxima gran idea.
+const text = ` 
+ Mi enfoque se centra en la colaboración y la mejora continua, con un compromiso hacia el aprendizaje constante y la adopción de nuevas tecnologías en el desarrollo web. Me apasiona crear soluciones funcionales, visualmente atractivas y accesibles. Soy un desarrollador versátil listo para dar vida a tu próxima gran idea.`;
 
 const words = text.split("");
 
@@ -42,7 +45,8 @@ export default function Introduction() {
             variants={titleVariants}
             className=" flex items-center justify-center font-semibold text-center lg:p-10 mt-16 mb-4"
           >
-            Tu proceso creativo merece algo mejor.{" "}
+            {/* Tu proceso creativo merece algo mejor.{" "} */}
+            Creador de Soluciones Web Innovadoras
           </motion.h2>
           <div className="text-3xl md:text-4xl lg:text-5xl text-center font-medium mt-10">
             <span className="text-white">
@@ -52,14 +56,12 @@ export default function Introduction() {
                   className={twMerge(
                     "transition duration-500 text-[#8b93a3]",
                     wordIndex < currentWord &&
-                      "bg-gradient-to-r from-[#03363D]/60 via-[#03363D]/70 to-[#03363D]/80 dark:from-primary dark:via-secondary dark:to-tertiary bg-clip-text text-transparent"
+                      "bg-gradient-to-r from-[#03363D]/60 via-[#03363D]/70 to-[#03363D]/80 dark:from-white/70 dark:via-white/80 dark:to-white/90 bg-clip-text text-transparent"
                   )}
                 >{`${word}`}</span>
               ))}
             </span>
-            <span className="text-lime-400 block">
-              cuanto más atrevidos, mejor.
-            </span>
+            <span className="text-lime-400 block mt-4">Trabajemos juntos!</span>
           </div>
         </div>
         <div className="h-[150vh]" ref={scrollTarget}></div>

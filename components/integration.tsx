@@ -56,14 +56,15 @@ export default function Integrations() {
       <div className="container">
         <div className="grid lg:grid-cols-2 items-center lg:gap-16">
           <div className="flex flex-col justify-center items-center">
-            <motion.h2
+            <motion.h3
               initial="offscreen"
               whileInView={"onscreen"}
               variants={titleVariants}
               className="text-5xl md:text-6xl flex-col lg:text-7xl flex items-center justify-center font-semibold text-center lg:p-10 mt-20 mb-4"
             >
-              Juega bien con los <span className="text-lime-400">demás.</span>
-            </motion.h2>
+              Transformando Ideas en Realidad {" "}
+              <span className="text-lime-400">Digital</span>
+            </motion.h3>
             <motion.p
               initial="offscreen"
               whileInView={"onscreen"}
@@ -73,7 +74,8 @@ export default function Integrations() {
               Cada desafío es único, por lo que me aseguro de aprender y crecer
               en cada uno de ellos, asegurándome de no solo dar lo mejor de mí,
               sino también de ofrecer soluciones que las empresas se
-              enorgullezcan de llamar propias. ¿Quieres saber más?<br/> Contactame!
+              enorgullezcan de llamar propias. ¿Quieres saber más?
+              <br /> Contactame!
             </motion.p>
             <button
               className="flex text-white relative max-w-sm items-center shadow-lg duration-200 btn

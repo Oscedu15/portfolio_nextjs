@@ -55,25 +55,28 @@ const open_sans = Open_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://portfolio-nextjs-pied-six.vercel.app"),
-  title: {
-    template: "%s | ",
-    default: "Oscar Garcia Portfolio",
-  },
-  description: "Tutorial de portfolio de Nextjs 15",
+  title: "Oscar Gracia Portfolio",
+  description: "Portfolio personal en Nextjs 15",
   openGraph: {
-    type: "website",
     title: "Oscar Garcia",
-    description: "Portfolio Nextjs 15 OpenGraph",
     siteName: "Mi Portfolio",
     url: "https://portfolio-nextjs-pied-six.vercel.app",
-    images: "/logo.jpg",
+    images: [
+      {
+        url: "/logo.jpg", // Ruta relativa a la imagen en la carpeta public
+        width: 1200, // Ancho de la imagen
+        height: 630, // Alto de la imagen
+        alt: "Osc FrontEnd", // Texto alternativo para la imagen
+      },
+    ],
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     site: "@eMartiiin94",
-    title: "Oscar Garcia",
+    title: "Oscar Garcia twitter",
     description: "Portfolio Nextjs 15",
-    images: "/mobile.jpg",
+    images: "logo1.jpg",
   },
 };
 

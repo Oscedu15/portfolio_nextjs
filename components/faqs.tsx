@@ -67,7 +67,7 @@ export default function Faqs() {
                 className="flex justify-between items-center mx-auto"
                 onClick={() => setSelectedIndex(faqIndex)}
               >
-                <p className="font-bold text-center text-[#03363D]/70">
+                <p className="font-bold text-[#03363D]/70">
                   {faq.question}
                 </p>
                 <svg

@@ -11,6 +11,7 @@ import {
   SiFramer,
   SiTailwindcss,
   SiSwiper,
+  SiJavascript,
 } from "react-icons/si";
 import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
 import { TbArrowRight } from "react-icons/tb";
@@ -56,7 +57,20 @@ const proyects2 = [
     href: "https://gym-tawny-nu.vercel.app/",
   },
   {
-    title: "Maverick",
+    title: "Home Axil",
+    description: "Cross-platform mobile app for health tracking",
+    tech: [
+      { name: "React", icon: SiReact, color: "#61DAFB" },
+      { name: "Javascript", icon: SiJavascript, color: "#FFCA28" },
+      { name: "Next.js", icon: SiNextdotjs, color: "000000" },
+      { name: "Framer Motion", icon: SiFramer, color: "00000" },
+      { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
+    ],
+    image: "/projects/home-axil.png",
+    href: "https://home-axil-ruby.vercel.app/",
+  },
+  {
+    title: "AppSocially",
     description: "Cross-platform mobile app for health tracking",
     tech: [
       { name: "React", icon: SiReact, color: "#61DAFB" },
@@ -65,34 +79,21 @@ const proyects2 = [
       { name: "Framer Motion", icon: SiFramer, color: "00000" },
       { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
     ],
-    image: "/projects/maverickcars.png",
-    href: "https://maverick-lemon.vercel.app/",
+    image: "/projects/appsocially.png",
+    href: "https://osocially.vercel.app/",
   },
   {
-    title: "Space",
-    description: "Cross-platform mobile app for health tracking",
-    tech: [
-      { name: "React", icon: SiReact, color: "#61DAFB" },
-      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-      { name: "Next.js", icon: SiNextdotjs, color: "000000" },
-      { name: "Framer Motion", icon: SiFramer, color: "00000" },
-      { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
-    ],
-    image: "/projects/space.png",
-    href: "https://espacio-flax.vercel.app/",
-  },
-  {
-    title: "Gym",
+    title: "Ar-tico",
     description: "Cross-platform mobile app for health tracking",
     tech: [
       { name: "Swiper", icon: SiSwiper, color: "#61DAFB" },
-      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+      { name: "Javascript", icon: SiJavascript, color: "#FFCA28" },
       { name: "Next.js", icon: SiNextdotjs, color: "000000" },
       { name: "Framer Motion", icon: SiFramer, color: "00000" },
       { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
     ],
-    image: "/projects/gym.png",
-    href: "https://gym-tawny-nu.vercel.app/",
+    image: "/projects/ar-tico.png",
+    href: "https://construccion-psi.vercel.app/",
   },
 ];
 
@@ -105,29 +106,6 @@ const ShowMoreButton = () => {
 
   return (
     <div className="flex flex-col items-center mt-4 md:mt-6">
-      <motion.button
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 1.2 }}
-        whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-        onClick={toggleVisibility}
-        className="relative overflow-hidden btn rounded-full  transition-all group"
-      >
-        <span className="flex group-hover:text-primary text-white">
-          {isVisible ? "Ver Menos" : "Ver Más"}
-          <TbArrowRight
-            className={`w-5 h-5 duration-500 ml-2 ${
-              isVisible ? "group-hover:-rotate-90" : "group-hover:rotate-90"
-            } `}
-          />
-          <div
-            className="absolute rounded-full inset-0 bg-gradient-to-r 
-        from-primary/10 to-tertiary/10 opacity-0 
-        group-hover:opacity-100 transition-opacity"
-          />
-        </span>
-      </motion.button>
-
       <motion.div
         initial={{ opacity: 0, height: 0 }}
         animate={{ opacity: isVisible ? 1 : 0, height: isVisible ? "auto" : 0 }}
@@ -220,6 +198,28 @@ const ShowMoreButton = () => {
           ))}
         </div>
       </motion.div>
+      <motion.button
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 1.2 }}
+        whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+        onClick={toggleVisibility}
+        className="relative mt-4 overflow-hidden btn rounded-full  transition-all group"
+      >
+        <span className="flex group-hover:text-primary text-white">
+          {isVisible ? "Ver Menos" : "Ver Más"}
+          <TbArrowRight
+            className={`w-5 h-5 duration-500 ml-2 ${
+              isVisible ? "group-hover:-rotate-90" : "group-hover:rotate-90"
+            } `}
+          />
+          <div
+            className="absolute rounded-full inset-0 bg-gradient-to-r 
+        from-primary/10 to-tertiary/10 opacity-0 
+        group-hover:opacity-100 transition-opacity"
+          />
+        </span>
+      </motion.button>
     </div>
   );
 };

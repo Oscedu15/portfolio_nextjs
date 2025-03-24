@@ -104,7 +104,7 @@ export default function Main() {
           transition={{ duration: 0.6 }}
           className="flex flex-col items-center mb-20"
         >
-          <h2 className=" mb-4 text-center">Parte de mis Proyetos</h2>
+          <h2 className=" mb-4 text-center">Proyectos Destacados</h2>
           <div
             className="w-24 h-1 bg-gradient-to-l from-[#174d4d]/70 via-[#174d4d]/80
   to-[#174d4d]/90 dark:from-primary dark:via-secondary

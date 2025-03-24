@@ -140,8 +140,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="flex w-full btn flex-col relative max-w-sm items-center  text-white rounded-full shadow-lg duration-200  border
-    transition-all group"
+                  className={`flex w-full btn flex-col relative max-w-sm items-center  text-white rounded-full shadow-lg duration-200 border transition-all group ${message ? "hidden": ""}`}
                 >
                   <span className="text-content group-hover:text-primary transition-colors">
                     Enviar

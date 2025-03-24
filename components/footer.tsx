@@ -14,7 +14,7 @@ export default function Footer() {
       >
         <div className="grid text-center grid-cols-1 md:grid-cols-4 gap-8">
           <motion.div initial={{ x: -100 }} animate={{ x: 0 }}>
-            <h3 className="text-lg font-semibold text-white mb-4">About</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">Sobre Mi</h3>
             <span className="dark:text-gray-400 text-[#d6dae0]">
               Construyendo experiencias digitales que combinan tecnología
               moderna con un diseño excepcional.
@@ -29,7 +29,7 @@ export default function Footer() {
                   className="dark:text-gray-400 text-[#d6dae0]
                          hover:text-white transition-colors"
                 >
-                  Projectos
+                  Proyectos
                 </Link>
               </li>
               <li>
