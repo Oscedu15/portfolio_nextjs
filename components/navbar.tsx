@@ -25,7 +25,6 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { scrollY } = useScroll();
 
-
   useMotionValueEvent(scrollY, "change", (latest) => {
     setIsScrolled(latest > 50);
   });
@@ -151,6 +150,12 @@ export default function Navbar() {
                 <LinkedInIcon className="h-5 w-5 text-white  dark:text-content/80 dark:group-hover:text-primary transition-colors" />
               </Link>
             </div>
+            <span
+              className="flex justify-center text-[#d6dae0]/70 hover:text-[#d6dae0]
+                 hover:bg-[#174D4D]/50 dark:text-primary dark:hover:text-primary/90 dark:hover:bg-white/5 transition-colors italic"
+            >
+              Desarrollado por: Oscar Garcia
+            </span>
           </motion.div>
         )}
       </div>

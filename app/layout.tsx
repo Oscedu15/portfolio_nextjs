@@ -18,41 +18,6 @@ const open_sans = Open_Sans({
   variable: "--font-open-sans",
 });
 
-// export const metadata: Metadata = {
-//   //El %s en template, nos permite capturar lo que este en el titulo de la pagina que este pasando por este layout
-//   title: {
-//     template: "%s | Oscar Garcia",
-//     default: "Portfolio Nextjs 15",
-//   },
-//   description: "Tutorial de portfolio de Nextjs 15",
-//   openGraph: {
-//     type: "website",
-//     url: "https://github.com/Oscedu15",
-//     title: "Oscar Garcia Portfolio Nextjs",
-//     description: "Front End Developer Oscar Garcia",
-//     siteName: "Mi Portfolio",
-//     images: [
-//       {
-//         url: "/public//ecommerce.png",
-//       },
-//     ],
-//   },
-// };
-
-// export const metadata = {
-//   metadataBase: new URL('http://localhost:3000'),
-//   alternates: {
-//     canonical: '/',
-//     languages: {
-//       'en-US': '/en-US',
-//       'de-DE': '/de-DE',
-//     },
-//   },
-//   openGraph: {
-//     images: '/og-image.png',
-//   },
-// }
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://portfolio-nextjs-pied-six.vercel.app"),
   title: "Oscar Gracia Portfolio",
@@ -71,13 +36,13 @@ export const metadata: Metadata = {
     ],
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    site: "@eMartiiin94",
-    title: "Oscar Garcia twitter",
-    description: "Portfolio Nextjs 15",
-    images: "logo1.jpg",
-  },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   site: "@eMartiiin94",
+  //   title: "Oscar Garcia twitter",
+  //   description: "Portfolio Nextjs 15",
+  //   images: "logo1.jpg",
+  // },
 };
 
 export default function RootLayout({
@@ -88,7 +53,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${poppins.variable} ${open_sans.variable} font-poppins dark:bg-blue-50 antialiased text-black  dark:text-white`}
+        className={`${poppins.variable} ${open_sans.variable} font-poppins dark:bg-blue-50 antialiased text-black dark:text-white`}
         suppressHydrationWarning
       >
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">

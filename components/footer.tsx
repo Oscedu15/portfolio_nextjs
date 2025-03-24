@@ -6,8 +6,10 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="dark:bg-gray-900 border-t bg-gradient-to-l from-[#174d4d]/90 via-[#174d4d]/80
-  to-[#174d4d]/90 border dark:from-surface dark:via-surface dark:to-surface dark:border-gray-800">
+    <footer
+      className="dark:bg-gray-900 border-t bg-gradient-to-l from-[#174d4d]/90 via-[#174d4d]/80
+  to-[#174d4d]/90 border dark:from-surface dark:via-surface dark:to-surface dark:border-gray-800"
+    >
       <div
         className="max-w-7xl mx-auto px-4 sm:px-6
          lg:px-8 py-12"
@@ -25,7 +27,16 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#projects"
+                  href="experiencia"
+                  className="dark:text-gray-400 text-[#d6dae0]
+                         hover:text-white transition-colors"
+                >
+                  Experiencia
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="proyectos"
                   className="dark:text-gray-400 text-[#d6dae0]
                          hover:text-white transition-colors"
                 >
@@ -34,7 +45,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#about"
+                  href="about"
                   className="dark:text-gray-400 text-[#d6dae0]
                          hover:text-white transition-colors"
                 >
@@ -43,7 +54,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#contact"
+                  href="contacto"
                   className="dark:text-gray-400 text-[#d6dae0]
                          hover:text-white transition-colors"
                 >
@@ -78,7 +89,7 @@ export default function Footer() {
           </motion.div>
 
           <motion.div initial={{ x: -100 }} animate={{ x: 0 }}>
-            <h3 className="text-lg font-semibold text-white mb-4">Connect</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">Redes</h3>
             <ul className="flex space-x-4 items-center justify-center">
               <Link
                 href="https://github.com/Oscedu15"
@@ -100,7 +111,11 @@ export default function Footer() {
                         hover:text-white dark:hover:text-white transition-colors"
                 />
               </Link>
-              <Link href="mailto:oscaregarcialeon@gmail.com" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="mailto:oscaregarcialeon@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <EnvelopeIcon
                   className="dark:text-gray-400 text-[#d6dae0] h-6 w-6
                         hover:text-white dark:hover:text-white transition-colors"
@@ -111,7 +126,8 @@ export default function Footer() {
         </div>
         <div className="border-t dark:border-gray-800  border-gray-400 mt-12 pt-8 text-center">
           <span className="dark:text-gray-400 text-[#d6dae0]">
-            &copy; {new Date().getFullYear()} Oscar Garcia. Todos los derchos reservados.
+            &copy; {new Date().getFullYear()} Oscar Garcia. Todos los derchos
+            reservados.
           </span>
         </div>
       </div>

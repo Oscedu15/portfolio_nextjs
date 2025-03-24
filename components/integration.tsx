@@ -60,9 +60,9 @@ export default function Integrations() {
               initial="offscreen"
               whileInView={"onscreen"}
               variants={titleVariants}
-              className="text-5xl md:text-6xl flex-col lg:text-7xl flex items-center justify-center font-semibold text-center lg:p-10 mt-20 mb-4"
+              className="text-5xl md:text-6xl flex-col lg:text-7xl flex items-center justify-center font-semibold text-wrap text-center lg:p-10 mt-20 mb-4"
             >
-              Transformando Ideas en Realidad {" "}
+              Transformar Ideas en Realidad{" "}
               <span className="text-lime-400">Digital</span>
             </motion.h3>
             <motion.p
