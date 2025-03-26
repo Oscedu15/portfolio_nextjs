@@ -19,7 +19,8 @@ import ShowMoreButton from "./button-special";
 const projects = [
   {
     title: "Carland Rent",
-    description: "Experiencia de reserva de autos con Next.js y Javacript",
+    description:
+      "Donde cada viaje es una nueva historia! Alquila, conduce y vive la experiencia.",
     tech: [
       { name: "Next.js", icon: SiNextdotjs, color: "000000" },
       { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
@@ -31,7 +32,7 @@ const projects = [
   },
   {
     title: "Hotel",
-    description: "Real-time data visualization platform",
+    description: "La hospitalidad que te abraza desde el primer momento.",
     tech: [
       { name: "Next.js", icon: SiNextdotjs, color: "000000" },
       { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
@@ -43,7 +44,7 @@ const projects = [
   },
   {
     title: "Spa Irene",
-    description: "Cross-platform mobile app for health tracking",
+    description: "Donde el bienestar se encuentra con la serenidad.",
     tech: [
       { name: "React", icon: SiReact, color: "#61DAFB" },
       { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
@@ -55,7 +56,7 @@ const projects = [
   },
   {
     title: "Administrador de Productos",
-    description: "Cross-platform mobile app for health tracking",
+    description: "Estrategias inteligentes para una administración efectiva",
     tech: [
       { name: "Next.js", icon: SiNextdotjs, color: "000000" },
       { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
@@ -67,7 +68,7 @@ const projects = [
   },
   {
     title: "Mediprime Salud",
-    description: "Cross-platform mobile app for health tracking",
+    description: "Comprometidos con tu salud, dedicados a tu bienestar.",
     tech: [
       { name: "React", icon: SiReact, color: "#61DAFB" },
       { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
@@ -79,7 +80,7 @@ const projects = [
   },
   {
     title: "LinkTree Clone",
-    description: "Cross-platform mobile app for health tracking",
+    description: "Todo lo que eres. En un solo enlace en la biografía.",
     tech: [
       { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
       { name: "Prisma", icon: SiPrisma, color: "06B6D4" },

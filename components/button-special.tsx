@@ -18,8 +18,8 @@ import { TbArrowRight } from "react-icons/tb";
 
 const proyects2 = [
   {
-    title: "Maverick",
-    description: "Cross-platform mobile app for health tracking",
+    title: "Restaurante W-Food",
+    description: "Sabor que enamora, en cada bocado.",
     tech: [
       { name: "React", icon: SiReact, color: "#61DAFB" },
       { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
@@ -27,12 +27,12 @@ const proyects2 = [
       { name: "Framer Motion", icon: SiFramer, color: "00000" },
       { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
     ],
-    image: "/projects/maverickcars.png",
-    href: "https://maverick-lemon.vercel.app/",
+    image: "/projects/w-food.png",
+    href: "https://w-food-two.vercel.app/",
   },
   {
-    title: "Space",
-    description: "Cross-platform mobile app for health tracking",
+    title: "Agencia Espacial",
+    description: "Impulsando la exploración más allá de nuestro planeta.",
     tech: [
       { name: "React", icon: SiReact, color: "#61DAFB" },
       { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
@@ -44,8 +44,8 @@ const proyects2 = [
     href: "https://espacio-flax.vercel.app/",
   },
   {
-    title: "Gym",
-    description: "Cross-platform mobile app for health tracking",
+    title: "Gym FitPhysque",
+    description: "Donde la fuerza se encuentra con la determinación.",
     tech: [
       { name: "Swiper", icon: SiSwiper, color: "#61DAFB" },
       { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
@@ -58,7 +58,8 @@ const proyects2 = [
   },
   {
     title: "Home Axil",
-    description: "Cross-platform mobile app for health tracking",
+    description:
+      "Construyendo futuros, encuentra el lugar perfecto para tu historia.",
     tech: [
       { name: "React", icon: SiReact, color: "#61DAFB" },
       { name: "Javascript", icon: SiJavascript, color: "#FFCA28" },
@@ -71,7 +72,7 @@ const proyects2 = [
   },
   {
     title: "AppSocially",
-    description: "Cross-platform mobile app for health tracking",
+    description: "Conectando vidas, compartiendo momentos.",
     tech: [
       { name: "React", icon: SiReact, color: "#61DAFB" },
       { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
@@ -84,7 +85,8 @@ const proyects2 = [
   },
   {
     title: "Ar-tico",
-    description: "Cross-platform mobile app for health tracking",
+    description:
+      "Mantén la frescura en casa, en la industria y en la carretera.",
     tech: [
       { name: "Swiper", icon: SiSwiper, color: "#61DAFB" },
       { name: "Javascript", icon: SiJavascript, color: "#FFCA28" },

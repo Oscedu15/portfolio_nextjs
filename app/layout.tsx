@@ -5,6 +5,7 @@ import { Poppins, Open_Sans } from "next/font/google";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "next-themes";
+import BackToTopBtn from "@/components/buttontop";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -59,6 +60,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
           <Navbar />
           {children}
+          <BackToTopBtn/>
           <Footer />
         </ThemeProvider>
       </body>
