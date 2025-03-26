@@ -1,15 +1,18 @@
-'use client';
+"use client";
 
 import { useEffect, useState } from "react";
-import { FaChevronUp } from 'react-icons/fa';
-import { motion } from 'framer-motion';
+import { FaChevronUp } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 interface BackToTopBtnProps {
   position?: { right?: string; bottom?: string };
   className?: string;
 }
 
-export default function BackToTopBtn({ position = { right: '16px', bottom: '11px' }, className = '' }: BackToTopBtnProps) {
+export default function BackToTopBtn({
+  position = { right: "16px", bottom: "11px" },
+  className = "",
+}: BackToTopBtnProps) {
   const [isActive, setIsActive] = useState<boolean>(false);
 
   useEffect(() => {
@@ -17,33 +20,42 @@ export default function BackToTopBtn({ position = { right: '16px', bottom: '11px
       setIsActive(window.scrollY > 500);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth' // Define el comportamiento de desplazamiento suave
+      behavior: "smooth", // Define el comportamiento de desplazamiento suave
     });
   };
 
   return (
-    <motion.div 
-      initial={{ opacity: 0 }} 
-      animate={{ opacity: isActive ? 1 : 0 }} 
-      transition={{ duration: 0.3 }} 
-      className={`fixed bg-[#174d4d]/90 dark:bg-secondary dark:hover:bg-secondary/70
-      w-12 h-12 z-10 cursor-pointer flex justify-center items-center text-white 
-      border-2  border-[#d6dae0] rounded-xl overflow-hidden ${className}`} 
-      style={{ right: position.right, bottom: position.bottom }} 
+    <motion.button
+      initial={{ opacity: 0 }}
+      animate={{ opacity: isActive ? 1 : 0 }}
+      transition={{ duration: 0.3 }}
+      className={`fixed bg-gradient-to-r
+  from-[#174d4d]/70 via-[#174d4d]/50 to-[#174d4d]/30 border dark:from-surface dark:via-surface dark:to-surface
+ dark:border-white/10 dark:hover:border-primary/30 overflow-hidden  px-8 py-4 transition-all group
+      w-4 h-10 z-10 cursor-pointer flex justify-center items-center text-white 
+        border-[#d6dae0]  p-2 rounded-lg  group ${className}`}
+      style={{ right: position.right, bottom: position.bottom }}
       aria-label="Volver al inicio"
       onClick={scrollToTop} // Llama a la función al hacer clic
     >
-      <FaChevronUp className='text-xl' />
-    </motion.div>
+      <span className="flex group-hover:text-primary text-white">
+        <FaChevronUp className="text-xl" />
+        <div
+          className="absolute rounded-lg inset-0 bg-gradient-to-r 
+        from-primary/10 to-tertiary/10 opacity-0 
+        group-hover:opacity-100 transition-opacity"
+        />
+      </span>
+    </motion.button>
   );
 }

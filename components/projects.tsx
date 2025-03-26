@@ -1,3 +1,4 @@
+"use client"
 import { tagVariants } from "@/utils/animation";
 import { motion } from "framer-motion";
 

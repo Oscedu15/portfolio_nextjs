@@ -162,7 +162,7 @@ dark:to-tertiary font-bold tracking-wider text-center"
                   width={200}
                   height={200}
                   className="rounded-full mx-auto"
-                  alt="profile3"
+                  alt="profile2"
                 />
                 <Link
                   href="https://app.aluracursos.com/certificate/9139fa0f-fd71-4b5e-95b3-e4e3dc64aada"
@@ -187,22 +187,22 @@ dark:to-tertiary font-bold tracking-wider text-center"
         to-tertiary bg-clip-text text-transparent -m-0.5 aspect-square  transition hover:-translate-y-3 hover:-translate-x-3"
               >
                 <Image
-                  src="/alura.jpg"
+                  src="/udemy.webp"
                   width={200}
-                  height={200}
+                  height={300}
                   className="rounded-full mx-auto"
-                  alt="profile1"
+                  alt="profile3"
                 />
                 <Link
-                  href="https://app.aluracursos.com/degree/certificate/c7b6d717-0550-45a0-915c-e678013740ba"
+                  href="https://www.udemy.com/certificate/UC-778761df-d589-494a-afc3-7fe8b3ad9948/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <h3 className="py-4 mt-4 text-2xl font-semibold uppercase">
-                    Formación Front End G4 - ONE
+                  Next.js: El framework de React para producción
                   </h3>
                 </Link>
-                <p className="">Alura Latam</p>
+                <p className="">Udemy Academy</p>
               </div>
             </motion.div>
           </div>

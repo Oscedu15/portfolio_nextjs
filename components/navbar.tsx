@@ -46,7 +46,7 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             className="flex items-center gap-2 group"
           >
-            <div id="home" className="relative h-8 w-8 rounded-full overflow-hidden">
+            <div className="relative h-8 w-8 rounded-full overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-r from-content/80 to-content/90 dark:from-primary dark:to-tertiary animate-spin-slow [mask-image:linear-gradient(transparent,white)]" />
               <div className="absolute inset-[2px] bg-[#91b99ecc]  dark:bg-background rounded-full flex items-center justify-center">
                 <span className="font-bold bg-gradient-to-r from-[#174D4D] to-[#03363D] dark:from-primary dark:to-tertiary bg-clip-text text-transparent">
