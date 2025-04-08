@@ -69,7 +69,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#privacy"
+                  href="/privacy"
                   className="dark:text-gray-400 text-[#d6dae0]
                          hover:text-white transition-colors"
                 >
@@ -78,7 +78,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#terms"
+                  href="/terms"
                   className="dark:text-gray-400 text-[#d6dae0]
                          hover:text-white transition-colors"
                 >

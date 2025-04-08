@@ -41,7 +41,7 @@ export default function BackToTopBtn({
       transition={{ duration: 0.3 }}
       className={`fixed bg-gradient-to-r
   from-[#174d4d]/70 via-[#174d4d]/50 to-[#174d4d]/30 border dark:from-surface dark:via-surface dark:to-surface
- dark:border-white/10 dark:hover:border-primary/30 overflow-hidden  px-8 py-4 transition-all group
+ dark:border-white/10 dark:hover:border-primary/30 overflow-hidden  px-5 py-4 transition-all group
       w-4 h-10 z-10 cursor-pointer flex justify-center items-center text-white 
         border-[#d6dae0]  p-2 rounded-lg  group ${className}`}
       style={{ right: position.right, bottom: position.bottom }}
@@ -52,7 +52,7 @@ export default function BackToTopBtn({
         <FaChevronUp className="text-xl" />
         <div
           className="absolute rounded-lg inset-0 bg-gradient-to-r 
-        from-primary/10 to-tertiary/10 opacity-0 
+        from-primary/10 to-tertiary/10 opacity-0 px-5 py-4
         group-hover:opacity-100 transition-opacity"
         />
       </span>
