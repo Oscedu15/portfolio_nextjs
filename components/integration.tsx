@@ -79,7 +79,7 @@ export default function Integrations() {
             </motion.p>
             <button
               className="flex text-white relative max-w-sm items-center shadow-lg duration-200 btn
-                    text-center transition-all group"
+                    text-center transition-all group hover:scale-95"
             >
               <Link href="/contacto" className="flex group-hover:text-primary ">
                 Contacto

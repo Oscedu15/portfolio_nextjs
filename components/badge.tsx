@@ -50,10 +50,14 @@ const Badge = () => {
             variants={tagVariants}
             className="flex justify-center"
           >
-                    <button  className="flex  relative max-w-sm items-center shadow-lg duration-200 btn
-        text-center transition-all group"
+            <button
+              className="flex relative max-w-sm items-center shadow-lg duration-200 btn
+        text-center transition-all group hover:scale-95"
             >
-              <Link href="/proyectos" className="flex group-hover:text-primary ">
+              <Link
+                href="/proyectos"
+                className="flex group-hover:text-primary "
+              >
                 Proyectos
                 <TbArrowUpRight className="w-5 h-5 duration-500 ml-2 group-hover:rotate-45" />
                 <div
@@ -74,7 +78,7 @@ const Badge = () => {
         "
         >
           <Image
-            src="/perfil.jpeg"
+            src="/foto-perfil.jpg"
             alt="heroImage"
             className="absolute right-18  xl:h-fit xl:w-[575px] max-h-[700px] lg:w-[500px] hidden lg:block"
             width={800}

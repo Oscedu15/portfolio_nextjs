@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer
       className="dark:bg-gray-900 border-t bg-gradient-to-l from-[#174d4d]/90 via-[#174d4d]/80
-  to-[#174d4d]/90 border dark:from-surface dark:via-surface dark:to-surface dark:border-gray-800"
+  to-[#174d4d]/90 border-b-transparent dark:from-surface dark:via-surface dark:to-surface dark:border-gray-800"
     >
       <div
         className="max-w-7xl mx-auto px-4 sm:px-6
@@ -25,6 +25,15 @@ export default function Footer() {
           <motion.div initial={{ x: -100 }} animate={{ x: 0 }}>
             <h3 className="text-lg font-semibold text-white mb-4">Links</h3>
             <ul className="space-y-2">
+              <li>
+                <Link
+                  href="about"
+                  className="dark:text-gray-400 text-[#d6dae0]
+                         hover:text-white transition-colors"
+                >
+                  Mision
+                </Link>
+              </li>
               <li>
                 <Link
                   href="experiencia"
@@ -45,15 +54,6 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="about"
-                  className="dark:text-gray-400 text-[#d6dae0]
-                         hover:text-white transition-colors"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="contacto"
                   className="dark:text-gray-400 text-[#d6dae0]
                          hover:text-white transition-colors"
@@ -69,25 +69,25 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/privacy"
+                  href="/privacidad"
                   className="dark:text-gray-400 text-[#d6dae0]
                          hover:text-white transition-colors"
                 >
-                  Privacy
+                  Privacidad
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/terms"
+                  href="/terminos"
                   className="dark:text-gray-400 text-[#d6dae0]
                          hover:text-white transition-colors"
                 >
-                  Terms
+                  Terminos
                 </Link>
               </li>
             </ul>
           </motion.div>
-
+          {/* ************* */}
           <motion.div initial={{ x: -100 }} animate={{ x: 0 }}>
             <h3 className="text-lg font-semibold text-white mb-4">Redes</h3>
             <ul className="flex space-x-4 items-center justify-center">

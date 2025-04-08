@@ -2,6 +2,7 @@
 import { ParticleCanvas } from "@/hooks/particle";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   const { scrollY } = useScroll();
@@ -44,11 +45,11 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.2 }}
               whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-              className="relative btn"
+              className="relative btn hover:scale-95 z-10"
             >
-              <span className="text-content rounded-full group-hover:text-primary transition-colors">
+              <Link href="/about" className="text-content rounded-full group-hover:text-primary transition-colors">
                 Explorar
-              </span>
+              </Link>
               <div
                 className="absolute rounded-full inset-0 bg-gradient-to-r 
         from-primary/10 to-tertiary/10 opacity-0

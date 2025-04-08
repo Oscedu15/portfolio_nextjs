@@ -12,7 +12,8 @@ const ProjectsPage = () => {
           variants={tagVariants}
           className="mx-auto max-w-7xl py-64 font-bold bg-gradient-to-r from-[#06b4cccc]/70 via-[#06b4cccc]/80 to-[#06b4cccc]/90 dark:from-primary dark:via-secondary dark:to-tertiary bg-clip-text  font-poppins"
         >
-          Our Projects
+          Front End Jr.
+          Developer
         </motion.h2>
       </div>
     </div>

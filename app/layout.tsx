@@ -54,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${poppins.variable} ${open_sans.variable} font-poppins dark:bg-blue-50 antialiased text-black dark:text-white`}
+        className={`${poppins.variable} ${open_sans.variable} font-poppins dark:bg-gray-900 bg-blue-50 antialiased text-black dark:text-white max-w-[1500px] mx-auto`}
         suppressHydrationWarning
       >
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">

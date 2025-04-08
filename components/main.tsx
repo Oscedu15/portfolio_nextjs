@@ -31,16 +31,16 @@ const projects = [
     href: "https://carland-og.vercel.app/",
   },
   {
-    title: "Hotel",
+    title: "Agencia Contable",
     description: "La hospitalidad que te abraza desde el primer momento.",
     tech: [
-      { name: "Next.js", icon: SiNextdotjs, color: "000000" },
+      { name: "Vite", icon: SiVite, color: "#FFCA28" },
       { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
       { name: "Framer Motion", icon: SiFramer, color: "00000" },
       { name: "Javascript", icon: SiJavascript, color: "#FFCA28" },
     ],
-    image: "/projects/hotel.png",
-    href: "https://hotey-next-js.vercel.app/",
+    image: "/projects/danielsy.png",
+    href: "https://consultoriadanielsy.vercel.app/",
   },
   {
     title: "Spa Irene",

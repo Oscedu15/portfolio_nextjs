@@ -42,8 +42,8 @@ export default function BackToTopBtn({
       className={`fixed bg-gradient-to-r
   from-[#174d4d]/70 via-[#174d4d]/50 to-[#174d4d]/30 border dark:from-surface dark:via-surface dark:to-surface
  dark:border-white/10 dark:hover:border-primary/30 overflow-hidden  px-5 py-4 transition-all group
-      w-4 h-10 z-10 cursor-pointer flex justify-center items-center text-white 
-        border-[#d6dae0]  p-2 rounded-lg  group ${className}`}
+      w-4 h-10 z-10 cursor-pointer flex justify-center items-center text-white border-transparent
+        dark:border-[#d6dae0]  p-2 rounded-lg  group ${className}`}
       style={{ right: position.right, bottom: position.bottom }}
       aria-label="Volver al inicio"
       onClick={scrollToTop} // Llama a la función al hacer clic

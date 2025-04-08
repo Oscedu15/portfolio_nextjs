@@ -31,8 +31,8 @@ const proyects2 = [
     href: "https://w-food-two.vercel.app/",
   },
   {
-    title: "Agencia Espacial",
-    description: "Impulsando la exploración más allá de nuestro planeta.",
+    title: "Titi Print",
+    description: "Donde el lujo se encuentra con el diseño y la confeccion.",
     tech: [
       { name: "React", icon: SiReact, color: "#61DAFB" },
       { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
@@ -40,8 +40,8 @@ const proyects2 = [
       { name: "Framer Motion", icon: SiFramer, color: "00000" },
       { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
     ],
-    image: "/projects/space.png",
-    href: "https://espacio-flax.vercel.app/",
+    image: "/projects/titi.png",
+    href: "https://titiprint.vercel.app/",
   },
   {
     title: "Gym FitPhysque",
@@ -206,7 +206,7 @@ const ShowMoreButton = () => {
         transition={{ duration: 0.8, delay: 1.2 }}
         whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
         onClick={toggleVisibility}
-        className="relative mt-4 overflow-hidden btn rounded-full  transition-all group"
+        className="relative mt-4 overflow-hidden btn rounded-full scale-95 duration-200  transition-all group"
       >
         <span className="flex group-hover:text-primary text-white">
           {isVisible ? "Ver Menos" : "Ver Más"}
