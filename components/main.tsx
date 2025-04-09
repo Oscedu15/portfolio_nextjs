@@ -95,7 +95,7 @@ const projects = [
 
 export default function Main() {
   return (
-    <section className="pt-24 pb-20 sm:pt-32 sm:pb-24 relative id='work'">
+    <section className="pt-24 sm:pt-32 lg:pb-16 relative">
       <div className="max-w-7xl mx-auto px-0 md:px-6">
         {/* Section Heading */}
 

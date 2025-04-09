@@ -1,5 +1,6 @@
-import Faqs from "@/components/faqs";
+// import Faqs from "@/components/faqs";
 import Main from "@/components/main";
+import Testimonials from "@/components/testimonials";
 
 
 const ProjectsPage = () => {
@@ -10,7 +11,8 @@ const ProjectsPage = () => {
         dark:from-primary/10 dark:to-tertiary/10 from-slate-50 to-gray-300"
       >
         <Main />
-        <Faqs />
+        {/* <Faqs /> */}
+        <Testimonials/>
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ const open_sans = Open_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://portfolio-nextjs-pied-six.vercel.app"),
-  title: "Oscar Gracia Portfolio",
+  title: "Oscar Gracia | Frontend Developer",
   description: "Portfolio personal en Nextjs 15",
   openGraph: {
     title: "Oscar Garcia",
@@ -37,13 +37,6 @@ export const metadata: Metadata = {
     ],
     type: "website",
   },
-  // twitter: {
-  //   card: "summary_large_image",
-  //   site: "@eMartiiin94",
-  //   title: "Oscar Garcia twitter",
-  //   description: "Portfolio Nextjs 15",
-  //   images: "logo1.jpg",
-  // },
 };
 
 export default function RootLayout({

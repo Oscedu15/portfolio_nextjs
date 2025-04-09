@@ -31,13 +31,23 @@ const faqs = [
   },
 ];
 
+//animation variants for FAQ items
+const faqItemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: index * 0.1, duration: 0.3 }, //staggered animation
+  }),
+};
+
 export default function Faqs() {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
-    <section className="pb-28 mx-auto max-w-7xl">
+    <section className="pb-28 mx-auto">
       <div className="mx-auto">
-        <motion.span
+        {/* <motion.span
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -53,11 +63,14 @@ export default function Faqs() {
           >
             servicio de página web.
           </motion.span>
-        </motion.span>
-
+        </motion.span> */}
         <div className="mt-12 flex flex-col gap-6 max-w-xl mx-auto">
           {faqs?.map((faq, faqIndex) => (
-            <div
+            <motion.div
+              variants={faqItemVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.2 }}
               key={faqIndex}
               className="bg-gradient-to-r
         dark:from-primary/10 dark:to-tertiary/10 from-gray-300/50 to-gray-400/50 text-white rounded-2xl border border-white/10 p-6
@@ -67,9 +80,7 @@ export default function Faqs() {
                 className="flex justify-between items-center mx-auto"
                 onClick={() => setSelectedIndex(faqIndex)}
               >
-                <p className="font-bold text-[#03363D]/70">
-                  {faq.question}
-                </p>
+                <p className="font-bold text-[#03363D]/70">{faq.question}</p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -109,7 +120,7 @@ export default function Faqs() {
                   </motion.div>
                 )}
               </AnimatePresence>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

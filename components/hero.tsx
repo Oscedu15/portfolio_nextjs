@@ -36,7 +36,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 1.1 }}
               className="text-2xl text-content/80 mb-8"
             >
-              Especializado en React, Next.js, Tailwindcss y Prisma. Creación de
+              Especializado en React, Next.js, Tailwindcss, Vite y Prisma. Creación de
               aplicaciones escalables con tecnologías modernas.
             </motion.p>
 

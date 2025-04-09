@@ -7,7 +7,7 @@ const TermsPage = () => {
   return (
 <MaxWidthWrapper className="max-w-full mx-auto px-8 pb-10 bg-gradient-to-r dark:from-primary/10 dark:to-tertiary/10 from-slate-50 to-gray-300">
   <AnimationContainer delay={0.1} className="w-full ">
-    <h2 className="text-4xl md:text-6x lpt-24 lg:pt-32 font-heading font-bold text-center w-full">
+    <h2 className="text-4xl md:text-6x pt-24 lg:pt-32 font-heading font-bold text-center w-full">
       Términos y Condiciones.
     </h2>
     <p className="text-sm mb-2 italic mt-10 lg:mt-20">
