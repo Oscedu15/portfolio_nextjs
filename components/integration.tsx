@@ -56,20 +56,20 @@ export default function Integrations() {
       <div className="container">
         <div className="grid lg:grid-cols-2 items-center lg:gap-16">
           <div className="flex flex-col justify-center items-center">
-            <motion.h3
+            <motion.h2
               initial="offscreen"
               whileInView={"onscreen"}
               variants={titleVariants}
-              className="text-5xl md:text-6xl flex-col lg:text-7xl flex items-center justify-center font-semibold text-wrap text-center lg:p-10 mt-20 mb-4"
+              className="flex-col flex items-center justify-center font-semibold text-wrap text-center lg:p-10 mt-20 mb-4 tracking-wider"
             >
               Transformar Ideas en Realidad{" "}
-              <span className="text-lime-400">Digital</span>
-            </motion.h3>
+              <span className="text-lime-400 italic">Digital.</span>
+            </motion.h2>
             <motion.p
               initial="offscreen"
               whileInView={"onscreen"}
               variants={desVariants}
-              className="dark:text-white/50 text-center text-gray-400 mt-4 text-xl italic mb-8"
+              className=" text-center mt-4 text-xl italic mb-8"
             >
               Cada desafío es único, por lo que me aseguro de aprender y crecer
               en cada uno de ellos, asegurándome de no solo dar lo mejor de mí,

@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { fadeIn, tagVariants, titleVariants } from "@/utils/animation";
 import { TbArrowUpRight } from "react-icons/tb";
 import Link from "next/link";
+import { blurhashToBase64 } from "blurhash-base64";
 
 const Badge = () => {
   return (
@@ -83,7 +84,8 @@ const Badge = () => {
             className="absolute right-18  xl:h-fit xl:w-[575px] max-h-[700px] lg:w-[500px] hidden lg:block"
             width={800}
             height={500}
-            loading="lazy"
+            placeholder="blur"
+            blurDataURL={blurhashToBase64("LQJ@LFJnp{-Uxuf6RjWVK5s:xGRj")}
           />
         </motion.div>
       </div>

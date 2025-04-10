@@ -1,5 +1,6 @@
 "use client";
 import { ParticleCanvas } from "@/hooks/particle";
+import { blurhashToBase64 } from "blurhash-base64";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -36,8 +37,8 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 1.1 }}
               className="text-2xl text-content/80 mb-8"
             >
-              Especializado en React, Next.js, Tailwindcss, Vite y Prisma. Creación de
-              aplicaciones escalables con tecnologías modernas.
+              Especializado en React, Next.js, Tailwindcss, Vite y Prisma.
+              Creación de aplicaciones escalables con tecnologías modernas.
             </motion.p>
 
             <motion.button
@@ -47,7 +48,10 @@ export default function Hero() {
               whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
               className="relative btn hover:scale-95 z-10"
             >
-              <Link href="/about" className="text-content rounded-full group-hover:text-primary transition-colors">
+              <Link
+                href="/about"
+                className="text-content rounded-full group-hover:text-primary transition-colors"
+              >
                 Explorar
               </Link>
               <div
@@ -100,6 +104,8 @@ export default function Hero() {
                   priority
                   quality={100}
                   className="object-cover scale-110 group-hover:scale-100 transition-transform duration-500"
+                  placeholder="blur"
+                  blurDataURL={blurhashToBase64("LQJ@LFJnp{-Uxuf6RjWVK5s:xGRj")}
                 />
                 <div className="absoulte inset-0 bg-gradient-to-t from-black/60 to-transparent" />
 

@@ -69,7 +69,7 @@ const Testimonials = () => {
           transition={{ duration: 0.8 }}
         >
           <motion.h2
-            className="mx-auto lg:text-5xl lg:max-w-[500px] max-w-72 text-4xl text-center font-bold mb-12"
+            className="mx-auto lg:max-w-[500px]  text-center font-bold mb-12"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.5, delay: 0.2 }}

@@ -36,9 +36,9 @@ export default function Introduction() {
             initial="offscreen"
             whileInView={"onscreen"}
             variants={titleVariants}
-            className=" flex items-center justify-center font-semibold text-center lg:p-10 mt-16 mb-4"
+            className=" flex items-center justify-center font-bold tracking-wider text-center lg:p-10 mt-16 mb-4"
           >
-            Creador de Soluciones Web Innovadoras
+            Creando Soluciones Web Innovadoras
           </motion.h2>
           <div className="text-3xl md:text-4xl lg:text-5xl text-center font-medium mt-10">
             <span className="text-white">

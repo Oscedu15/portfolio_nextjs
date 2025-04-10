@@ -60,7 +60,7 @@ export default function Contact() {
             initial="offscreen"
             whileInView={"onscreen"}
             variants={desVariants}
-            className="mt-6 lg:my-6 text-center text-[#03363D]/70  dark:text-content/80 text-muted-foreground"
+            className="mt-6 lg:my-6 text-center italic text-[#03363D]/70  dark:text-content/80 text-muted-foreground"
           >
             Por Favor, no dudes en realizar tu consulta.
           </motion.h5>
