@@ -74,7 +74,7 @@ export default function Contact() {
               y: -10,
               transition: { duration: 0.2 },
             }}
-            action="https://formspree.io/f/xgvogldq4"
+            action="https://formspree.io/f/xgvogldq"
             method="POST"
             onSubmit={handleSubmit}
             className="mx-auto mt-8 pt-6 w-full max-w-xl md:w-4/6 sm:mt-12 shadow-lg dark:shadow-md shadow-[#366b48cc] dark:shadow-primary rounded-xl bg-gradient-to-r dark:from-primary/10 dark:to-tertiary/10 from-gray-300/50 to-gray-400/50 lg:h-[600px]"
