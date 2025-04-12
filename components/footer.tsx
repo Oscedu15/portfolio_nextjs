@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function Footer() {
+  const email = process.env.NEXT_PUBLIC_EMAIL; // Accede a la variable de entorno
   return (
     <footer
       className="dark:bg-gray-900 border-t bg-gradient-to-l from-[#174d4d]/90 via-[#174d4d]/80
@@ -112,7 +113,7 @@ export default function Footer() {
                 />
               </Link>
               <Link
-                href="mailto:oscaregarcialeon@gmail.com"
+                href={`mailto:${email}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
