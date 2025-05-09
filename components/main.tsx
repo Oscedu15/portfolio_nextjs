@@ -10,6 +10,7 @@ import {
   SiFramer,
   SiVite,
   SiJavascript,
+  SiMongoose,
 } from "react-icons/si";
 import Image from "next/image";
 import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
@@ -68,16 +69,18 @@ const projects = [
     href: "https://product-admin-project-nextjs.vercel.app/",
   },
   {
-    title: "Mediprime Salud",
-    description: "Comprometidos con tu salud, dedicados a tu bienestar.",
+    title: "QuickCart",
+    description:
+      "Su principal destino para productos electrónicos asequibles y de calidad en línea.",
     tech: [
-      { name: "React", icon: SiReact, color: "#61DAFB" },
       { name: "Tailwind", icon: SiTailwindcss, color: "06B6D4" },
-      { name: "Vite", icon: SiVite, color: "#FFCA28" },
+      { name: "Next.js", icon: SiNextdotjs, color: "000000" },
+      { name: "Javascript", icon: SiJavascript, color: "#FFCA28" },
       { name: "Framer Motion", icon: SiFramer, color: "00000" },
+      {name:"Moongose", icon:SiMongoose, color: "#1C8139"}
     ],
-    image: "/projects/mediprime.png",
-    href: "https://mediprime.vercel.app/",
+    image: "/projects/quick.png",
+    href: "https://oscecommerce.vercel.app/",
   },
   {
     title: "LinkTree Clone",
